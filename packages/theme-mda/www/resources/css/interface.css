@@ -1,0 +1,15 @@
+h1 {
+	cursor:move !important;
+}
+.dragAjuda {
+	border: 3px dashed #0066CC;
+	width: auto !important;
+}
+.dragAtivo {
+	background-color: #f7f7f7;
+}
+.dragHover {
+	background-color: #F0F1FF;
+}
+
+

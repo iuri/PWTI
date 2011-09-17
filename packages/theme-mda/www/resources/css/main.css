@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/*
+	Portal da Cidadania
+	Site: www.territoriosdacidadania.gov.br
+	Autor: Thiago Melo
+	E-mail: falecom@thiagomelo.com
+	Design de Interfaces: Thiago Melo
+	Arquitetura de Informação: Thiago Melo
+	Programação: Alessandro Landim e Breno Assunção
+	Última atualização do CSS: 16 de Fevereiro de 2009
+*/
+
+/*..... Structure .....*/
+* { margin:0px; padding:0px; border:0px; list-style-type:none; }
+body { margin:0; padding:0; background:#EFEFEF; font:12px Arial, Helvetica, sans-serif; color:#666; }
+.wrap { width:1008px; background:#FFF; margin:0 auto; clear:both; }
+.header { width:1008px; height:110px; background:#F0F0F2 url(/resources/theme-zen/images/portalcidadania/bg_header.jpg) top repeat-x; float:left; }
+.menu { width:1008px; background:#FFF; float:left; text-align:center; padding:9px 0; border-bottom:3px double #E9E8ED; border-top:1px solid #E9E8ED; }
+.content_master { width:968px; float:left; background:#FFF url(/resources/theme-zen/images/portalcidadania/bg_content.jpg) bottom repeat-x; padding:0px 20px 20px 20px; }
+.footer { width:968px; padding:0px 20px; background:#FFF; float:left; }
+/*...................................................*/
+
+/*..... Commons .....*/
+p { margin:15px 0; }
+.frase_titulo { font:11px Arial, Helvetica, sans-serif; font-weight:bold; color:#666; margin:8px 0; }
+.voltar { clear:both; padding-left:15px; background:url(/resources/theme-zen/images/territorios/img_voltar.gif) left no-repeat; }
+.voltar a { color:#838D72; text-decoration:none; padding:2px 5px; }
+.voltar a:hover { background:#838D72; color:#FFF; padding:2px 5px; }
+.txtfield { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; padding:2px; font:13px Arial, Helvetica, sans-serif; color:#333; }
+
+.hide { display:none; }
+
+a.button { margin-right:3px; background:#EFEFEF; border:1px solid #DDD; padding:5px 8px; margin-bottom:10px; text-decoration:none; }
+a:hover.button { background:#EF931D; color:#FFF; }
+/*...................................................*/
+
+/*..... Header .....*/
+.header .login { float:right; background:#838D72 url(/resources/theme-zen/images/portalcidadania/img_login.gif) 140px 2px no-repeat; padding:8px 55px 6px 12px; margin-top:61px; opacity:0.90; filter:Alpha(Opacity=90); }
+.header .login:hover { background:#EFA951 url(/resources/theme-zen/images/portalcidadania/img_login.gif) 140px 2px no-repeat; padding:8px 55px 6px 12px; opacity:1.0; filter:Alpha(Opacity=100); }
+.header .login a { font:16px Arial; color:#FFF; font-weight:bold; text-decoration:none; }
+.header .login p { margin:0; }
+
+.header .logout { float:right; background:#333 url(/resources/theme-zen/images/portalcidadania/img_logout2.gif) 125px 5px no-repeat; padding:8px 42px 6px 12px; margin-top:61px; opacity:0.90; filter:Alpha(Opacity=90); }
+.header .logout:hover { background:#900 url(/resources/theme-zen/images/portalcidadania/img_logout.gif) 125px 5px no-repeat; padding:8px 42px 6px 12px; opacity:1.0; filter:Alpha(Opacity=100); }
+.header .logout a { font:16px Arial; color:#FFF; font-weight:bold; text-decoration:none; }
+.header .logout p { margin:0; }
+
+.header .busca { position:absolute; margin-left:252px; top:10px; }
+.header .busca .bt_busca { background:#FFA826; padding:1px 5px; color:#FFF; border:1px solid #DF8600; cursor:pointer; font:13px Arial; }
+.header .busca .bt_busca:hover { background:#DF8600; padding:1px 5px; color:#FFF; border:1px solid #DF8600; cursor:pointer; }
+
+.topo_1 { width:1008px; height:110px; background:url(/resources/theme-zen/images/portalcidadania/topo01.jpg) top right no-repeat; float:left; }
+.topo_2 { width:1008px; height:110px; background:url(/resources/theme-zen/images/portalcidadania/topo02.jpg) top right no-repeat; float:left; }
+.topo_3 { width:1008px; height:110px; background:url(/resources/theme-zen/images/portalcidadania/topo03.jpg) top right no-repeat; float:left; }
+.topo_4 { width:1008px; height:110px; background:url(/resources/theme-zen/images/portalcidadania/topo04.jpg) top right no-repeat; float:left; }
+/*...................................................*/
+
+/*..... Menu Contexto .....*/
+.menu_contexto li { width:198px; height:15px; background:url(/resources/theme-zen/images/territorios/bg_submenu.gif) no-repeat; margin:2px 0; padding:5px 6px; }
+.menu_contexto li:hover { width:198px; height:15px; background:url(/resources/theme-zen/images/territorios/bg_submenu_hover.gif) no-repeat; display:block; margin:2px 0; padding:5px 6px; }
+.menu_contexto li a { width:198px; height:15px; display:block; font:11px Arial; color:#FFF; font-weight:bold; text-decoration:none; }
+/*...................................................*/
+
+/*..... Breadcrumbs .....*/
+#breadcrumbs { width:1008px; background:#FFF; float:left; padding-bottom:20px; padding-top:5px; }
+#breadcrumbs ul { margin-left:20px; }
+#breadcrumbs li { display:inline; font:13px Arial; }
+#breadcrumbs li a { color:#235C96; text-decoration:none; padding:1px 3px; }
+#breadcrumbs li a:hover { background:#235C96; color:#FFF; padding:1px 3px; }
+/*...................................................*/
+
+/*..... Content .....*/
+.estrutura_principal { width:968px; float:left; margin-bottom:15px; }
+.estrutura01 { width:738px; float:left; }
+.estrutura02 { width:210px; float:right; }
+.estrutura03 { width:210px; float:left; }
+.estrutura04 { width:738px; float:right; }
+.estrutura05 { width:968px; float:left; margin-bottom:15px; }
+
+.corpo_1 { font:13px Arial; }
+.corpo_2 { font:14px Arial; }
+.corpo_3 { font:16px Arial; }
+
+.content_master a { color:#235C96; }
+/*...................................................*/
+
+/*..... Footer .....*/
+.footer p { float:left; margin-right:155px; }
+.footer ul { float:left; margin:15px 0; }
+.footer ul li { display:inline; margin:0 5px; }
+.footer ul li a { color:#235C96; text-decoration:none; padding:2px 5px; }
+.footer ul li a:hover { background:#235C96; color:#FFF; padding:2px 5px; }
+/*...................................................*/
+
+/*..... Formulários .....*/
+.formulario { background:#F3F3F3; padding:10px; border:1px solid #E4E4E4; }
+.formulario .txtfield { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; padding:2px; font:13px Arial, Helvetica, sans-serif; color:#333; }
+.formulario select { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; padding:2px; font:13px Arial, Helvetica, sans-serif; color:#333; }
+.formulario p { margin:8px 0; }
+.formulario .bt_execucao { background:#EB9811; color:#FFF; font-size:11px; padding:5px; display:table; text-align:center; cursor:pointer; margin-top:10px; border:2px outset #999; }
+/*...................................................*/
+
+/*..... Login no portal .....*/
+.login_portal { width:965px; border:1px solid #DDD; background:#FFF; float:left; }
+.login_portal .margin-form { border:none !important; margin-left:-155px !important; background:none !important; }
+.login_portal label { font-weight:bold; }
+.login_portal p { line-height:18px; }
+.login_portal .form-button input { margin-left:147px; margin-bottom:10px; }
+.login_portal .opcoes_login { margin-top:-20px; }
+.login_portal .opcoes_login li { margin:3px 0; }
+/*...................................................*/
+
+/*..... Mensagens .....*/
+.postit { position:absolute; top:120px; margin-left:750px; width:196px; height:130px; padding-top:35px; background:url("/resources/theme-zen/images/portalcidadania/bg_postit.gif") no-repeat; }
+.postit .numero_mensagens a { display:block; width:165px; height:100px; text-align:center; font:44px Arial; color:#235C96; text-decoration:none; }
+.postit .fechar_postit { position:absolute; margin:-170px 0 0 130px; }
+.postit .txt_mensagens { margin-top:-70px; margin-left:20px; }
+
+.mensagens_data { font:bold 18px Arial; }
+.mensagens_horario { width:60px; background:#235C96; padding:4px 6px; color:#FFF; font:bold 13px Arial; margin-top:5px; display:block; }
+/*...................................................*/
+
+.botoes_gestao_programa { margin-left:-10px; }
+.botoes_gestao_programa li { display:block; float:left; margin:10px 8px 15px 8px; }
+.imagem_right { float:left; margin:0 15px 15px 0; }
+
+.controles_video { width:330px; height:40px; background:url("/resources/theme-zen/images/territorios/bg_controles_video.gif") no-repeat; float:left; margin:5px 0 15px 0; }
+.controles_video ul li { display:block; float:left; }
+.titulo_videos { margin-bottom:10px; }
+.controles_video .bt_anterior { margin:6px 0 0 6px; float:left; }
+.controles_video .bt_anterior a { width:115px; height:25px; text-indent:-99999px; overflow:hidden; background:url("/resources/theme-zen/images/territorios/bt_video_anterior.jpg") no-repeat; float:left; }
+.controles_video .bt_proximo { margin:6px 6px 0 0; float:right; }
+.controles_video .bt_proximo a { width:115px; height:25px; text-indent:-99999px; overflow:hidden; background:url("/resources/theme-zen/images/territorios/bt_video_proximo.jpg") no-repeat; float:right; }
+.nome_videos { width:122px; height:16px; left:105px; background:#E5E5E5; float:left; text-align:center; padding-top:2px; margin-top:-2px; }
+
+.selo_previsao_tempo { width:200px; display:block; text-align:center; float:left; background:#EFEFEF; padding:25px 0; border:1px solid #DDD; }
+
+.meu_perfil_foto { width:220px; float:left; margin-top:20px; margin-bottom:15px; }
+.meu_perfil_foto img { background:#FFF; padding:10px; border:1px dashed #CCC; }
+.meu_perfil_informacoes { width:508px; float:right; }
+.meu_perfil_outras_informacoes { width:738px; display:block; clear:both; margin-top:15px; }
+
+.meuperfil_nome { font-size:34px; font-weight:bold; margin:20px 0 0 0; }
+.meuperfil_orgao { font-size:18px; font-weight:bold; margin:0 0 10px 0; color:#848C73; }
+.meuperfil_email { font-size:18px; margin:5px 0; margin-top:25px; }
+.meuperfil_email a { color:#235C96; }
+.meuperfil_cidade { font-size:18px; margin:5px 0; }
+
+.comunidades_que_participo { margin:15px 0 20px 0; }
+.comunidades_que_participo li { list-style-type:disc; margin-left:15px; }
+.comunidades_que_participo li a { font-size:16px; font-weight:bold; color:#235C96; text-decoration:none; }
+.comunidades_que_participo li a:hover { text-decoration:underline; }
+
+#lightwindow { line-height:16px !important; }
+.colunas_simples_coluna01 { width:660px !important; float:left !important; }
+.colunas_simples_coluna02 { width:285px !important; float:right !important; }
+
+.alert { padding:10px; background:#FFFFB9; border:1px solid #E6E600; margin:10px 0; margin-left:2px; }
+.alert p { margin:0 !important; color:#333; }
+
+.portlet-wrapper { margin-bottom:20px; }
+
+
+/* Drag and Drop */
+h1 {
+	cursor: move !important;
+}
+
+.dragAjuda {
+	border: 3px dashed #0066CC;
+	width: auto !important;
+}
+.dragAtivo {
+	background-color: #f7f7f7;
+}
+.dragHover {
+	background-color: #F0F1FF;
+}
+
+
+.portal_customize_elements { width:98%; background:#FFF; float:left; padding:10px 1%; border:1px solid #E2E2E2; margin:5px 0 10px 0; }
+.portal_customize_elements li { width:30%; float:left; margin-right:10px; }
+.portal_customize_elements li a { font:bold 12px Arial; color:#235C96; text-decoration:none; }
+.portal_customize_elements li a:hover { color:#828D70; }
+
+.portal_customize_layout { width:98%; background:#FFF; float:left; padding:10px 1%; border:1px solid #E2E2E2; margin:5px 0 30px 0; }
+.portal_customize_layout li { width:30%; float:left; margin-right:10px; }
+.portal_customize_layout li a { font:bold 12px Arial; color:#999; text-decoration:none; }
+.portal_customize_layout li img { margin-right:10px; float:left; }
+.portal_customize_layout li .tipo_disposicao a { font:bold 18px Arial; color:#235C96; }
+.portal_customize_layout li .tipo_disposicao a:hover { text-decoration:underline; }

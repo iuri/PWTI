@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/*
+	Secretaria da Agricultura Familiar - Ministério do Desenvolvimento Agrário
+	Site: http://www.mda.gov.br/saf
+	Autor: Thiago Melo
+	E-mail: thiago.melo@mda.gov.br
+	Design: Thiago Melo
+	Programação: Alessandro Landim e Breno Assunção
+	Folha de estilos para o Internet Explorer 7
+*/
+
+
+/*..... Hacks .....*/
+.header .search { margin:21px 0 0 240px; }
+.header .search .txtfield { width:265px; }
+.header .header_menu { margin-top:23px; }
+.header .header_menu ul li.outras_opcoes { margin-top:0px; }
+.faq_right_column { width:195px; background:#EAEAEA; margin-top:10px; margin-bottom:10px; padding:10px; margin-left:15px; margin-top:10px; float:right; }
+.img_faq { margin-top:18px; }
+.faq_images_portlet li .nome_programa { position:absolute; text-align:center; width:120px; height:30px; background:#FFF; margin-left:500px; margin-top:80px; padding:5px 10px; opacity:0.90; filter:Alpha(Opacity=90); font:bold 12px Arial; }
+.faq_right_column .list_faq_images li .nome_programa { position:absolute; text-align:center; width:120px; height:30px; background:#FFF; margin-left:-140px; margin-top:100px; padding:5px 10px; opacity:0.90; filter:Alpha(Opacity=90); font:bold 12px Arial; }
+.faq_right_column .list_faq_images li { padding:11px 10px 11px 0; margin-left:8px; }
+.faq_right_column .list_faq_images li:hover { padding:11px 10px 11px 0; margin-left:8px; }
+#faq_carousel { float:left; margin-bottom:10px; position:relative; height:135px; }
+#faq_carousel .container { float:left; position:relative; overflow:hidden; margin-right:5px; margin-top:-4px; }
+#faq_carousel li .nome_programa { position:absolute; text-align:center; width:120px; height:30px; background:#FFF; margin-left:-140px; margin-top:80px; padding:5px 10px; opacity:0.90; filter:Alpha(Opacity=90); font:bold 12px Arial; }
+#faq_carousel .previous_button { margin-left:4px; }
+#faq_carousel .next_button { margin-left:2px; }
+.imageElement img { margin-top:-100px; }
+.faq_list_column {margin-left:60px;}
+#faq_main .portlets {width: 300px;}
+.max_priority .cut_image {height:100%}
+/*...................................................*/

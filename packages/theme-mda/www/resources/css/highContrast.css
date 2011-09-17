@@ -1,0 +1,277 @@
+body {
+    font:medium/1.5em Tahoma, "Lucida Grande", sans-serif;
+    background-color: #222222;
+    color: #dddddd;
+}
+
+/* STANDARD TAGS -----------------------------------------------------------*/
+/* standard html (body, h1, p, form...) */
+
+h1 { 
+	font-size: 1.2em; 
+	font-weight:bold;
+	color: #eeeeee; 
+}
+	
+h2 { 
+	font-size: 1.1em; 
+	font-weight:bold;
+	color: #eeeeee; 
+}
+	
+h3 {
+	font-size: 1em; 
+	font-weight:bold;
+	color: #dddddd; 
+}
+
+a:link {
+	color: #dbdbb0;
+	text-decoration:underline;
+}
+	
+a:visited {
+	color: #dbdbb0;
+	text-decoration:underline;
+}
+	
+a:hover {
+	color: #222222;
+	text-decoration:underline;
+	background: #cccc3d;
+}
+
+/* END OF STANDARD TAGS */
+
+
+/* COLUMNS  -----------------------------------------------------------*/
+/* Mimics the 1 column layout */
+
+#sidebar-1 {
+	float: left;
+	width: 100%;
+}
+
+#main-content {
+	float: left;
+	width: 100%;
+}
+
+#sidebar-2 {
+	float: left;
+	width: 100%;
+}
+
+/* END OF COLUMNS */
+
+
+/* PORTLETS -----------------------------------------------------------*/
+/* contains: all general portlet styles like title, frame, font etc. */
+
+.portlet {
+	background: #222222; 
+	border: 1px solid #ddd; /* color */
+}
+
+.portlet-header {
+	background: #ffffff url(/resources/theme-zen/images/global/trans.gif) repeat-x top left;/* color */
+}
+
+.portlet-title h1 {
+	color: #222222;
+}
+
+/* END OF PORTLETS*/
+
+
+/* MAIN NAVIGATION -----------------------------------------------------------*/
+
+main-navigation {
+	background: url("/resources/theme-zen/images/global/trans.gif") repeat-x bottom;
+}
+	
+#main-navigation li {
+	border: 2px solid #fff;
+	background:url("/resources/theme-zen/images/global/trans.gif") no-repeat left top;
+	padding-left:0px;
+}
+
+#main-navigation a {
+	background:url("/resources/theme-zen/images/global/trans.gif") no-repeat right top;
+	padding-left: 16px;
+	color:#dbdbb0;
+}
+
+
+#main-navigation #active {
+	background-image:url("/resources/theme-zen/images/global/trans.gif");
+}
+	
+#main-navigation #main-navigation-active a {
+	background-image:url("/resources/theme-zen/images/global/trans.gif");
+	background: #fff;
+	color:#222222;
+	padding-bottom:4px;
+}
+
+#main-navigation a:hover {
+    color: #222222;
+    background: #cccc3d;
+    text-decoration: underline;
+}
+
+/* END OF MAIN NAVIGATION */
+
+
+/* SUB NAVIGATION -----------------------------------------------------------*/
+
+#sub-navigation {
+	padding-top: 1px;
+	padding-bottom: 1px
+}
+
+#sub-navigation ul {
+	margin-left: 10px;
+}
+
+#sub-navigation li {
+	border: 2px solid #fff;
+	padding: 5px; 
+}
+
+#sub-navigation a {
+	padding: 4px 15px 5px 16px;
+	color:#dbdbb0;
+}
+
+#sub-navigation li a:hover {
+    color: #222222;
+    background: #cccc3d;
+    text-decoration: underline;
+}
+
+#sub-navigation li#sub-navigation-active a {
+	background: #eee;
+	color:#222222;
+}
+
+/* END OF SUB NAVIGATION */
+
+
+/* ALERT MESSAGE */
+/* contains: styles for the alert box */
+
+.alert {
+	padding: 5px;
+	background: #333;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+/* END OF ALERT MESSAGE */
+
+
+/*  BUTTONS -----------------------------------------------------------*/
+
+a.button { 
+  background:url("/resources/theme-zen/images/global/trans.gif") repeat-x;
+  font-size: 1em;
+  border: solid 1px #ffffff;
+  background-color: #222222;
+  text-align: center; 
+  padding: 4px 8px;
+  color: #ffffff;
+  text-decoration: underline;
+ 
+
+}
+
+a.button:hover { 
+  background:url("/resources/theme-zen/images/global/trans.gif") repeat-x;
+  text-decoration: underline;
+  background-color: #ffffff;
+  color: #222222;
+
+}
+
+.button {
+	text-decoration: underline;
+	padding-right: 5px;
+	border-right: 1px solid #666666;
+}
+
+/* END OF BUTTONS */
+
+
+
+
+
+/* PACKAGE SPECIFIC -----------------------------------------------------------*/
+
+/* LISTS -----------------------------------------------------------*/
+
+.list-table tr.list-header {
+  background-color: #111111; 
+}
+.list-table tr.even, .list-tiny tr.even {
+  background-color: #555555;
+}
+.list-table tr.odd, .list-tiny tr.odd {
+  background-color: #222222;
+}
+th.list-table, th.list-table-narrow, .list-table th {
+	border-bottom-color: #ffffff;
+}
+td.list-table, td.list-table-narrow, .list-table td {
+	border-bottom-color: #ffffff;
+}
+tr.last td {
+  border-bottom-color: #ffffff;
+}
+
+
+/* END OF LISTS */
+
+/* FORMS */
+.form-required-mark {
+	color:#fff000;
+}
+
+/* END OF FORMS */
+
+
+
+/* FORUMS -----------------------------------------------------------*/
+
+.pagination li a {
+	border: 2px solid #ffffff;
+	background-color: #222222;
+}
+
+.pagination li.current a {
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	color: #000000
+}
+
+.pagination li a:hover {
+	background-color: #ffffff;
+}
+
+
+#forum-thread .subject {
+        background: #222222;
+}
+
+#forum-thread .odd {
+        background: #222222;
+}
+
+#forum-thread .even {
+        background: #111111;
+}
+
+#forum-thread .subject .reference { 
+        color: #dbdbb0;
+}
+

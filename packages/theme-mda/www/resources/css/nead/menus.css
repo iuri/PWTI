@@ -1,0 +1,49 @@
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 200px; /* Width of Menu Items */
+	}
+	
+#menu ul li {
+	position: relative;
+	}
+	
+#menu li ul {
+margin-left:189px;
+margin-top:-28px;
+	display:none;
+    z-index:999999;
+	}
+#menu li ul li ul {
+	margin-left:120px; /* Set 1px less than menu width */
+    margin-top:-20px;
+	display: none;
+    z-index:999999;
+}
+
+/* Styles for Menu Items */
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #4F4F4F;
+}
+
+#menu ul li a:hover { color:#4F4F4F; }
+	
+/* Holly Hack. IE Requirement \*/
+* html #menu ul li { float:left; height: 1%; }
+* * html #menu ul li a { height: 1%; }
+/* End */
+
+
+
+#menu li:hover ul, li.over ul { display: block; } /* The magic */gl.menu li:hover ul { display: block; }
+
+#menu li:hover ul ul, li.over ul ul { display:none; }
+
+#menu li li:hover ul, li li.over ul { display: block; } 
+
+/*
+#menu li:hover ul, li.over ul { display: block;}
+*/

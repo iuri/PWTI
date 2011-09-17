@@ -1,0 +1,60 @@
+body {
+	font-family: "Times New Roman", serif;
+	font-size: 12pt;
+}
+
+h1 { 
+	font-size: 16pt; 
+	font-weight:bold;
+	color: #6E7A6A; */
+}
+
+h2 { 
+	font-size: 15pt; 
+	font-weight:bold;
+	color: #545D51; 
+}
+	
+h3 {
+	font-size: 14pt; 
+	font-weight:bold;
+	color: #444444; 
+}
+
+#header-navigation, #main-navigation, #sub-navigation, #skiptocontent, .block-marker, #alert-message, .portlet-controls, #footer, .button {
+	display: none;
+}
+
+
+#content-wrapper a:after {
+	/*content: " [" attr(href) "] ";*/
+	font-size: 70%;
+}	
+
+/* LISTS -----------------------------------------------------------*/
+
+ul.compact{
+	margin: 0px;
+	padding: 0px;
+}
+ul.compact li {
+	list-style:none;
+	display: inline;
+}
+
+.portlet-title h1 {
+	color:#FFFFFF;
+	display:inline;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+/* END OF LISTS */
+
+
+table.standard {
+	border: 1pt solid black; padding: 5pt;
+}
+
+table.standard th { border: 1pt solid #222222; padding: 5pt; background-color: #aaaaaa }
+table.standard td { border: 1pt solid #222222; padding: 5pt; }

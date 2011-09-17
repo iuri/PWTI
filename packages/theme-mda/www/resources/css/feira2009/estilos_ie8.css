@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+
+.imagem-rio {
+	margin: auto auto -250px;
+	overflow:hidden;
+}
+	
+
+#conteudo {
+	top: -250px;
+}

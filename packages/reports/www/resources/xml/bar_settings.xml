@@ -1,0 +1,47 @@
+<settings>
+	<data_type>csv</data_type>
+	<depth>0</depth>
+	<angle>10</angle>
+	<column>
+		<spacing>1</spacing>
+		<grow_time>1</grow_time>
+		<grow_effect>regular</grow_effect>
+		<alpha>60</alpha>
+		<border_color>#000000</border_color>
+		<border_alpha>80</border_alpha>
+		<balloon_text><![CDATA[{series}: {value}]]></balloon_text>
+	</column>
+
+	<background>
+		<border_color>#000000</border_color>
+		<border_alpha>15</border_alpha>
+	</background>
+
+	<axes>
+		<category>
+			<width>5</width>
+		</category>
+		<value>
+			<width>5</width>
+		</value>
+	</axes>
+
+	<legend>
+		<enabled>false</enabled>
+	</legend>
+	
+	<labels>
+		<label>
+			<x>50%</x>                                                <!-- [0] (Number / Number% / !Number) -->
+			<y>5%</y>                                               <!-- [0] (Number / Number% / !Number) -->
+			<rotate>false</rotate>                                  <!-- [false] (true / false) -->
+			<width></width>                                         <!-- [] (Number / Number%) if empty, will stretch from left to right untill label fits -->
+			<align>left</align>                                   <!-- [left] (left / center / right) -->  
+			<text_color></text_color>                               <!-- [text_color] (hex color code) button text color -->
+			<text_size>12</text_size>                               <!-- [text_size](Number) button text size -->
+			<text>                                                  <!-- [] (text) html tags may be used (supports <b>, <i>, <u>, <font>, <a href="">, <br/>. Enter text between []: <![CDATA[your <b>bold</b> and <i>italic</i> text]]>-->
+			        <![CDATA[<b>Distribuição dos valores totalizados</b>]]>
+			</text>        
+		</label>
+	</labels>
+</settings>

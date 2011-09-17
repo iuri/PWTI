@@ -1,0 +1,7 @@
+.main { width:825px; background:#FFF; padding:0px 0 0px 0; float:right; }
+.top-content { width:825px; float:left;}
+.main-content { width:400px; float:left; min-height:50px;border-right:1px solid #D7DDD6;padding: 5px; }
+.right-content { width:195px; margin-top:5px; margin-bottom:10px; padding:5px; float:right; min-height:50px;}
+.center-content { width:180px; margin-top:5px; margin-bottom:10px; margin-left: 5px; padding:5px; float:left; min-height:50px;}
+.left-content { float:left; padding:8px 5px; width:195px; min-height:50px; }
+.bottom-content { width:788px; margin-top:10px; float:left; min-height:50px; }

@@ -1,0 +1,14 @@
+CREATE TABLE mores_sentimento (
+  query_id integer NOT NULL,
+  lang character varying,
+  source character varying NOT NULL,
+  mores_post_id integer NOT NULL,
+  sentimento smallint NOT NULL DEFAULT 0)
+WITH (
+  OIDS=TRUE
+);
+ALTER TABLE mores_sentimento OWNER TO service0;
+
+
+INSERT INTO mores_sentimento(query_id, lang, source, mores_post_id, sentimento)
+  SELECT query_id, lang, source, mores_post_id, sentimento  FROM mores_items3 WHERE sentimento <> 0

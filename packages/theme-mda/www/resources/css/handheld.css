@@ -1,0 +1,69 @@
+body {
+font:1em/1.2em sans-serif;
+}
+
+
+
+
+
+/* STANDARD TAGS -----------------------------------------------------------*/
+/* standard html (body, h1, p, form...) */
+
+h1 { 
+	font-size: 1.4em; 
+}
+	
+h2 { 
+	font-size: 1.25em; 
+}
+	
+h3 {
+	font-size: 1.1em; 
+}
+
+/* END OF STANDARD TAGS */
+
+
+
+
+
+#sidebar-1 {
+	float: left;
+	width: 100%;
+}
+
+#main-content {
+	float: left;
+	width: 100%;
+}
+
+#sidebar-2 {
+	float: left;
+	width: 100%;
+}
+
+.main-content-padding {
+	padding: 0px 5px;
+}
+
+.sidebar-1-padding {
+	padding: 0px 5px;
+}
+
+.sidebar-2-padding {
+	padding: 0px 5px;
+}
+
+
+.portlet-controls {
+	display: none;
+}
+
+.block-marker {
+	position:absolute;
+	left:0px;
+	top:-500px;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}

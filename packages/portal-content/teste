@@ -1,0 +1,6 @@
+#!/bin/sh
+  
+for file in *.c
+do
+   vim -s trocas.vim $file
+done  

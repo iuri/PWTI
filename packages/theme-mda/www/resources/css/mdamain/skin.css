@@ -1,0 +1,49 @@
+.jcarousel-skin-tango.jcarousel-container {
+    -moz-border-radius: 10px;
+}
+
+.jcarousel-skin-tango.jcarousel-container-horizontal {
+    width: 749px;
+    padding: 0px 30px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  749px;
+    height: 105px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 120px;
+    height: 105px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+    margin-right: 11px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    position: absolute;
+    top: -5px;
+    left: 750px;
+    width: 36px;
+    height: 115px;
+    cursor: pointer;
+    background: transparent url(/resources/theme-mda/imagens/mdamain/contdestdir.jpg) no-repeat;
+    /* Para funcionar no IE */
+    _left: 749px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 36px;
+    height: 115px;
+    cursor: pointer;
+    background: transparent url(/resources/theme-mda/imagens/mdamain/contdestesq.jpg) no-repeat;
+}

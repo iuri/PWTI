@@ -1,0 +1,400 @@
+html,body {
+	height: 100%;
+	margin:0; padding:0;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+body {margin:0; padding:0; background-color:white;background: url(../images/fundoGradiente.jpg) repeat-x 0 110px;
+	behavior: url("css/csshover.htc"); /* para fazer funcionar o :hover no IE 5+ */;
+
+}
+form {margin:0; padding:0}
+
+
+#wrarper{
+	position: absolute;
+	height:100%;
+	width:1024px;
+	margin:0; padding:0;
+	background: url(../images/fundoGradiente.jpg) repeat-x 0 110px;
+	
+	font: 11px "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+
+
+
+#cabecalho{
+	position: relative;
+	float:left;
+	height:112px;
+	width:100%;
+	background: url(../images/topo.jpg) no-repeat;
+	margin-bottom:10px;
+	/*overflow:hidden;*/
+	
+
+	}
+
+
+
+#logomarca{
+		/*Size of the image*/ 
+		padding-top: 99px; 
+		width: 231px;
+		margin-top:10px;
+
+		/*The image*/ 
+		background-image: url(../images/logomarca.jpg); 
+		background-repeat: no-repeat; 
+		
+		/*Hide the text*/ 
+		overflow: hidden; 
+		/* WIN IE5 hack */ 
+		height: 133px; 
+		voice-family: "\"}\""; 
+		voice-family:inherit; 
+		height: 0; 
+}
+
+/* @group linksPortal */
+
+
+#linksPortal{
+	margin: 0px; padding: 0px;
+	position:absolute;
+	bottom:0px;
+	
+	width:80%;
+	padding-left:20%;
+	
+	border-bottom:4px solid white;
+	
+	list-style:none;
+	text-align: left;
+	
+	height:32px;
+}
+
+
+
+#linksPortal li{
+	float:left;
+	width:100px;
+	text-align:center;
+	line-height:38px;
+	}
+
+
+
+#linksPortal a{
+	text-decoration:none;
+	color:black;
+	}
+	
+	
+#linksPortal li.select{
+	display:block;
+	height:39px;
+	margin-top:0px;
+	z-index:2;
+	
+	background: url(../images/menuTopoBkg.jpg) no-repeat 0 2px;
+	font-weight:bolder;
+}
+
+/* @end */
+
+
+
+#conteudo{
+	position:relative;
+	float:left;
+	width:100%;
+	padding-left: 20px;
+	color: #7f7f7f;
+	line-height:17px;
+}
+
+
+
+
+
+h1{
+	font: italic 58px Georgia, "Times New Roman", Times, serif;
+	color: #000;
+	margin-bottom:-10px;
+}
+
+/* @group subLinks */
+
+#subLinks{
+	margin:0px;padding: 0px;
+	clear:left;
+	position:relative;
+	float:left;
+	width:100%;
+	list-style:none;
+	text-align: left;
+	padding-left:0px;
+	height:36px;	
+	margin-top:10px;
+	
+
+}
+
+
+#subLinks li{
+	
+	float:left;
+	width:108px;
+	text-align:center;
+	height:33px;
+	background: url(../images/subMenuBkg_des.jpg) no-repeat;
+	font: 12px/31px Geneva;
+	color: #555;
+	margin-left:5px;
+}
+
+
+
+#subLinks a{
+	text-decoration:none;
+	color: #7b7b7b;
+	}
+	
+
+
+#subLinks li.select{
+		background: url(../images/subMenuBkg_atv.jpg) no-repeat;
+		color: #fff;
+}
+
+
+
+#subLinks li:hover{
+		background: url(../images/subMenuBkg_atv.jpg) no-repeat;
+		color: white;
+}
+
+/* @end */
+
+
+
+
+
+
+
+#territoriosCidadaniaPeq{
+		
+		margin: 0px;padding: 0px;
+		/*Size of the image*/ 
+		padding-top: 29px; 
+		width: 100%;
+		margin-top:0px;
+		
+		
+		margin-left:200px;
+
+		/*The image*/ 
+		background-image: url(../images/territoriosCidadaniaLogoPeq.jpg); 
+		background-repeat: no-repeat; 
+		
+		/*Hide the text*/ 
+		overflow: hidden; 
+		/* WIN IE5 hack */ 
+		height: 29px; 
+		voice-family: "\"}\""; 
+		voice-family:inherit; 
+		height: 0; 
+	
+}
+
+
+
+
+
+
+#colDir .box h2{
+	font: 22px Georgia;
+	border-bottom:0px solid #d2d2d4;
+
+}
+
+
+
+
+/* @group col Esq */
+
+
+/* @end */
+
+
+
+
+
+.boxAcao{
+	position:relative;
+	float:left;	
+	width: 385px;
+	background: url(../images/acaoTituloBkg.gif) no-repeat;
+	margin-bottom:10px;
+	
+}
+
+
+
+.boxAcao#desativado{
+	height:24px;
+	overflow:hidden;
+	margin-bottom:1px;
+	
+	
+}
+.boxAcao#desativado h4{
+	font: 18px "Lucida Grande";
+	width:100%;
+	margin:0px;padding:0px;
+	height:30px;
+	color: #555;
+	background: url(../images/acaoTituloSetaSide.gif) no-repeat 10px 9px;
+	padding-left:30px;
+	margin-bottom:-6px;
+	
+	
+}
+
+
+
+.boxAcao h4{
+	font: 18px "Lucida Grande";
+	width:100%;
+	margin:0px;padding:0px;
+	height:30px;
+	color: white;
+	background: url(../images/acaoTituloSetaDown.gif) no-repeat 10px 9px;
+	padding-left:30px;
+	margin-bottom:-6px;
+}
+
+#Acoes div.boxAcao a {
+		margin:0;padding:0px;
+		
+		
+	
+}
+
+
+
+
+
+
+.boxAcao ul{
+	list-style-type: none;
+	margin:0;padding:0px;
+	width:100%;
+	
+}
+
+
+
+.boxAcao li{
+	position: relative;
+	float: left;
+	width:94%;
+	margin:0;padding:0px;
+	margin-left:3px;
+	
+}
+
+
+.boxAcao li.acaoRow1{
+	background-color: #e4e4e6;
+	
+}
+
+/*
+.boxAcao li div{
+	
+
+	position: relative;
+	float: left;
+	width:100px;
+	vertical-align: middle;
+	line-height:50px;
+	height:50px;
+		
+}
+
+*/
+
+.boxAcao ul li .numero {
+	width:30px;
+	text-align: center;
+	font: bold 27px/27px Verdana, "Lucida Grande", Lucida, sans-serif;
+	color: #cacacb;
+	vertical-align: middle;
+}
+
+
+.boxAcao ul li .nomeAcao {
+	width:170px;
+	text-align: left;
+	font: bold 10px "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #636364;
+		
+}
+
+.boxAcao ul li .metaFisica {
+	width:85px;
+	text-align: center;
+	font: 10px "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #636364;
+		
+}
+
+.boxAcao ul li .metaFinanc {
+	width:115px;
+	text-align: center;
+	font: 10px "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #636364;
+	height:50px;
+	vertical-align: middle;
+	
+	
+	}
+
+
+.boxAcao ul li .metaFinanc .metaFinanNumero{
+	width:85%;
+	font: 10px/25px "Lucida Grande", Lucida, Verdana, sans-serif;
+	color:white;
+	margin:1px;padding: 0px;
+	vertical-align: middle;
+	background-color: #e57942;
+}
+
+.boxAcao ul li.acaoRow2 .metaFinanc .metaFinanNumero{
+		color:white;
+	background-color: #e79944;
+}
+
+
+
+.boxAcao ul li .infosGerais {
+	display:none;
+	width:85px;
+	text-align: center;
+	font: 10px "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #636364;
+		
+}
+
+
+
+
+

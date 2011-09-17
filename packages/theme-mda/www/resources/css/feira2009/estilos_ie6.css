@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+
+.imagem-rio {
+	margin: auto auto -250px;
+	overflow:hidden;
+}
+	
+
+#conteudo {
+}
+#destaques {
+	margin-left:0;
+	width: 400px;
+        height: 350px;
+	overflow: hidden;
+}
+#rio img {height:231px; width:1000px;} 
+#rodape img {height:246px; width:1000px;} 
+#creativecommons img {height:31px; width:88px;} 
+#prev img {height:129px; width:22px;} 
+#next img {height:61px; width:22px;}
+#menu-inferior a {display:inline;}
+#menu-inferior li {margin-top:15px}

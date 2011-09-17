@@ -1,0 +1,26 @@
+#sidebar-1 {
+	float: left;
+	width: 33%;
+}
+
+#main-content {
+	float: right;
+	width: 66%;
+}
+
+#sidebar-2 {
+	float: left;
+	width: 33%;
+}
+
+.main-content-padding {
+	padding-right: 5px
+}
+
+.sidebar-1-padding {
+	padding-left: 5px;
+}
+
+.sidebar-2-padding {
+	padding-left: 5px;
+}

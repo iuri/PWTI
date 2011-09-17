@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/*
+	Comunidades do Portal da Cidadania
+	Site: comunidades.mda.gov.br
+	Autor: Thiago Melo
+	E-mail: falecom@thiagomelo.com
+	Design de Interfaces: Thiago Melo
+	Arquitetura de Informação: Thiago Melo
+	Programação: Alessandro Landim e Breno Assunção
+	Última atualização do CSS: 16 de Fevereiro de 2009
+*/
+
+/*..... Header .....*/
+.header .name a { width:182px; height:46px; background:url(/resources/theme-zen/images/portalcidadania/logomarca.gif) no-repeat; display:block; text-indent:-99999px; overflow:hidden; float:left; margin:20px 0 0 20px; }
+.header .abas { float:left; margin-top:68px; margin-left:50px; }
+.header .abas li { display:inline; float:left; }
+.header .abas li a { font:16px Arial; background:#FFF; color:#235C96; font-weight:bold; text-decoration:none; padding:8px 12px; border-left:1px solid #DDD; }
+.header .abas li a:hover { font:16px Arial; background:#235C96; color:#FFF; font-weight:bold; text-decoration:none; padding:8px 12px; border-left:1px solid #235C96; }
+.header .abas #main-navigation-active a { background:#235C96 !important; color:#FFF !important; border:none; }
+/*...................................................*/
+
+/*..... Menu .....*/
+.menu li a { font:18px Arial; padding:3px 5px; font-weight:bold; text-decoration:none; }
+ul.dropdown { list-style:none; margin:0; padding:0; }
+ul.dropdown * { margin:0; padding:0; }
+ul.dropdown li { position:relative; display:inline; margin:0 8px; }
+ul.dropdown li a { color:#235C96; text-decoration:none; padding:3px 5px; }
+ul.dropdown li a:hover { background:#235C96 !important; padding:3px 5px; color:#FFF; }
+ul.dropdown ul { width:210px; position:absolute; top:24px; left:0; display:none; opacity:0; list-style:none; }
+ul.dropdown ul li { text-align:left; display:block; width:198px; height:15px; background:url(/resources/theme-zen/images/comunidades/bg_submenu_comunidades.gif) no-repeat; margin:2px 0; padding:5px 6px; }
+ul.dropdown ul li:hover { text-align:left; display:block; width:198px; height:15px; background:url(/resources/theme-zen/images/comunidades/bg_submenu_comunidades02.gif) no-repeat; margin:2px 0; padding:5px 6px; }
+ul.dropdown ul li a:hover { background:none !important; }
+ul.dropdown .sub a { font:11px Arial; color:#FFF; font-weight:bold; text-decoration:none; }
+/*...................................................*/
+
+/*..... Titles .....*/
+.titulos { width:1008px; background:#FFF; float:left; }
+.titulos ul { margin:15px 0 0 20px; }
+.titulos li { font:30px Arial; font-weight:bold; color:#CCC; display:block; float:left; margin-right:5px; }
+.titulos li a { font:30px Arial; font-weight:bold; color:#235C96; text-decoration:none; }
+.titulos li a:hover { font:30px Arial; font-weight:bold; color:#5999D9; }
+h1 { color:#235C96 !important; font-size:18px !important; font-weight:bold; margin-bottom:15px; border-bottom:3px double #DDDDDD; padding-bottom:3px; clear:both; }
+h2 { color:#F7941E; font-size:20px; font-weight:bold; margin:15px 0; }
+.estrutura03 h2 { font:18px Arial; font-weight:bold; color:#EFA951; margin-top:20px; }
+.estrutura05 h1 { margin-bottom:10px; }
+/*...................................................*/
+
+.comunidades_block_conteudo { width:444px; height:180px; background:#F3F3F4; padding:0 15px; float:left; margin-bottom:15px; }
+.comunidades_block_ferramentas { width:444px; height:180px; background:#F3F3F4; padding:0 15px; float:right; margin-bottom:15px; } 
+.img_block_comunidades { float:left; margin:0 15px 0 0; }
+.agrupador_redes_tematicas { width:953px; background:#F3F3F4; float:left; padding:15px 0 0 13px; margin-bottom:15px; border:1px solid #DDD; }
+.agrupador_comunidades { width:955px; background:#FFF; float:left; padding:15px 0 0 13px; margin-bottom:15px; }
+.block_comunidade { width:180px; height:240px; float:left; background:url(/resources/theme-zen/images/comunidades/bg_comunidades.gif) no-repeat; margin-right:10px; margin-bottom:15px; }
+.block_comunidade img { padding:6px; margin-bottom:7px; }
+.block_comunidade h4 { display:block; font-size:13px !important; color:#235C96; text-align:center; margin-bottom:15px; }
+.botoes_comunidades { position:absolute; margin-top:-47px; margin-left:12px; }
+.botoes_comunidades p { width:155px; background:#235C96; margin:5px 0 !important; text-align:center; opacity:0.75; filter:Alpha(Opacity=75); cursor:pointer; }
+.botoes_comunidades p:hover { width:155px; background:#235C96; margin:5px 0 !important; text-align:center; opacity:1.00; filter:Alpha(Opacity=100); }
+.botoes_comunidades p a { font:11px/2em Arial; padding:6px 0; color:#FFF; text-decoration:none; font-weight:bold; }
+.subcategorias_ajax_comunidades { position:absolute; width:158px; height:168px; overflow:auto; background:#000; margin:6px; padding:0 5px; opacity:0.80; filter:Alpha(Opacity=80); }
+.subcategorias_ajax_comunidades li { display:block; margin:10px 0; border-bottom:1px dashed #666; padding-bottom:10px; margin-left:5px; margin-right:5px; }
+.subcategorias_ajax_comunidades li a { font-size:11px; font-weight:bold; color:#FFF; text-decoration:none; }
+.subcategorias_ajax_comunidades li a:hover { color:#FFFF00; }
+
+ul.opcoes_comunidade_administrador { position:absolute; margin-left:420px; margin-top:-53px; padding:0;}
+ul.opcoes_comunidade_administrador li {  display:inline; margin:0 1px;  }
+ul.opcoes_comunidade_administrador li a { background:#235C96; border:1px solid #DDD; text-decoration:none; padding:5px 8px; color:#FFF; }
+ul.opcoes_comunidade_administrador li a:hover { background:#FFF; color:#235C96; border:1px solid #DDD; text-decoration:none; padding:5px 8px; }
+
+.foto_categorias_comunidades { float:left; margin:5px 10px 0 5px; }
+
+.categoria_rede_01 { width:465px; height:175px; background:url(/resources/theme-zen/images/comunidades/bg_categorias_comunidades.gif) no-repeat; float:left; margin:5px 0; }
+.categoria_rede_01 h3 { color:#F7941E; font-size:18px; font-weight:bold; margin:10px 0; }
+.categoria_rede_01 p { margin-right:15px; }
+.categoria_rede_02 { width:465px; height:175px; background:url(/resources/theme-zen/images/comunidades/bg_categorias_comunidades.gif) no-repeat; float:right; margin:5px 0; }
+.categoria_rede_02 h3 { color:#F7941E; font-size:18px; font-weight:bold; margin:10px 0; }
+.categoria_rede_02 p { margin-right:15px; }
+
+.botao_acessar_categoria { position:absolute; margin-left:10px; margin-top:145px; width:155px; color:#FFF; text-align:center; }
+.botao_acessar_categoria a { background:#235C96; padding:5px 12px; color:#FFF !important; text-decoration:none; font-size:11px; font-weight:bold; opacity:0.80; filter:Alpha(Opacity=80); }
+.botao_acessar_categoria a:hover { opacity:1.00; filter:Alpha(Opacity=100); }
+
+.botaoAdicionarConteudo { float:right; margin-left:20px; margin-top:-12px; margin-bottom:-10px; }
+
+.foto_rede { width:300px; background:#FFF; float:left; margin-bottom:20px !important; }
+.foto_rede img { background:#FFF; padding:4px; border:1px solid #CCC; }
+.informacoes_rede { width:618px; float:right; }
+.one_column { width:948px; float:left; }
+
+.photoflow_content { width:100%; text-align:center; clear:both; margin:20px 0; border:1px solid #DDD; background:#FFF; padding-top:5px; }
+.listagem_conteudos a { color:#666 !important; font-size:11px; font-weight:bold; text-decoration:none; }
+
+.abas_comunidades { width:968px; float:right; text-align:right; margin-right:-2px; }
+.abas_comunidades li { display:block; float:right; margin-left:2px; margin-bottom:8px; }
+.abas_comunidades li a { text-decoration:none; font-weight:bold; font-size:11px; background:#B5B5B5 url(/resources/theme-zen/images/comunidades/bg_abas_comunidades.jpg) repeat-x; padding:8px 10px; color:#FFF; border-top:1px solid #B5B5B5; border-right:1px solid #B5B5B5; border-left:1px solid #B5B5B5; }
+.abas_comunidades li a:hover { text-decoration:none; font-weight:bold; font-size:11px; background:#F5F5F5; padding:8px 10px; color:#235C96; border-top:1px solid #DDD; border-right:1px solid #DDD; border-left:1px solid #DDD; }
+#sub-navigation-active a { text-decoration:none; font-weight:bold; font-size:11px; background:#F5F5F5; color:#235C96; border-top:1px solid #DDD; border-right:1px solid #DDD; border-left:1px solid #DDD; }
+
+.pagina_comunidade { width:948px; background:#F5F5F5; clear:both; padding:10px; border:1px solid #E9E9EB; }
+.pagina_comunidade .portlet-title { background:#F5F5F5 !important; }
+.pagina_comunidade .foto_rede { float:left; margin:0 10px 0 0; }
+.pagina_comunidade h1 { font-size:18px; }
+
+.meu_perfil_informacoes02 { width:738px; float:right; margin-top:-10px; }
+.enviar_mensagem { float:right; margin-top:10px; }
+
+.usuario_online { margin:5px 0; background:url(/resources/theme-zen/images/img_status_online.gif) 0 3px no-repeat; padding-left:15px; font-size:18px; font-weight:bold; }
+.usuario_online a { color:#006600 !important; text-decoration:none; }
+.usuario_online a:hover { text-decoration:underline; }
+.usuario_offline { margin:5px 0; background:url(/resources/theme-zen/images/img_status_offline.gif) 0 3px no-repeat; padding-left:15px; font-size:18px; font-weight:bold; }
+.usuario_offline a { color:#990000 !important; text-decoration:none; }
+.usuario_offline a:hover { text-decoration:underline; }
+
+.listagem_conteudos h6 { background:#FFF; color:#666; font-weight:bold; padding:5px 10px; margin:10px 0; font-size:22px; }
+.listagem_conteudos li { margin:10px 0; }
+.listagem_conteudos li a { color:#666; }
+.listagem_conteudos li a:hover { color:#235C96; }
+
+.agrupador_alfabetico0 { width:306px; float:left; margin:0 5px; }
+.agrupador_alfabetico1 { width:307px; float:left; margin:0 5px; }
+.agrupador_alfabetico2 { width:307x; float:right; margin:0 5px; }
+.agrupador_alfabetico { width:305px; clear:both; }
+
+.coluna_arquivo_01 { width:565px; float:left; }
+.coluna_arquivo_02 { width:365px; float:right; }
+.block_informacoes_arquivo { width:343px; background:#FCFCFC; padding:10px; float:left; border:1px solid #E2E2E2; }
+.nome_arquivo_comunidades { color:#F7941E; font-size:22px; font-weight:bold; }
+.imagem_arquivo_destalhes { width:275px; height:205px; padding:4px; border:1px solid #DDD; background:#FFF; }
+
+/* Portlet Comunidades */
+.portlet_comunidades { width:332px; height:200px; color:#666666; }
+.portlet_comunidades .portlet_imagem { width:130px; height:200px; float:left; margin-right:15px; }
+.portlet_comunidades .portlet_imagem p { font:12px Arial !important; text-align:center; margin:0; padding:0; }
+.portlet_comunidades .portlet_comunidades_informacoes { width:167px; height:185px; overflow:auto; padding:0 10px; background:#FFF; float:right; }
+.portlet_comunidades .portlet_imagem .destaque_informacao { font:28px Arial; font-weight:bold; }
+
+.botao_entrar_portlet { margin-top:10px; float:left; }
+.botao_entrar_portlet a { border:1px solid #235C96; background:#235C96; color:#FFF !important; text-decoration:none; padding:4px 8px; margin-bottom:10px !important; }
+.botao_entrar_portlet a:hover { background:#666; border:1px solid #666; color:#FFF !important; text-decoration:none; padding:4px 8px; }
+
+.botao_donwload_arquivo { margin-top:10px; float:left; }
+
+ul.listagem_portlet_comunidades { margin-bottom:15px; }
+.listagem_portlet_comunidades li { margin:5px 0; list-style-type:disc; margin-left:15px !important; }
+.listagem_portlet_comunidades li a { font:12px Arial; font-weight:bold; color:#235C96; text-decoration:none; }
+.listagem_portlet_comunidades li a:hover { font:12px Arial; font-weight:bold; color:#235C96; text-decoration:underline; }
+.listagem_portlet_comunidades .data { font-size:10px; color:#666; font-weight:bold; }
+
+ul.listagem_portlet_membros { margin-bottom:15px; }
+.listagem_portlet_membros li { margin:5px 0; list-style-type:none; }
+.listagem_portlet_membros li a { font-size:12px; font-weight:bold; line-height:18px; color:#235C96; text-decoration:none; }
+.listagem_portlet_membros li a:hover { color:#235C96; text-decoration:underline; }
+
+.portlet_mais_opcoes { width:95%; background:#FFF; float:left; padding:10px 0 12px 14px; border:1px solid #E2E2E2; margin:5px 0 30px 0; }
+.portlet_mais_opcoes li { width:30%; float:left; margin-right:10px; }
+.portlet_mais_opcoes li a { font:bold 12px Arial; color:#235C96; text-decoration:none; }
+.portlet_mais_opcoes .bt_mais_opcoes { width:26px; margin-right:0; background:url("/resources/theme-zen/images/bullet_mais.gif") right no-repeat; padding-right:14px; }
+.portlet_mais_opcoes .bt_mais_opcoes a { font-weight:bold; text-decoration:none; }
+
+/*...................................................*/
+
+/*..... Portlet de Notícias ..... Retirar */
+.noticias_portlet { width:95%; clear:both; font-size:12px !important; padding:0 2%; background:#FFF; margin-bottom:10px; display:table; border:1px solid #E2E2E2; }
+.noticias_portlet p { margin:2px 0; line-height:18px; }
+.noticias_portlet a { color:#235C96; text-decoration:none; }
+.noticias_portlet a:hover { color:#235C96; text-decoration:underline; }
+.noticias_portlet .dataNoticia { background:#235C96; padding:1px 2px; font:9px Verdana, Arial, Tahoma !important; float:left; margin-right:5px; color:#FFF; margin-top:0px; }
+.noticias_portlet .estrelasNoticias { float:left; margin-right:5px; }
+/*...................................................*/
+
+.block_admin_comunidades { width:926px; background:#FFF; border:1px solid #DDD; float:left; padding:10px; margin-bottom:25px; }
+.block_admin_comunidades .destaque_informacao { font:28px Arial; font-weight:bold; margin-top:-10px; }
+
+.img_admin_comunidades { width:150px; float:left; text-align:center; }
+.img_admin_comunidades img { margin-top:5px; margin-bottom:-10px; }
+.info_admin_comunidades { width:766px; float:right; }
+.block_admin_comunidades ul { margin-top:15px; }
+.block_admin_comunidades li { margin-left:15px; list-style-type:disc; }
+.block_admin_comunidades li a { font:bold 18px Arial; text-decoration:none; }
+.block_admin_comunidades li a:hover { text-decoration:underline; }
+.block_admin_comunidades h3 { width:95%; background:#235C96; padding:2% 3%; color:#FFF; font:bold 18px Arial; }
+
+ul.listagem_subcomunidades li { width:335px; float:left; margin-right:15px; }
+.espaco_colaborativo_paginas { width:435px; height:180px; background:#f7f7f7; margin-right:10px; overflow:auto; border:1px solid #DDD; padding:10px; float:left; }
+.espaco_colaborativo_paginas ul { margin-top:0; }
+.espaco_colaborativo_paginas_naomembro { width:435px; height:180px; background:#f7f7f7; overflow:auto; border:1px solid #DDD; padding:10px; float:left; }
+.espaco_colaborativo_paginas_naomembro ul { margin-top:0; }
+.titulo_espaco_colaborativo { width:452px; margin-right:15px; margin-bottom:8px; float:left; }
+.titulo_espaco_colaborativo02 { width:452px; margin-bottom:8px; float:left; }
+
+.tabela_permissoes_comunidade { border-collapse:collapse; }
+.tabela_permissoes_comunidade tr td { border:1px solid #DDD; padding:5px 8px !important; font:bold 18px Arial; color:#666666; }
+.tabela_permissoes_comunidade .titulo { color:#FFF !important; }

@@ -1,0 +1,277 @@
+﻿@charset "utf-8";
+* { margin:0px; padding:0px; list-style-type:none; line-height:1.6em; }
+body{margin:0px;
+-x-system-font:none; 
+font-family:"Trebuchet MS",Arial,Tahoma,Verdana;
+font-size:12px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+color: #333333;
+}
+img {border:0px;}
+
+.wrap{margin: 0 auto;width:1008;height:100%;}
+.logo{margin-top: 10px;}
+
+/*  Fonte */
+a { color:#666600; }
+
+h1{font-family: "Myriad Pro Light" Verdana, Arial, Helvetica, sans-serif;font-size:16px; color:#2f1700; }
+h2{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#000000;}
+
+/* Fonte Destaque */
+h3{font-family: "Myriad Pro Light" Verdana, Arial, Helvetica, sans-serif;font-size:14px; color:#666600;}
+/* h3{font-family: "Myriad Pro Light" Verdana, Arial, Helvetica, sans-serif;font-size:16px; color:#ffcc00;}*/
+h4{font-family: Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#ffffff;}
+/* Fonte Destaque FIM */
+
+
+
+.barra_ministerio { margin:0 auto; width:1008px; }
+/*..... Ministry Bar .....*/
+.barra_ministerio .logo { float:left; margin:2px 0 0 5px;padding-left:180px; }
+.barra_ministerio .logo a { width:310px; height:36px; background:url(/resources/theme-mda/imagens/expointer/logo_mda.gif) no-repeat; display:block; text-indent:-999999px; overflow:hidden; }
+.barra_ministerio fieldset { float:left; margin:8px 0 0 280px; }
+.barra_ministerio .select { width:200px; padding:2px; background:#FFEDA4; font:11px Arial; border:1px solid #FFCC01; }
+.barra_ministerio .marca_brasil { float:right; margin:8px 110px 0 0; padding-right:100px; }
+.barra_ministerio .marca_brasil a { width:96px; height:26px; background:url(/resources/theme-mda/imagens/expointer/marca_brasil.gif) no-repeat; display:block; text-indent:-999999px; overflow:hidden; }
+/*...................................................*/
+
+#videos_div{ margin-left:10px; height:400px;width:360px;position: absolute;top:315px;z-index:1; padding-left:12px; background-image: url(/resources/theme-mda/imagens/feira2009/fundo-video.png);}
+
+#videos_div #mediaspace { margin-top: 15px; }
+
+
+/* Twitter */
+
+ul#twitter_update_list {list-style: none;font-size: 14px; }
+
+ul#twitter_update_list li {width:290px;height:75px;background-image:url(/resources/theme-mda/imagens/feira2009/balao-twitter.png);background-repeat:no-repeat;z-index:3;font-family:Arial, Helvetica, sans-serif;font-size:12px;padding-left:5px;padding-top:5px;color:#23160e;font-style:italic; padding:0 10px 10px;
+line-height:1.4em; margin-top:5px; margin-bottom: 10px;color: #fff;background-image:url(/resources/theme-mda/imagens/feira2009/balao-twitter.png);background-repeat:no-repeat;}
+
+
+ul#twitter_update_list li a {color: #C5650E;}
+
+
+
+/* Twitter FIM */
+
+/* Conteúdo Superior */
+
+.topo{ margin:auto ;height:685px;width:1024px;overflow:hidden;background-position: center;}
+.top-left{ width: 350px; float:left;}
+.top-right{ width: 600px; float:left;}
+
+.topo-interno { margin:auto ;width:1024px;overflow:hidden;background-position: center; height: 400px}
+.destaques{z-index:3;top:5px;position:relative;float:right;height:350px;width:400px;margin-right:40px; background: url(/resources/theme-mda/imagens/feira2009/fundo-destaque.png) no-repeat center;}
+.destaque-box{width:390px;}
+.destaque-prev {float: left; height: 400px; margin-top: 90px;}
+.destaque-next {float: right; height: 400px; margin-top: 120px;}
+
+
+.destaque-foto{margin-top:11px; margin-bottom:5px;margin-left:5px;}
+.destaque-titulo{font-family: "Tahoma", Verdana, Arial, Helvetica, sans-serif;font-size: 16px; color:#ffcc00; font-weight:bold;}
+.destaque-titulo a {font-family: "Tahoma", Verdana, Arial, Helvetica, sans-serif;font-size: 16px; color:#ffcc00; font-weight:bold; text-decoration: none;}
+.destaque-noticia{height:60px; margin-top:2px; margin-bottom:0px;margin-right:10px; font-family: "Tahoma", Verdana, Arial, Helvetica, sans-serif;font-size: 13px;color:#ffffff; }
+
+.info{left:40px;float:right;margin-right:40px; z-index:-40}
+.conteudo-programacao{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#ffffff; position:absolute; z-index:3;top:505px; right:-295px; margin-top:25px; }
+
+
+.imagem-rio{ width:1008px; margin: auto auto -250px; position:relative;  top:-240px;    z-index:2;}
+
+/* Conteúdo Superior FIM*/ 
+
+/*
+#busca {position:absolute;right:180px;top:45px;margin: 0;padding: 6;color: #fff;font-size: 11px;font-weight: bold;}
+
+#busca label input {border: none;background-color: #FFFFFF;}
+
+#busca input#submit {background: #c30;border: 2px outset #f66;color:#fff;font-size:10px;}
+*/ 
+/* Busca FIM */	 
+
+/* Menu Superior */
+
+#menu-superior{float:right;list-style: none;}
+#menu-superior ul {height: 16px;margin: 0 auto;padding: 0;font-family: "Tahoma", Verdana, Arial, Helvetica, sans-serif;font-size: 13px;list-style: none;
+width: 770px;}
+#menu-superior li {float: left;width: 110px;}
+#menu-superior a {display: block;width: 110px;padding-top: 8px;text-align: center;text-decoration: none;font-weight: bold;color: #fff;height: 30px;font-size:15px;}
+#menu-superior a:hover {color:#CCCCCC;}
+
+#menu-superior li a {
+background-image: url(/resources/theme-mda/imagens/feira2009/activo.png);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+/* Menu Superior FIM  */
+
+/* Menu Inferior  */
+
+#menu-inferior {background:#F8F7F2 none repeat scroll 0 0;height:70px;list-style-image:none;list-style-position:outside;list-style-type:none;margin-left:4px;margin-top:-6px;padding-left:30px;width:970px;}
+#menu-inferior ul {height:58px; margin: 0 auto;  sans-serif;font-size: 15px;list-style: none; width:770px;}
+#menu-inferior li {float: left;height: 58px;margin-right:20px;}
+#menu-inferior a {display: block;padding-top: 18px;text-align: center;text-decoration: none;font-weight: bold;color: #2F1700;height: 40px; font-size:16px; font-family: "Myriad Pro Light", Verdana, Arial, Helvetica;}
+#menu-inferior li.ativo a {background-image: url(/resources/theme-mda/imagens/feira2009/ativo.png);color: #FFFFFF;background-repeat: no-repeat;background-position: center;}
+
+/* Menu Inferior  FIM */
+/* Menu Inferior  ADMIN */
+
+#menu-inferior-admin {background:#F8F7F2 none repeat scroll 0 0;height:30px;list-style-image:none;list-style-position:outside;list-style-type:none;margin-left:4px;margin-top:-5px;padding-left:30px;width:970px;}
+#menu-inferior-admin ul {height:58px; margin: 0 auto;  sans-serif;font-size: 15px;list-style: none; width:770px;}
+#menu-inferior-admin li {float: left;margin-right:5px;}
+
+/* Menu Inferior ADMIN FIM */
+
+/* Conteúdo  */
+
+#conteudo{margin: 0 auto;width:1000px;overflow:hidden;background-position: center;background-color:#F8f7f2; padding:15px 15px 30px; width:970px; }
+
+/* Conteúdo FIM */
+
+/* rodapé */
+
+#rodape{margin: 0 auto;margin-top:0px;width:1000px;}
+
+/* Caixa de Noticias  */
+
+#caixa-noticia{width:556px;}
+.caixa-noticia-principal{width:556px;background-color:#dad7ce;}
+.caixa-noticia-foto{ width:539px; margin-top:10px; margin-right:7px; margin-left:7px; margin-bottom:15px; padding-top:10px;}
+.caixa-noticia-link{width:541px; background-color:#dad7ce; margin-right:7px; margin-left:7px; margin-bottom:2px; }
+.caixa-fonte{ margin:0px;  font-size: 18px; text-align:justify; font-weight:bold; padding-bottom:5px; }
+.caixa-fonte a { color: #000; text-decoration:none }
+.caixa-fonte-dois{ margin-top:10px;  font-size: 14px; text-align:justify; padding-bottom:5px; }
+.caixa-fonte-dois a { color: #000; text-decoration:none }
+.caixa-midias{ width:535px; height:30px; background-color:#dad7ce;}
+#caixa-noticia-dois{ width:556px;  background-color:#f8f7f0; padding-top:3px;}
+.caixa-noticia-dois{ border-bottom:solid 1px #dddddd;  width:535px; height:30px; background-color:#f8f7f0;  font-size: 14px; padding-left:5px; padding-top:7px; }
+.caixa-noticia-leiamais{width:75px; height:20px; background-color:#f8f7f0; font-family: "Tahoma" Verdana, Arial, Helvetica, sans-serif; font-size: 13px; float:right;
+margin-right:5px;
+}
+.caixa-noticia-dois a{ border-bottom:solid 1px #dddddd;  width:535px; height:40px; background-color:#f8f7f0; font-size: 14px; padding-left:5px; padding-top:5px; }
+}
+
+.caixa-noticia-leiamais a{width:75px; height:20px; background-color:#f8f7f0; font-family: "Tahoma" Verdana, Arial, Helvetica, sans-serif; font-size: 13px; float:right;margin-right:5px; color:#000066}
+
+/* Caixa de Noticias  Fim  */
+
+
+/* CSS Acontece Hoje   */
+
+
+#caixa-acontece{height:370px; background-color:#eeedea;}
+.caixa-titulo{ height:55px; padding-left:10px; padding-top:10px;}
+.caixa-acontece-um{height:45px; background-color:#dad7ce; margin-left:15px; margin-right:15px; padding-left:8px;padding-top:7px; }
+.caixa-acontece-dois{ height:45px; background-color:#eeedea; margin-left:15px; margin-right:15px; padding-left:8px; padding-top:7px;}
+.caixa-vejamais{width:70px; height:30px; margin-left:15px; margin-right:35px; padding-left:8px;padding-top:7px; float:right; font-size:14px; color:#2f1700;}
+#group-day {margin-left:20px;}
+/* CSS Acontece Hoje Fim  */
+
+#creativecommons {
+	color:#FFFFFF;
+	text-align:center;
+
+}
+
+#creativecommons a {
+	color:  #99ffff;
+}
+
+
+#sounds_portal_portlet {
+	background-image: url(/resources/theme-mda/imagens/feira2009/tt-radiomda.png);
+	background-repeat: no-repeat;
+	height: 45px;
+	color:#DAD7CE;
+	margin-top: 15px;
+}
+
+#videos_portal_portlet {
+	background-image: url(/resources/theme-mda/imagens/feira2009/tt-tv.png);
+	background-repeat: no-repeat;
+	height: 45px;
+	color:#DAD7CE;
+}
+
+#photo_album_portlet {
+	background-image: url(/resources/theme-mda/imagens/feira2009/tt-galeriadefotos.png);
+	background-repeat: no-repeat;
+	height: 45px;
+	color:#EDECE9;
+	margin-top: 15px;
+}
+#twitter_portlet {
+	background-image: url(/resources/theme-mda/imagens/feira2009/tt-twitter.png);
+	background-repeat: no-repeat;
+	height: 45px;
+	color:#DAD7CE;
+	margin-top: 15px;
+}
+
+#calendar_portal_portlet {
+	background-image: url(/resources/theme-mda/imagens/feira2009/acontecehoje.jpg);
+	background-repeat: no-repeat;
+	height: 45px;
+	color:#DAD7CE;
+	margin-top: 15px;
+}
+
+#videoblog_portlet {
+	background-image: url(/resources/theme-mda/imagens/feira2009/videoblog.jpg);
+	background-repeat: no-repeat;
+	height: 45px;
+	color:#DAD7CE;
+	margin-top: 15px;
+}
+
+.rodape{ width:1000px;}
+
+.newsTitle {
+color:#2F1700;
+font-size:28px;
+width:640px;
+}
+
+
+ 
+.data_noticia p {
+background:#354903 none repeat scroll 0 0;
+}
+.noticia_destaque a:hover {
+color:#354903 !important;
+text-decoration:none;
+}
+.noticia_destaque h2 a {
+color:#354903 !important;
+}
+.noticia_destaque h2 {
+color:#354903 !important;
+}
+
+.noticia_destaque02 a:hover {
+color:#354903 !important;
+text-decoration:none;
+}
+.noticia_destaque02 h2 a {
+color:#354903 !important;
+}
+.noticia_destaque02 h2 {
+color:#354903 !important;
+}
+
+.desativado {
+	display:none;
+}
+
+.videoblog-box-um{ width:420px; background-color:#f8f7f0; margin:0px}
+.videoblog-box-dois{ height:180px; padding-left:10px; float:left;}
+.videoblog-box-tres{ height:180px; padding-left:10px;float:left;}
+.videoblog-box-quatro{height:180px; padding-left:10px;float:left;}
+
+.img_destaque_noticia_completa_box h4 {color: #333333;}

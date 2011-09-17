@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<message_catalog package_key="theme-mda" package_version="0.1d" locale="pt_BR" charset="ISO-8859-1">
+
+  <msg key="Arco_Verde_Maps">Rotas do Mutirão Arco Verde</msg>
+  <msg key="Arco_Verde_The_program">O Programa</msg>
+  <msg key="Customize_portal_Off">Personalização do portal está desligada</msg>
+  <msg key="Customize_portal_On">Personalizar Portal está Ligado,</msg>
+  <msg key="Customize_portal_turn_off">Desligar</msg>
+  <msg key="Customize_portal_turn_on">Ligar</msg>
+  <msg key="Menus">Menus</msg>
+  <msg key="The_region_attended">Roteiro e Resultados do Mutirão</msg>
+</message_catalog>

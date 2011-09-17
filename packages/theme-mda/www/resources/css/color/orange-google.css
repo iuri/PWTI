@@ -1,0 +1,17 @@
+.portlet-header {
+	background: #4b68a0 url(/resources/theme-zen/images/color-orange-google/portlet-header-bg.gif) repeat-x top left;
+}
+
+#main-navigation #main-navigation-active {
+	background-image:url("/resources/theme-zen/images/color-orange-google/main-navigation-active-left.gif");
+}
+	
+#main-navigation #main-navigation-active a {
+	background-image:url("/resources/theme-zen/images/color-orange-google/main-navigation-active-right.gif");
+}
+
+.portlet-title h1, .portlet-title-no-controls h1 {
+	color: black;
+	margin: 0px;
+        font-size: 1em;
+}

@@ -1,0 +1,21 @@
+/* PORTLETS -----------------------------------------------------------*/
+/* contains: all general portlet styles like title, frame, font etc. */
+/* Note: additional styles for specific packages (ie. calendar, survey) 
+are located in the css for that package (eg. Selva_calendar.css)  */
+
+.portlet-wrapper { margin-bottom:10px; }
+.portlet-header {}
+.portlet-title { float:left; display:inline; font-weight:bold; color:#FFF; }
+.portlet-title-no-controls { display:inline; font-weight:bold; color:#FFF; }
+.portlet-title h1, .portlet-title-no-controls h1 { margin:0px; }
+.portlet-title h1 { font-size:18px !important; }
+.portlet-title h3 { font:bold 12px Arial; color:#FFF; background:url(../imagens/bg_titulos.jpg) repeat-x; padding:4px 5px; border:1px solid #6B9A40; }
+.portlet-controls {	display:block; padding-top:2px; text-align:right; }
+.portlet-controls img {	border:0px; }
+.portlet-controls a:link { color:#FFF; }
+.portlet-controls a:hover {	color:#000; }
+.portlet { background:#FFF; border:1px solid #c8c8c8; background:url(/resources/theme-zen/images/global/page_background.gif) repeat-x top left; }
+.portlet ul { padding-top:0px; list-style-type:disc; }
+.portlet ul li { margin-left:0px; padding-left:0px;	padding-top:0px; }
+
+/* END OF PORTLETS*/

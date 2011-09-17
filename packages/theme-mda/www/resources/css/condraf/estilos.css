@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.header .elemento_header { background:none;margin-left:830px;}
+.header {background:url("/resources/theme-mda/imagens/condraf/bg_header_01.jpg") no-repeat scroll right top #FFFFFF}
+
+.banners_images_portlet #banner_carousel ul li {height:120px;}
+.banners_images_portlet #banner_carousel {height: 131px;}
+.banners_images_portlet #banner_carousel .previous_button {margin: 52px 5px 0;}
+.banners_images_portlet #banner_carousel .next_button {margin-top:54px;}

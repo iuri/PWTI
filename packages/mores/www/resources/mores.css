@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:inline-table}/* Hides from IE-mac \*/* html .clearfix{height:1%}*+html .clearfix{height:1%}.clearfix{display:block}/* End hide from IE-mac */
+
+html,body{
+	padding:0;
+	margin:0;
+}
+
+.socialmention-buzz-widget {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin:0;
+	padding:5px;
+	color:#000;
+	background-color:#f8f8f8;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:3px solid #EDEDED;
+}
+
+.socialmention-buzz-widget img{border:none;}
+
+.socialmention-buzz-widget .sm_title {
+	color:#333333;
+	font-family:Georgia,Times,serif;
+	font-size:125%;
+	font-style:italic;
+	font-weight:bold;
+	margin-bottom:0px;
+	min-height:25px;
+}
+
+.sm-pause {
+	font-size:80%;	   
+}
+
+.socialmention-buzz-widget .pagination {
+	min-height: 25px;
+	font-size:12px;
+}
+
+.sm-pagination-buttons {
+	float:left;
+	cursor:pointer;
+}
+
+.pagination .prev, .pagination .next {
+	margin:0 4px 0 0;
+	float:left;
+	padding:5px 7px;
+	background-color:#239ECC;
+	color:#fff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+/*
+.pagination .prev:hover, .pagination .next:hover {
+	background-color:#ccc;
+}
+
+.socialmention-buzz-widget .sm_footer{
+	margin-top:5px;
+	font-size:10px;
+	text-align:right;
+	color:#999999;
+	float:right;
+}
+*/
+.socialmention-buzz-widget a{
+	text-decoration:none;
+	color:#239ECC;
+}
+
+.socialmention-buzz-widget a:hover{
+	text-decoration:underline;
+}
+
+.socialmention-buzz-widget .item {
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	background:#E2F7FF none repeat scroll 0 0;
+	margin-bottom:2px;
+	padding:4px;
+	border:3px solid #fff;
+}
+
+.socialmention-buzz-widget .item .text {
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	background-color:#fff;
+	color:#222;
+	line-height:1.2em;
+	padding:1em;
+	margin-right:3px;
+	margin-left:43px;
+}
+
+.socialmention-buzz-widget .item .text2 {
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	background-color:#fff;
+	color:#222;
+	line-height:1.2em;
+	padding:1em;
+	margin-left:3px;
+	margin-right:3px;
+
+}
+.socialmention-buzz-widget .text img {
+	float:right;
+	margin:20% 0 0 0.5em;
+	background-color:#FFFFFF;
+	vertical-align:middle;
+	max-width:50px;
+	max-height:50px;
+	min-height:50px;
+	height:50px;
+}
+
+.socialmention-buzz-widget .item .details {
+	margin:5px 0 0 0;
+	padding:0;
+	font-size:90%;
+	clear:both;
+	display:block;
+	line-height:1em;
+	margin-top:-4px;
+}
+
+.socialmention-buzz-widget .details, .socialmention-buzz-widget .details .date a {
+	color:#999999;
+	text-decoration:none;
+}
+
+.socialmention-buzz-widget .details .date a:hover {
+	text-decoration:underline;
+}
+
+.socialmention-buzz-widget .user_image {
+	margin:0;
+	float:left;
+}
+
+.socialmention-buzz-widget .user_image img {
+	max-height:36px;
+	min-height:36px;
+	height:36px;	
+}
+h3 img {width:50px;}
+h1 {color:#999}
+#facebook {width:600px; overflow:hidden;float:right;background-color:fff;margin-top:5px;margin-right:5px}
+#search_facebook {margin-left:-155px;margin-top:-140px;opacity:0.9 !important}
+.socialmention {float:left}
+
+/* 1024 */
+.framefacebook {width:100%; height:830px;margin-right:5px;margin-top:5px;}
+#socialmention_buzz_content_id {height:770px;margin-bottom:5appx;}
+#socialmention_buzz_iframe {margin:5px;height:700px; width:97%;}
+#title {float:right; margin-top:0px;margin-right: 90px;}
+#busca {float:left; margin-top:5px;}
+
+
+
+
+
+/* 1280*/
+/*
+.framefacebook {width:100%; height:870px;margin-right:5px;margin-top:5px;}
+#socialmention_buzz_content_id {height:700px;margin-bottom:5appx;}
+#socialmention_buzz_iframe {margin:5px;height:740px; width:325px;}
+#title {float:right; margin-right: 200px;margin-top:-10px}
+#busca {width:50%; float:left;}
+
+*/
+
+
+
+/*1440
+.framefacebook {width:100%; height:960px}
+#socialmention_buzz_content_id {height:680px;margin-bottom:5appx;}
+#socialmention_buzz_iframe {margin-bottom:5px; height:805; width:415px;}
+*/
+

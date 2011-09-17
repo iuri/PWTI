@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.site {width:1007px;}
+.main {width:830px;}
+#conteudo {width:1007px;}
+#conteudo #boxes {margin:0;padding:0;width:830px;}
+.main {width:820px;float:none;}
+.right-content {width:375px;float:left;padding:0;}
+#license img {width:88px; height:31px;}
+#banners_tworow {width:480px; overflow:hidden}
+.jcarousel-next {display:inline;}
+#banners_tworow ul {margin:0}
+.jcarousel-next {right: 700px;}

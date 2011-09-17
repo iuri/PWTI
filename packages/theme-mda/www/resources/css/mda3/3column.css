@@ -1,0 +1,4 @@
+.main {	float:left;	width:100%; }
+.top-content { float:left; width:600px; min-height:50px; }
+.main-content { float:left; width:360px; margin-left:5px; min-height:50px;}
+.bottom-content { float:left; width:908px; margin-top:10px; }

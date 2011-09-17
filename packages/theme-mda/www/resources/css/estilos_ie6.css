@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/*
+	Secretaria da Agricultura Familiar - Ministério do Desenvolvimento Agrário
+	Site: http://www.mda.gov.br/saf
+	Autor: Thiago Melo
+	E-mail: thiago.melo@mda.gov.br
+	Design: Thiago Melo
+	Programação: Alessandro Landim e Breno Assunção
+	Folha de estilos para o Internet Explorer 6
+*/
+
+
+/*..... Hacks .....*/
+.header .search { margin:21px 0 0 120px; }
+.header .search .txtfield { width:267px; }
+.header .header_menu { margin-top:23px; z-index:10000; }
+.wrap_content .menu li a { width:183px; display:block; border-left:2px solid #999; border-bottom:1px dotted #999; padding:5px 10px; font:11px "Trebuchet MS"; color:#333; text-decoration:none; }
+.wrap_content .menu li a:hover { border-left:2px solid #6B9A40; color:#FFF; }
+.barra_ministerio .marca_brasil { margin:8px 95px 0 0; }
+.barra_ministerio fieldset { float:left; margin:8px 0 0 270px; }
+.barra_ministerio .select { margin-top:1px; }
+.breadcrumbs { width:773px; float:left; margin-bottom:0px; }
+.breadcrumbs li { padding:1px 15px 1px 4px; }
+.breadcrumbs li.ativo { padding:1px 15px 1px 4px; }
+.header .header_menu ul li.outras_opcoes { margin-top:-1px; margin-right:0px; }
+.header .header_menu ul li a:hover { border-bottom:none; margin-bottom:-10px !important; }
+.info_max_priority { margin-top:199px !important; margin-left:-433px; }
+.faq_images_portlet .shift { float:left; margin:55px 5px 0 2px; }
+#gallery #panel1 { margin-right:5px; float:left; }
+.wrap_content .content { width:600px; }
+.wrap_content { width:1200px; }
+.faq_right_column { width:195px; background:#EAEAEA; margin-top:10px; margin-bottom:10px; padding:5px; margin-left:15px; margin-top:10px; float:right; }
+.img_faq { margin-top:18px; }
+.wrap_content .content_home { width:788px; background:#FFF; padding:10px 0 10px 0; float:right; margin-right:0; }
+.faq_images_portlet li .nome_programa { position:absolute; text-align:center; width:120px; height:30px; background:#FFF; margin-left:-143px; margin-top:80px; padding:5px 10px; opacity:0.90; filter:Alpha(Opacity=90); font:bold 12px Arial; }
+.faq_images_portlet li { width:140px; height:120px !important; overflow:hidden; background:#FFF; border:2px solid #DBDBDB; display:block; float:left; }
+.faq_right_column .list_faq_images li { padding:11px 10px 11px 0; margin-left:8px; }
+.faq_right_column .list_faq_images li:hover { padding:11px 10px 11px 0; margin-left:8px; }
+.faq_right_column .list_faq_images li .nome_programa { position:absolute; text-align:center; width:120px; height:30px; background:#FFF; margin-left:-64px; margin-top:-40px; padding:5px 10px; opacity:0.90; filter:Alpha(Opacity=90); font:bold 12px Arial; }
+#menu li ul { width:195px; position:absolute; margin-left:205px; margin-top:-28px; display:none; z-index:999999; border-top:1px dotted #999; }
+#faq_carousel .previous_button { margin-left:3px; }
+#faq_carousel .next_button { margin-left:7px; }
+#faq_carousel ul { margin-top:-5px; }
+#banner_carousel .previous_button { margin-left:2px; }
+/*...................................................*/

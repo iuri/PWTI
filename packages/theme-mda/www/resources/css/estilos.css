@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+/*
+	Secretaria da Agricultura Familiar - Ministério do Desenvolvimento Agrário
+	Site: http://www.mda.gov.br/saf
+	Autor: Thiago Melo
+	E-mail: thiago.melo@mda.gov.br
+	Design: Thiago Melo
+	Programação: Alessandro Landim e Breno Assunção
+*/
+
+
+/*..... Structure .....*/
+* { margin:0px; padding:0px; border:0px; list-style-type:none; }
+body { margin:0 auto; background:#F1F1F1; font:11px/1.6em "Trebuchet MS", Arial, Tahoma, Verdana; color:#333; }
+.wrap { width:1008px; background:#FFF; margin:0 auto;}
+.barra_ministerio { width:1008px; height:40px; background:#FFCC00; float:left; }
+.header { width:1008px; height:105px; background:#FFF url(/resources/theme-mda/imagens/bg_header_01.jpg) right top no-repeat; float:left; margin-top:-5px;}
+.menu_horizontal { width:1008px; height:40px; background:url(/resources/theme-mda/imagens/bg_menu_horizontal.jpg) repeat-x; float:left; }
+.wrap_content { width:1008px; background:#FFF url(/resources/theme-mda/imagens/bg_wrap_content.gif) repeat-y; float:left; }
+.footer { width:988px; background:#558C24 url(/resources/theme-mda/imagens/bg_footer.jpg) top repeat-x; padding:10px; float:left; }
+/*...................................................*/
+
+/*..... Commons .....*/
+a { color:#436D1D; }
+.more { clear:both; }
+.more a { width:148px; height:19px; background:url(/resources/theme-mda/imagens/bg_mais_informacoes.gif) no-repeat; padding-left:25px; padding-top:2px; color:#FFF; display:block; text-decoration:none; margin-bottom:10px; }
+.more a:hover { width:148px; height:19px; background:url(/resources/theme-mda/imagens/bg_mais_informacoes_hover.gif) no-repeat; padding-left:25px; padding-top:2px; color:#FFF; }
+
+li.bt_administrator { clear:both; }
+li.bt_administrator a { width:148px; height:19px; background:url(/resources/theme-mda/imagens/bg_opcoes_administrador.gif) no-repeat; padding-left:25px; padding-top:2px; color:#FFF; display:block; text-decoration:none; margin-bottom:4px; }
+li.bt_administrator a:hover { width:148px; height:19px; background:url(/resources/theme-mda/imagens/bg_mais_informacoes_hover.gif) no-repeat; padding-left:25px; padding-top:2px; color:#FFF; }
+
+.titulo { width:650px; margin-bottom: 50px;}
+a.button { margin-right:3px; background:#EFEFEF; border:1px solid #DDD; padding:5px 8px; margin-bottom:10px; text-decoration:none; }
+a:hover.button { background:#EF931D; color:#FFF; }
+
+/*...................................................*/
+
+
+/*..... Breadcrumbs .....*/
+.breadcrumbs { width:773px; float:left; margin-bottom:20px; }
+.breadcrumbs li { height:17px; background:#568C24; padding:1px 15px 2px 4px; display:block; float:left; color:#FFF; }
+.breadcrumbs li a { color:#FFF; text-decoration:none; }
+.breadcrumbs li a:hover { color:#FFCC00; text-decoration:none; }
+.breadcrumbs li.ativo { background:#AD9B2D url(/resources/theme-mda/imagens/teste2.gif) right top no-repeat; padding:1px 15px 2px 4px; display:inline; color:#FFF; }
+.breadcrumbs li.bread { background:#568C24 url(/resources/theme-mda/imagens/teste.gif) right top no-repeat; }
+.breadcrumbs li.bread02 { background:#568C24 url(/resources/theme-mda/imagens/teste.gif) right bottom no-repeat; }
+/*...................................................*/
+
+
+/*..... Tamanho da fonte .....*/
+.tamanho_fonte { position:absolute; margin-left:680px; top:215px; }
+.tamanho_fonte ul { margin-left:12px; }
+.tamanho_fonte ul li { display:inline; }
+.tamanho_fonte .diminuir a { width:30px; height:25px; display:block; float:left; background:url(/resources/theme-mda/imagens/icone_letra_pequena.gif) no-repeat; text-indent:-999999px; overflow:hidden; }
+.tamanho_fonte .diminuir a:hover { border-bottom:3px solid #568C24; }
+.tamanho_fonte .aumentar a { width:30px; height:25px; display:block; float:left; background:url(/resources/theme-mda/imagens/icone_letra_grande.gif) no-repeat; text-indent:-999999px; overflow:hidden; margin-left:3px; }
+.tamanho_fonte .aumentar a:hover { border-bottom:3px solid #568C24; }
+.tamanho_fonte p { font:9px Arial; margin:6px !important; }
+
+.corpo_1 { font:11px "Trebuchet MS"; }
+.corpo_2 { font:13px "Trebuchet MS"; }
+.corpo_3 { font:16px "Trebuchet MS"; }
+
+.corpo_1 .voltar { font-size:11px; }
+.corpo_2 .voltar { font-size:11px; }
+.corpo_3 .voltar { font-size:11px; }
+.corpo_1 .more { font-size:11px; }
+.corpo_2 .more { font-size:11px; }
+.corpo_3 .more { font-size:11px; }
+.corpo_1 .menu_contexto { font-size:11px; }
+.corpo_2 .menu_contexto { font-size:11px; }
+.corpo_3 .menu_contexto { font-size:11px; }
+/*...................................................*/
+
+/*..... Títulos .....*/
+.content h1 { font:bold 24px Arial; margin:0px 0 5px 0; }
+/*...................................................*/
+
+/*..... Barra Ministério .....*/
+.barra_ministerio .logo { float:left; margin:2px 0 0 5px; }
+.barra_ministerio .logo a { width:310px; height:36px; background:url(/resources/theme-mda/imagens/logo_mda.gif) no-repeat; display:block; text-indent:-999999px; overflow:hidden; }
+.barra_ministerio fieldset { float:left; margin:8px 0 0 280px; }
+.barra_ministerio .select { width:200px; padding:2px; background:#FFEDA4; font:11px Arial; border:1px solid #FFCC01; }
+.barra_ministerio .marca_brasil { float:right; margin:8px 110px 0 0; }
+.barra_ministerio .marca_brasil a { width:96px; height:26px; background:url(/resources/theme-mda/imagens/marca_brasil.gif) no-repeat; display:block; text-indent:-999999px; overflow:hidden; }
+/*...................................................*/
+
+/*..... Header .....*/
+.header .name { margin:20px 0 0 10px; }
+.header .name a { font:bold 29px Arial; color:#333; text-decoration:none; }
+.header .elemento_header { position:absolute; margin-left:800px; top:30px; z-index:10000 !important; background-image: url(/resources/theme-mda/imagens/elemento_header_01.png); width:178px; height:110px;}
+
+.header .search { width:346px; height:22px; background:url(/resources/theme-mda/imagens/bg_buscar_header.gif) no-repeat; margin:20px 0 0 245px; padding:4px 3px; float:left; }
+.header .search label { display:none; }
+.header .search .txtfield { width:275px; padding:3px; border-left:1px solid #47741F; border-top:1px solid #47741F; border-right:1px solid #7CA656; border-bottom:1px solid #7CA656; font:11px Arial; color:#436D1D; }
+.header .search .bt_buscar { background:url(/resources/theme-mda/imagens/bg_botao_buscar.jpg) repeat-x; border:1px solid #47741F; color:#FFF; font:bold 11px Arial; padding:2px 4px; cursor:pointer; }
+.header .search .bt_buscar:hover { background:#47741F; border:1px solid #47741F; color:#FFF; font:bold 11px Arial; padding:2px 4px; cursor:pointer; }
+
+.header .header_menu { width:390px; background:#FFF; opacity:0.90; filter:Alpha(Opacity=90); margin-top:22px; padding:5px 8px; float:right; }
+.header .header_menu ul li { display:block; float:left; margin:0 7px; }
+.header .header_menu ul li a { color:#436D1D; font-weight:bold; text-decoration:none; padding-bottom:3px; }
+.header .header_menu ul li a:hover { border-bottom:3px solid #436D1D; }
+.header .header_menu ul li.outras_opcoes { margin-top:3px; }
+.header .header_menu ul li.outras_opcoes a { width:12px; height:10px; background:url(/resources/theme-mda/imagens/seta_outras_opcoes.gif) center no-repeat; display:block; text-indent:-999999px; overflow:hidden; }
+.header .header_menu ul li.outras_opcoes a:hover { border-bottom:none; }
+/*...................................................*/
+
+/*..... Menu Superior .....*/
+.menu_horizontal ul { text-align:center; padding-top:9px; }
+.menu_horizontal ul li { display:inline; margin:0 15px; }
+.menu_horizontal ul li a { font:bold 13px "Trebuchet MS", Arial, Tahoma, Verdana; color:#FFF; text-decoration:none; }
+.menu_horizontal ul li a:hover { color:#FFCC00; text-decoration:none; }
+/*...................................................*/
+
+/*..... Menu Coluna .....*/
+.wrap_content .column { width:205px; background:#EAEAEA; float:left; }
+.wrap_content .column_content { width:195px; padding:8px 5px; float:left; }
+.wrap_content .menu { width:205px; background:#EAEAEA; float:left; }
+.wrap_content .menu li { display:block; float:left; }
+.wrap_content .menu li a { width:183px; display:block; background:url(/resources/theme-mda/imagens/bg_menu_coluna.jpg) repeat-y; border-left:2px solid #999; border-bottom:1px dotted #999; padding:5px 10px; font:11px "Trebuchet MS"; color:#333; text-decoration:none; }
+.wrap_content .menu li a:hover { background:#6B9A40 url(/resources/theme-mda/imagens/bg_menu_coluna_hover.jpg) repeat-y; border-left:2px solid #6B9A40; color:#FFF; }
+.wrap_content .menu li.ativo a { width:185px; background:#FFF; border-left:2px solid #DDD; }
+.wrap_content .menu li.ativo a:hover { width:185px; background:#FFF; border-left:2px solid #DDD; color:#333; }
+.wrap_content h3 { font:bold 12px Arial; color:#FFF; background:url(/resources/theme-mda/imagens/bg_titulos.jpg) repeat-x; padding:4px 5px; border:1px solid #6B9A40; cursor:move; }
+.wrap_content h5 { font:bold 11px Arial; color:#666; background:#CCC; padding:4px 5px; margin:5px 0 8px 0; }
+/*...................................................*/
+
+/*..... Content .....*/
+.wrap_content .content { width:773px; background:#FFF; padding:10px 15px; float:left; }
+.wrap_content .content p { margin:15px 0; }
+.wrap_content .content_home { width:788px; background:#FFF; padding:10px 0 10px 0; float:right; }
+
+
+.portal_customize_elements { width:774px; background:#F2F2F2; border:1px solid #DDD; float:left; padding:10px 0; margin:10px 0 0 0; }
+.portal_customize_elements li { display:block; float:left; list-style-type:disc; margin-left:15px; }
+.portal_customize_elements li a { text-decoration:none; font-weight:bold; }
+.portal_customize_elements li a:hover { text-decoration:underline; }
+
+.portal_customize_layout { width:774px; background:#F2F2F2; border:1px solid #DDD; float:left; margin:5px 0 10px 0; }
+.portal_customize_layout li { width:215px; display:block; float:left; margin:10px 20px; }
+.portal_customize_layout li img { float:left; margin-right:8px; }
+.portal_customize_layout li a { text-decoration:none; }
+.portal_customize_layout li a:hover { color:#000; text-decoration:underline; }
+.portal_customize_layout .tipo_disposicao { font:bold 16px Arial; }
+.portal_customize_layout .tipo_disposicao a { text-decoration:none; }
+.portal_customize_layout .tipo_disposicao a:hover { color:#333; text-decoration:none; }
+/*...................................................*/
+
+/*..... Footer .....*/
+.footer p { font-weight:bold; color:#FFF; }
+.footer .info { float:left; }
+.footer .secretaria { display:block; float:left; background:#7CA656; padding:2px 5px; margin-bottom:5px; }
+.footer address { font:bold 11px/1.4em Arial; color:#FFF; font-style:normal; clear:both; margin:0 0 0 5px; }
+
+.footer .politicas { float:right; padding-top:40px; }
+.footer .politicas ul li { display:inline; margin:0 5px; }
+.footer .politicas ul li a { color:#FFF; font-weight:bold; text-decoration:none; }
+.footer .politicas ul li a:hover { color:#FFCC00; font-weight:bold; text-decoration:none; }
+/*...................................................*/
+
+/*.................Theme MDA..................................*/
+.hide {display:none}
+.noticia_destaque h2 a { font:bold 22px Arial; color:#568C24 !important; }
+.noticia_destaque02 h2 a { color:#568C24 !important; }
+.noticia_destaque a:hover { color:#568C24 !important; }
+.noticia_destaque02 a:hover { color:#568C24 !important; }
+.data_noticia { margin-top:-30px; }
+.data_noticia p { font-size:16px; font-weight:bold; background:#568C24; padding:8px 3px; color:#FFF; margin:5px 0 !important; }
+
+.margin-form { float:left; }
+
+.form-button input { background:#568C24; }
+.form-button input:hover { background:#666666; }
+
+.newsTitle { color:#568C24; }
+.notas_noticias { width:778px; }
+.menu_table {float:left}
+
+
+.listagem_noticia { width:778px; padding-bottom:10px; border-bottom:1px dashed #CCC; margin-bottom:10px; float:left; }
+.noticias_destaques { width:778px; float:left; margin-bottom:25px; }
+.noticia_destaque { width:380px; height:525px; background:#efefef; padding:10px 15px; float:left; }
+.noticia_destaque .img_destaque01 { width:380px; height:320px; overflow:hidden; }
+.noticia_destaque02 .img_destaque02 { width:150px; height:100px; overflow:hidden; margin-top:10px; }
+.noticia_destaque02 { width:324px; padding:10px 15px 0 15px; background:#efefef; margin-bottom:10px; float:right; }
+.titulo_noticias_listagem { width:700px;}
+.titulo_noticias_listagem h2 { line-height:25px; font-size:18px; }
+.data_noticia { width:78px; float:left; display:block; text-align:center; margin-top:-7px; margin-bottom:-7px; }
+
+.calendar, .calendar table { border:none !important; background:none !important; }
+table { border-collapse:collapse; }
+table tr td { border:1px solid #CCC !important; padding:0 5px; }
+
+.tabela_login tr td { border:none !important; }
+.tabela_login { border:none !important; }
+/*.................End of Theme MDA..................................*/
+.form-item-wrapper {
+	width: 700px;
+}
+.cal-table-display {
+float:right;
+width:567px;
+}
+#boxescontrel {width:560px;}

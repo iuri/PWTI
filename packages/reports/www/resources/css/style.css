@@ -1,0 +1,5 @@
+.filters { width:100%; float:left; margin:20px 0; border-bottom:2px solid #999; padding-bottom:10px; }
+.filters label { font-weight:bold; margin-right:20px; font-size:10px; color:#333; }
+.filters label a { border:none; background:none; }
+.chart { width:100%; background:#FFF; margin:0 0 15px 10px; float:right; }
+.table { width:100%; float:left; margin-bottom:15px; }

@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/*
+	Ministério do Desenvolvimento Agrário - Terra Legal
+	Site: http://www.mda.gov.br/terra_legal
+	Autor: Thiago Melo
+	E-mail: thiago.melo@mda.gov.br
+	Design: Thiago Melo
+	Programação: Alessandro Landim e Breno Assunção
+*/
+
+/*..... Structure .....*/
+* { margin:0px; padding:0px; }
+body { margin:0 auto; background:#F1F1F1; font:11px/1.6em "Trebuchet MS", Arial, Tahoma, Verdana; color:#333; }
+img {border:0;}
+.wrap { width:1008px; background-color:#FFF;margin:0 auto; padding-bottom:280px; }
+.barra_ministerio { width:1008px; height:40px; background:#FFCC00; float:left; }
+.header { width:1008px; height:400px; float:left; }
+.content { width:988px; padding:10px; float:left; background-color:#fff;}
+.footer { width:773px; height:104px; background:url(/resources/theme-mda/imagens/terralegal/bg_footer.gif) no-repeat; margin:0 auto; margin-top:-104px; padding-left:235px; }
+.left_column { width:548px; float:left; }
+.right_column { width:430px; float:right; }
+/*...................................................*/
+
+/*..... Ministry Bar .....*/
+.barra_ministerio .logo { float:left; margin:2px 0 0 5px; }
+.barra_ministerio .logo a { width:310px; height:36px; background:url(/resources/theme-mda/imagens/terralegal/logo_mda.gif) no-repeat; display:block; text-indent:-999999px; overflow:hidden; }
+.barra_ministerio fieldset { float:left; margin:8px 0 0 280px; }
+.barra_ministerio .select { width:200px; padding:2px; background:#FFEDA4; font:11px Arial; border:1px solid #FFCC01; }
+.barra_ministerio .marca_brasil { float:right; margin:8px 110px 0 0; }
+.barra_ministerio .marca_brasil a { width:96px; height:26px; background:url(/resources/theme-mda/imagens/terralegal/marca_brasil.gif) no-repeat; display:block; text-indent:-999999px; overflow:hidden; }
+/*...................................................*/
+
+/*..... Header .....*/
+.header .name { position:absolute; width:264px; height:117px; margin:15px 0 0 10px; }
+.header .name a { width:264px; height:117px; background:url(/resources/theme-mda/imagens/terralegal/logomarca_terra_legal.gif) no-repeat; display:block; text-indent:-99999px; overflow:hidden; }
+.header .animation { position:absolute; margin-left:0; z-index:500; margin-top:-5px;}
+.header .search { position:absolute; margin:357px 0 0 578px; z-index:700; }
+.header .search p { color:#FFF; font-weight:bold; float:left; margin-left:10px; }
+.header .search .txtfield { width:240px; padding:4px !important; margin-left:7px; background:#FFF !important; font:11px "Trebuchet MS"; }
+.header .search .bt_search { width:62px; height:24px; background:url(/resources/theme-mda/imagens/terralegal/bg_bt_buscar.gif) no-repeat; margin-left:2px; color:#FFF; font:bold 11px Arial; cursor:pointer; padding:0 0 3px 0; border:none; }
+.header .search .txt_search { width:86px; height:10px; display:block; text-indent:-9999px; overflow:hidden; background:url(/resources/theme-mda/imagens/terralegal/txt_buscar_site.gif) no-repeat; float:left; margin-top:8px; }
+/*...................................................*/
+
+/*..... Menu Admin .....*/
+.menu_admin { width:1008px; height:30px; padding-top:10px; text-align:center; background:url(/resources/theme-mda/imagens/terralegal/bg_menu.jpg) repeat-x; border-top:5px solid #8AC53F; float:left; margin-top:-5px;}
+.menu_admin li { display:inline; margin:0 10px; }
+.menu_admin li a { color:#FFF; text-decoration:none; font-weight:bold; }
+.menu_admin li a:hover { color:#FFFF00; text-decoration:none; }
+/*...................................................*/
+
+/*..... Twitter .....*/
+.icon_twitter { width:105px; float:left; margin-right:10px; margin-top:5px; padding:1px 0; border:1px solid #EAEAEA; }
+.info_twitter { width:225px; float:right; margin-top:5px; padding:2px 8px; background:#EAEAEA; }
+/*...................................................*/
+
+/*..... Menu .....*/
+.menu { position:absolute; width:500px; height:150px; margin-top:208px; z-index:600; }
+.menu ul { list-style-type:none; }
+.menu li { border-bottom:1px dashed #CCC; padding:5px 3px 6px 3px; margin-left:0px; }
+.menu li a { color:#666; font-weight:bold; text-decoration:none; cursor:pointer; padding:2px 5px; }
+.menu li a:hover { color:#FFF; background:#71A532; }
+.menu .home { border:none; }
+.menu .home a:hover { color:#FFF; background:#A47933; }
+
+.menu .about { width:248px; }
+.menu .news { width:305px; }
+.menu .ombudsman { width:345px; }
+.menu .gallery { width:328px; }
+.menu .list { border-bottom:none; }
+/*...................................................*/
+
+/*..... Titles .....*/
+.portlet_title { height:18px; background:url(/resources/theme-mda/imagens/terralegal/bg_title.jpg) right no-repeat; font:bold 12px "Trebuchet MS"; color:#FFF; padding:5px 5px; margin-bottom:10px; }
+/*...................................................*/
+
+/*..... Content .....*/
+.content_text { width:968px; background:#FFF url(/resources/theme-mda/imagens/terralegal/bottom_content_text.gif) bottom no-repeat; padding:10px; }
+.content .portlets { clear:both; }
+.content p { margin:10px 0; color:#45651F;}
+.content p a { color:#A57B39; font-weight:bold; }
+.content_text p a { color:#A57B39; font-weight:bold; }
+.content .img_left { float:left; margin:0 15px 5px 0; }
+.content .img_left img { margin-top:5px; }
+.more { width:175px; height:20px; background:url(/resources/theme-mda/imagens/terralegal/bg_mais_informacoes.gif) left no-repeat; clear:both; }
+.more a { display:block; text-decoration:none; color:#FFF !important; font-weight:normal !important; padding:1px 0 2px 25px; }
+.more a:hover { color:#FFE548; font-weight:normal !important; }
+
+.bt_administrator { width:175px; height:20px; background:url(/resources/theme-mda/imagens/terralegal/bg_opcoes_administrador.gif) left no-repeat; float:left; }
+.bt_administrator a { display:block; text-decoration:none; color:#FFF; padding:1px 0 2px 25px; }
+.bt_administrator a:hover { color:#FFE548; }
+
+.img_left { float:left; margin:0 10px 0 0; }
+.content h4 { font-size:16px; margin:10px 0; display:block; }
+
+.default_list li { margin-left:15px; list-style-type:disc; }
+.default_list li a { color:#568C24; }
+/*...................................................*/
+
+/*..... News .....*/
+.portlet_main_news { width:100%; float:left; background:#FFF; }
+.portlet_main_news .max_priority { width:270px; padding:10px; background:#EAEAEA; float:left; margin:0 0 10px 10px; font:12px "Trebuchet MS"; }
+.portlet_main_news .max_priority h5 a { font:bold 17px "Trebuchet MS"; color:#568C24; text-decoration:none; line-height:18px; }
+.portlet_main_news .max_priority p a { color:#333; font-size:11px; text-decoration:none; font-weight:normal !important; }
+.portlet_main_news .others_news { width:260px; float:right; }
+.portlet_main_news .others_news .news { margin:5px 5px 5px 0; }
+.portlet_main_news .others_news .news h6 { font:bold 12px "Trebuchet MS"; line-height:15px; margin-bottom:-8px; }
+.portlet_main_news .others_news .news h6 a { color:#568C24; text-decoration:none; }
+.portlet_main_news .others_news .news p a { color:#333; text-decoration:none; font-weight:normal !important; }
+/*...................................................*/
+
+/*..... Twitter .....*/
+.twitter { width:100%; height:364px; background:#DDD; margin-bottom:10px; float:left; }
+/*...................................................*/
+
+/*..... Photos Gallery .....*/
+.home_gallery { width:100%; float:left; }
+.home_gallery ul li { width:100px; height:100px; display:block; float:left; margin:3px; }
+/*...................................................*/
+
+/*..... Pagination .....*/
+.photos_pagination { height:35px; background:#FFF; border:1px solid #BED6A3; float:left; margin-top:-45px; }
+/*...................................................*/
+
+/*..... Pagination .....*/
+.videos_pagination { width:425px; height:39px; background:url(/resources/theme-mda/imagens/terralegal/bg_paginacao_videos.gif) no-repeat; float:left; margin-top:-7px; }
+.videos_pagination li { display:block; float:left; }
+.videos_pagination ul { margin:7px 0 0 7px; }
+.videos_pagination .fw a { width:115px; height:25px; background:url(/resources/theme-mda/imagens/terralegal/bt_videos_anteriores.jpg) no-repeat; display:block; text-indent:-99999px; overflow:hidden; }
+.videos_pagination .fw a:hover { width:115px; height:25px; background:url(/resources/theme-mda/imagens/terralegal/bt_videos_anteriores_hover.jpg) no-repeat; display:block; text-indent:-99999px; overflow:hidden; }
+.videos_pagination .ff a { width:115px; height:25px; background:url(/resources/theme-mda/imagens/terralegal/bt_proximos_videos.jpg) no-repeat; display:block; text-indent:-99999px; overflow:hidden; margin-left:7px; }
+.videos_pagination .ff a:hover { width:115px; height:25px; background:url(/resources/theme-mda/imagens/terralegal/bt_proximos_videos_hover.jpg) no-repeat; display:block; text-indent:-99999px; overflow:hidden; margin-left:7px; }
+.videos_pagination .active { width:174px; text-align:center; margin-top:4px; font-weight:bold; }
+/*...................................................*/
+
+/*..... Footer .....*/
+.footer p { font-weight:bold; }
+.footer .name { width:400px; background:#7CA656; padding:2px 7px; color:#FFF; }
+.footer .info { margin:28px 0 0 15px; float:left; }
+/*...................................................*/
+
+/*...... Tools ......*/
+#album_vertical_carousel .next_button { width:135px; height:21px; background:url(/resources/photo-album/images/bt_fotos_videos_bg02.jpg) no-repeat; display:block; color:#FFF; padding-top:4px; cursor:pointer; }
+#album_vertical_carousel .next_button_over { width:135px; height:21px; background:url(/resources/photo-album/images/bt_fotos_videos_bg02.jpg) no-repeat; display:block; color:#FFF; padding-top:4px; cursor:pointer; }
+#album_vertical_carousel .next_button_disabled { width:135px; height:21px; background:url(/resources/photo-album/images/bt_fotos_videos_bg02.jpg) no-repeat; cursor:default; display:block; color:#FFF; padding-top:4px; }
+
+#album_vertical_carousel .previous_button { width:135px; height:21px; background:url(/resources/photo-album/images/bt_fotos_videos_bg.jpg) no-repeat; display:block; margin-left:5px; cursor:pointer; color:#FFF; padding-top:4px; }
+#album_vertical_carousel .previous_button_over { width:135px; height:21px; background:url(/resources/photo-album/images/bt_fotos_videos_bg.jpg) no-repeat; display:block; margin-left:5px; cursor:pointer; color:#FFF; padding-top:4px; }
+#album_vertical_carousel .previous_button_disabled { width:135px; height:21px; background:url(/resources/photo-album/images/bt_fotos_videos_bg.jpg) no-repeat; cursor:default; padding-top:4px; }
+/*...................................................*/
+
+/*..... News .....*/
+.noticia_destaque h2 { margin:15px 0; }
+.noticia_destaque h2 a { color:#568C24 !important; }
+.noticia_destaque h2 a:hover { color:#A47933 !important; }
+.noticia_destaque p a:hover { color:#568C24 !important; }
+.noticia_destaque02 h2 { margin:15px 0; }
+.noticia_destaque02 h2 a { color:#568C24 !important; }
+.noticia_destaque02 h2 a:hover { color:#A47933 !important; }
+.noticia_destaque02 p a:hover { color:#568C24 !important; }
+.titulo_noticias_listagem h2 a { color:#568C24 !important; }
+.data_noticia p { background:#568C24; color:#FFF; }
+.titulo_padrao { margin-bottom:30px; }
+.newsTitle { width:940px !important; color:#568C24; margin:20px 0; }
+/*...................................................*/
+
+.faq_list li a { color:#0084C4; }
+.questions li .question { color:#507A1D; }
+
+.listarequerentes { border-collapse:collapse; }
+.listarequerentes tr td { background:#F3F3F3; border:1px solid #CCC; padding:10px; }
+.listarequerentes tr th { background:#679F24; border:1px solid #CCC; padding:10px; color:#FFF; }
+
+.form-button input { background:#639B1E; }
+
+.patrocinios { width:968px; height:70px; background:#FFF; margin:0 auto; padding:20px; }
+.patrocinios li { display:inline; margin:0 5px; }
+.patrocinios .patrocinio { background:#FFF; float:left; }
+.patrocinios .realizacao { background:#FFF; float:right; }
+.patrocinios h6 { margin-bottom:10px; font-size:11px; font-weight:bold; color:#666; }
+
+table { border-collapse:collapse; }
+table tr td { border:1px solid #CCC; padding:5px; }
+table a { font-weight:bold; color:#568C24; text-decoration:none; }
+
+.photo_album_nav strong { background:#568C24; padding:1px 5px; color:#FFF; }
+.photo_album_nav a { color:#568C24; font-weight:bold; text-decoration:none; padding:1px 5px; }
+.photo_album_nav a:hover { background:#568C24; padding:1px 5px; color:#FFF; }
+
+.posseiros { width:968px; clear:both; }
+.busca_posseiros { width:500px; float:left; margin:5px 0 20px 0; }
+.total_posseiros_cadastrados { width:400px; float:right; text-align:right; }
+.total_posseiros_cadastrados p { text-align:center; padding:5px; float:right; margin-top:3px; font-weight:bold; color:#666666; }
+.total_posseiros_cadastrados .total_posseiros { font-size:20px; font-weight:bold; margin-right:3px; }
+
+.data_aggregator-table td.list-table, td.list-table-narrow, .list-table td {
+	padding:0 0 0 5px;
+}
+.data_aggregator-table .list-table th {
+	padding:0;
+}

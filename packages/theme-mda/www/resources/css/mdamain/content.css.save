@@ -1,0 +1,183 @@
+:q@charset "ISO-8859-1";
+/* Documento de folha de estilo para o Portal do Ministério do Desenvilvomento Agrário
+Desenvolvido por: CTIS*/
+/*Folha que controla a HOME do portal */
+
+* { margin:0px; padding:0px;}
+
+/* ------- layout genérico --------*/
+body,div,td,h1{ font:12px "Trebuchet MS", verdana, arial, Helvetica, sans-serif; color:#666; line-height:15px;}
+body{background:#fff url(../images/bcksite.jpg) top repeat-x left; top left repeat-x;}
+ul{list-style-type: disc;}
+h2{ font-size:25px; color:#363;}
+a{text-decoration:none; color:#666;}
+a:hover{ text-decoration:underline; }
+br.clear{clear:both;font-size:0;height:0;line-height:0;display:block;}
+p{ margin: 7px 0px 7px 0px;line-height:15px;}
+p a{color:#06C;}
+p a:hover{text-decoration:none;}
+img{ border:0px;}
+
+/* ------- layout divs --------*/
+
+#site{margin:0px auto 0px auto; padding: 0px 5px 0px 5px; width:990px; text-align:left;}/* Correção de BUG FF3 Retirar com atualização - retornar para //!important*/
+/* ------- barra Brasil --------*/
+#barrabrasil{ background: #ffcc00;  height:40px; z-index:999; position:absolute; top:0px; left:0px; width:100%; margin-bottom:40px;}/* Correção de BUG FF3 Retirar com atualização - retornar para // background:#ffcc00; height:40px;*/
+#barrabrasil .sele{ position:absolute; top:7px; left:50%;} /* Correção de BUG FF3 Retirar com atualização - retornar para // position:absolute; top:7px; left:600px;*/
+#barrabrasil .brasil{position:absolute; top:5px; left:80%;} /* Correção de BUG FF3 Retirar com atualização - retornar para // position:absolute; top:5px; left:885px;*/
+.barrabrasil{ background: #ffcc00;  height:40px;}  /* Correção de BUG FF3 Retirar com atualização */
+.barrabrasil .sele{ position:absolute; top:7px; left:50%;} /* Correção de BUG FF3 Retirar com atualização */
+.barrabrasil .brasil{position:absolute; top:5px; left:80%;} /* Correção de BUG FF3 Retirar com atualização */
+
+/* ------- topo --------*/
+#topo{ margin-top:30px;*margin-top:70px; position:relative;} /* Correção de BUG FF3 Retirar com atualização  retornar para // margin-top:10px; */
+#topo #ferramentas{position:absolute; right:0px; top:10px;*top:-30px; width:500px;}
+#topo #ferramentas #ferrtop{float:left; margin:3px 10px 0px 10px; margin-right:10px; float:right;}
+#topo #ferramentas #ferrtop li{ display:inline;}
+#topo #ferramentas .busca{ width:100px; font-size:9px; border:#666 solid 1px;}
+#topo #ferramentas .busca_avancada { float:right; margin-right:55px; text-decoration:underline; margin-top:2px;}
+#topo #ferramentas input {border:0px; font:12px "Trebuchet MS", verdana, arial, Helvetica, sans-serif; margin: 5px 5px 0px 0px; padding-left:5px;}
+/* ------- destaques --------*/
+#destaques{ width:990px; height:195px; background:url(../images/bcktopo002.jpg) top left no-repeat; position:relative;margin-top:40px;}
+/* painel de destaques */
+#site #destaques #painel{ position:absolute; top:28px; left:160px; width:774px; height:115px; background:url(../images/bkp_dest.jpg) repeat-x top left;}
+#site #destaques #painel #inside{margin:5px;}
+#site #destaques #painel #inside ul li{border-right:#dbdfda 1px solid;}
+#site #destaques #painel #inside ul li img{padding-left:35px; text-align:center;}
+/* painel de destaques > controladores */
+#contdestesq{position:absolute; top:35px; left:-10px;}
+#contdestdir{position:absolute; top:35px; right:-10px;}
+#contbarraesq{position:absolute; top:116px; left:0px;}
+#contbarradir{position:absolute; top:116px; right:0px;}
+#contbarra{position:absolute; top:116px; left:100px;}
+
+#conteudo{ width:990px;}
+/* ------- navegação esquerda > banners e menu esquerdo --------*/
+#conteudo #navesqu{width:145px; margin-right:10px; float:left;}
+#conteudo #navesqu #menu{border-left:#d7ddd6 1px solid;border-right:#d7ddd6 1px solid;border-top:#d7ddd6 1px solid;}
+#conteudo #navesqu #menu li{border-bottom:#d7ddd6 1px solid; list-style-type:none; list-style-position:none;}
+#conteudo #navesqu #menu .itens{background:url(../images/bck_menu.jpg) repeat-x;padding:8px 8px 8px 15px;}
+#conteudo #navesqu #menu .itensSelected{background:url(../images/bck_menuSelecionado.jpg) repeat-x;padding:8px 8px 8px 15px;}
+#conteudo #navesqu #menu .subitens{border:none; padding:10px;}
+#conteudo #navesqu #menu .subitens li{border:none; padding-top:10px; list-style-type:none;}
+#conteudo #navesqu #menu a.head{background:transparent url(../images/bulletfechado.gif) 0px 3px no-repeat;*background:transparent url(../images/bulletfechado.gif) 0px 5px no-repeat;}
+#conteudo #navesqu #menu a.selected{background:transparent url(../images/bulletAberto.gif) 0px 3px no-repeat;*background:transparent url(../images/bulletAberto.gif) 0px 5px no-repeat;}
+#conteudo #navesqu #menu a.noHover{background:transparent url(../images/bulletfechado.gif) 0px 3px no-repeat;*background:transparent url(../images/bulletfechado.gif) 0px 5px no-repeat;}
+#conteudo #navesqu #menu a.menuFechadoSelected{background:transparent url(../images/bulletativo.gif) 0px 3px no-repeat;*background:transparent url(../images/bulletativo.gif) 0px 5px no-repeat;color:#336633;}
+#conteudo #navesqu #menu a.menuAbertoSelected{background:transparent url(../images/stmenuaberta.gif) 0px 3px no-repeat;*background:transparent url(../images/stmenuaberta.gif) 0px 5px no-repeat;color:#336633;}
+#conteudo #navesqu #menu a.subitensSelected{color:#336633;font-weight:bold;}
+#conteudo #navesqu #menu a span{margin-left:10px;}
+#banners{margin-top: 20px;}
+
+/* ------- conteudo das paginas internas (miolos)  --------*/
+#conteudo #boxes { width:570px; float:left; margin:0px 10px 10px 0px;}
+#conteudo #boxes #caixa001 {width:355px; float:left; padding-right:5px; }
+#conteudo #boxes #caixa002 {width:200px; float:right;}
+#conteudo #boxes #caixa003 {padding-right:5px; display:block; }
+#not031{ width:185px; padding:5px; height:220px; background:#e1dfdf; float:left;}
+#not032{ width:185px; margin-left:13px; padding:5px; height:220px; background:#e1dfdf; float:left;}
+#not033{ width:185px; padding:5px; height:220px; background:#e1dfdf; float:right; margin-bottom:15px;}
+#destprincipal{ background:#edf2f7; padding:5px; margin-bottom:10px; height:290px;}
+
+
+/* ------- Tv MDA --------*/
+#conteudo #tvmda {width:190px; float:right; background:url(../images/bck_tvmda.jpg) repeat-x top left; padding:5px; display:block;}
+#conteudo #tvmda #radiomda{ background:url(../images/bckradio.jpg) top left no-repeat; padding-top:60px; margin:10px 0px;}
+#conteudo #tvmda #radiomda #radesp{ padding:5px;}
+#conteudo #tvmda #radiomda #radioplayer{ width:85px; height:40px; float:left;}
+#conteudo #tvmda #radiomda #radioplayerall{ margin:10px 0px;}
+#conteudo #tvmda #tvinterna{}
+#conteudo #tvmda #player{margin-top:10px;}
+#conteudo #tvmda #videomaior{margin:10px 0px; text-align:center;}
+#conteudo #tvmda #videosmenores{margin:10px 0px; text-align:center;}
+#conteudo #tvmda #player #videoPricipalTitulo{font-size:15px;color:#365;display:block;text-align:left;font-weight:bold;}
+
+
+/* ------- conteudos relacionados --------*/
+#conteudo #contrel {width:200px; float:right; display:block; padding-left:5px;}
+#conteudo #boxescontrel { width:610px; float:left; padding:0px 10px 10px 0px; border-right:#d7ddd6 1px solid; }
+#loading{text-align:center; padding:15px; background:#fff url(../images/bck_menu.jpg)repeat-x top left;}
+
+
+#site #rodape{clear:both; text-align:center; background:url(../images/bck_rodape.jpg) repeat-x top left; font:9px; padding:10px;}
+
+#sitemap{margin-left:20px;}
+#sitemap li{list-style-type:none;}
+#sitemap .titvde13{
+    border-bottom: #365 1px dotted;
+}
+
+
+#box_outter{width:595px; padding:5px;  border-top:#d7ddd6 1px solid;  clear:both;}
+.box_principal{width:595px; padding:5px; display: block;}
+
+/* ------- classes --------*/
+.limpa{clear:both;}
+.box_inner{ width:279px; height:auto; float:left; clear:left; margin:3px; padding:5px; border:0px #CCC solid; background:#edf2f7;}
+.box_inner_right{ width:279px; height:auto; float:right; clear:right; margin:3px; padding:5px; border:0px #CCC solid; background:#edf2f7;}
+.data{font:9px; color:#999; display:block;}
+.sutien{padding:10px; background:#eaeaea; display:block; margin-top:5px;}
+.sutien li{list-style-type:none;}
+.titcinza11{ font-size:11px; text-align:left; clear:both; float:none; display:block;}
+.linetop{padding:5px 0px; margin:5px 0px; clear:both; border-top:#d7ddd6 1px solid;}
+.noline{padding:0px 0px 10px 0px; clear:both;}
+.not024{padding:10px 0px; clear:both; border-top:#d7ddd6 1px solid;}
+.cinz{ display:block;}
+.clear {clear:both;}
+.titazul{color:#369; display:block;}
+.titverde{color:#365; display:block;}
+.titvde13{ font-size:15px; color:#365; display:block; text-align:left; margin:5px 0px;}
+.maisnot li{padding-left:5px; background:url(../images/seta.gif) no-repeat top left; margin-top:10px; list-style-type:none;}
+.maisnot strong{color:#365;}
+.imgdstaq{ float:left; margin: 0px 5px 5px 0px;}
+.imagblok{ display:block; margin: 0px 5px 5px 0px;}
+.destaqueprincipal{font-size:27px; line-height:24px; display: block; margin-bottom:5px; letter-spacing:-1px; color:#365;}
+.cat{font-size:20px; display: block; margin:10px 0px; letter-spacing:-1px; color:#666; }
+.relacionados{clear:both; margin-top:5px;}
+.relacionados a{ color:#369; }
+.destaque2{font-size:15px; line-height:15px; display: block; margin-bottom:5px; letter-spacing:0px; color:#365;}
+.sel{border:#365 1px solid; color:#365; width:140px; margin:0px; font-size:9px; float:left;}
+.imagblok2{display:block; margin: 5px 0px;}
+.resultado{background-color: #FF0;}
+.bxsapoio{ border:1px dashed #d7ddd6; padding:10px; margin:10px; background: url(../images/bck_menuSelecionado.jpg) repeat-x top left #fff;}
+.bread{ font-size:12px;}
+.breada{font-size:12px; text-decoration:underline; color:#369;}
+.leiamais{color:#369; margin-top:15px; display:block;}
+.cont ul,li{list-style-position:inside;}
+.notimg{ float:left; margin:0px 10px 10px 0px; width:215px;}
+.sub li{padding-left:10px; margin-top:10px; margin-left:10px; background: url(../images/sub2.gif) top left no-repeat;}
+.subtt{ background:none;}
+.azul{color:#369; margin-top:15px;}
+.botao{ background: url(../images/bck_botao.jpg) repeat-x center; font: 9px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#333; font-weight:bold; border:#333 1px solid; display:block; margin:5px 0; cursor:pointer;}
+.ipt{ height:20px; color:#030; border:1px solid #666; font:12px "Trebuchet MS", verdana, arial, Helvetica, sans-serif; margin: 5px 5px 0px 0px; padding-left:5px;}
+.verm{ color:#993333;}
+.lar{color:#cc6600;}
+.imgfloat{ float:left;}
+.paginacao li{ display:inline; margin:10px 15px 10px 0px; list-style-type:none; }
+.paginacao li a{text-decoration:underline; color:#369;}
+.paginacao li a:hover{ text-decoration:none;}
+.buscres{ font-size:15px; margin:20px; }
+.buscres strong{ text-transform:uppercase;}
+.bloc{ display:block;}
+.vervideo2{ position:relative;float:left; width:100px; margin:0px 10px 5px 0px;}
+.margbot5{ margin-bottom:5px;}
+.vervideo{ position:absolute; top:0px; left:0px; float:left;}
+.telamaior{width:320px; height:240px; margin:0px 10px 10px 0px; background:#E8E8E8; float:left;}
+.ouveradio{width:85px; height:auto; margin:0px 10px 10px 0px; float:left;}
+.videocont{ float:left; margin:0px 10px 10px 0px; width:320px;}
+.imgdstaq{ display:block; width:385px; height:258px;}
+.imgdstaq2{display:block; width:185px; height:124px;}
+.imgdstaq3{float: left; margin: 0px 5px 0px 0px; width:100px; height:66;}
+.imgdstaq4{float:left; margin: 0px 5px 0px 0px;}
+.iptEnviaEmail{width:180px;}
+
+
+/* ------- Formularios --------*/
+/* @TODO - Ainda nao esta completo */
+form .comment{color:#FF0000;}
+form .msg{}
+form .alert{}
+form input, textarea, select {color:#030; border:1px solid #666; margin: 5px 5px 0px 0px; padding-left:5px;}
+form input, textarea, select {color:#030; border:1px solid #666; font:12px "Trebuchet MS", verdana, arial, Helvetica, sans-serif; margin: 5px 5px 0px 0px; padding-left:5px;}*/
+select .sel{border:#365 1px solid; color:#365; width:140px; margin:0px; float:left;}
+label {font-weight:bold;}

@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/*
+	Mutirão Arco Verde - Governo Federal
+	Site: http://www.mda.gov.br/terra_legal
+	Autor: Thiago Melo
+	E-mail: thiago.melo@mda.gov.br
+	Design: Thiago Melo
+	Programação: Alessandro Landim e Breno Assunção
+*/
+
+/*..... Structure .....*/
+* { margin:0px; padding:0px; border:0px; list-style-type:none; }
+body { margin:0 auto; background:#F1F1F1; font:12px/1.4em "Trebuchet MS", Arial, Tahoma, Verdana; color:#333; }
+.wrap { width:1008px; background:#FFF; left bottom no-repeat; margin:0 auto; overflow:hidden; }
+.government_bar { width:1008px; height:40px; background:#FFCC00; float:left; }
+.header { width:1008px; height:350px; float:left; }
+.menu { width:1008px; height:30px; padding-top:10px; text-align:center; background:url(/resources/theme-mda/imagens/arcoverde/bg_menu.jpg) repeat-x; border-top:5px solid #8AC53F; float:left; }
+.content { width:988px; padding:10px; float:left; }
+.movies { width:988px; float:left; }
+.footer { width:1008px; height:35px; background:#66952C; border-top:5px solid #8AC53F; padding-top:15px; text-align:center; float:left; }
+/*...................................................*/
+
+/*..... Barra Governo .....*/
+.government_bar .logo { float:left; }
+.government_bar .logo a { width:234px; height:40px; background:url(/resources/theme-mda/imagens/arcoverde/logo_brasil.gif) no-repeat; display:block; text-indent:-99999px; overflow:hidden; float:left; }
+.government_bar .brasil_brand { float:right; margin:8px 20px 0 0; }
+.government_bar .brasil_brand a { width:96px; height:26px; background:url(/resources/theme-mda/imagens/arcoverde/marca_brasil.gif) no-repeat; display:block; text-indent:-999999px; overflow:hidden; }
+/*...................................................*/
+
+/*..... Menu .....*/
+.menu li { display:inline; margin:0 10px; }
+.menu li a { color:#FFF; text-decoration:none; font-weight:bold; }
+.menu li a:hover { color:#FFFF00; text-decoration:none; }
+/*...................................................*/
+
+/*..... Titles .....*/
+.portlet_title { width:100%; height:29px; background:url(/resources/theme-mda/imagens/arcoverde/bg_title.jpg) right no-repeat; font:bold 12px "Trebuchet MS"; color:#FFF !important; float:left; margin-bottom:10px; }
+/*...................................................*/
+
+/*..... Header .....*/
+.header .name { position:absolute; width:156px; height:156px; margin:37px 0 0 12px; z-index:3000; }
+.header .name a { width:156px; height:156px; background:url(/resources/theme-mda/imagens/arcoverde/logo.gif) no-repeat; display:block; text-indent:-99999px; overflow:hidden; }
+.header .animation { position:absolute; margin-left:0; z-index:500; }
+.header .search { position:absolute; margin:197px 0 0 658px; z-index:700; }
+.header .search p { color:#FFF; font-weight:bold; float:left; margin-left:10px; }
+.header .search .txtfield { width:160px; padding:3px 4px !important; background:#FFF !important; margin-left:7px; font:11px "Trebuchet MS"; }
+.header .search .bt_search { width:62px; height:24px; background:url(/resources/theme-mda/imagens/arcoverde/bg_botao_buscar.gif) no-repeat; margin-left:2px; color:#FFF; font:bold 11px Arial; cursor:pointer; padding:0 0 3px 0; border:none; }
+.header .search .txt_search { width:86px; height:10px; display:block; text-indent:-9999px; overflow:hidden; background:url(/resources/theme-mda/imagens/arcoverde/txt_buscar_site.gif) no-repeat; float:left; margin-top:8px; }
+
+.header .survey { position:absolute; width:405px; margin-left:580px; margin-top:255px; z-index:9999999; }
+.header .survey img { float:left; margin-right:10px; }
+.header .survey h5 { color:#0072BC; margin:0; font-size:11px; }
+.header .survey h5 a { color:#0072BC; text-decoration:none; }
+.header .survey .info { width:330px; float:right; }
+.header .survey p { font-size:11px; color:#666; }
+.header .survey p a { color:#666; text-decoration:none; }
+/*...................................................*/
+
+/*..... News .....*/
+.news_home { width:100%; float:left; }
+.news_home .max_priority { width:270px; padding:10px; float:left; margin:0 10px 0 0; font:12px "Trebuchet MS"; }
+.news_home .max_priority h5 a { font:bold 17px "Trebuchet MS"; color:#0273BC; text-decoration:none; line-height:18px; }
+.news_home .max_priority p a { color:#333; font-size:11px; text-decoration:none; }
+.news_home .others_news { width:280px; margin-right:5px; float:right; }
+.news_home .others_news .news { margin:15px 0; }
+.news_home .others_news .news h6 { font:bold 12px "Trebuchet MS"; line-height:15px; margin-bottom:-8px; }
+.news_home .others_news .news h6 a { color:#0273BC !important; text-decoration:none; }
+.news_home .others_news .news p a { color:#333; text-decoration:none; }
+
+.portlet_main_news .max_priority h5 a { font:bold 17px "Trebuchet MS"; color:#0273BC; text-decoration:none; line-height:18px; }
+.portlet_main_news .others_news .news h6 a { color:#0273BC; text-decoration:none; }
+
+.news_block { padding:10px; margin:20px 0 0 0; }
+.news_block .news { margin:15px 0; }
+.news_block .news h6 { font:bold 12px "Trebuchet MS"; line-height:15px; margin-bottom:-8px; }
+.news_block .news h6 a { color:#0273BC; text-decoration:none; }
+.news_block .news p a { color:#333; text-decoration:none; }
+/*...................................................*/
+
+/*..... Content .....*/
+.content .left_column { width:608px; float:left; }
+.content .right_column { width:370px; float:right; }
+.content p { margin:10px 0; color:#5A5A5A; }
+.content p a { color:#0273BC; }
+.content .img_left { float:left; margin:15px 15px 10px 0; }
+.content h3 span { float:left; height:29px; background:url(/resources/theme-mda/imagens/arcoverde/bg_titles_right.jpg) no-repeat; padding-left:10px; padding-top:5px; }
+
+.more { width:186px; height:21px; background:url(/resources/theme-mda/imagens/arcoverde/bg_mais_informacoes.gif) left no-repeat; clear:both; font-size:11px; }
+.more a { display:block; text-decoration:none; color:#FFF !important; padding:1px 0 2px 25px; }
+.more a:hover { color:#FFE548; }
+
+.portlet-wrapper { background:#F4F4F4; padding:10px; margin-bottom:15px; float:left; }
+/*...................................................*/
+
+.arcoverde_actions {float:left; width:100%; margin:15px 0; }
+.arcoverde_actions .tabela { border-collapse:collapse; background:#F9F9F9; }
+.arcoverde_actions .tabela tr td { border:1px solid #EEE; padding:10px; }
+.arcoverde_actions .tabela .title { color:#FFF; font-weight:bold; }
+.arcoverde_actions .tabela span { font-size:26px; color:#666666; }
+.arcoverde_actions .tabela .odd { background:#EEE; }
+
+/*..... Photos Gallery .....*/
+.home_gallery { width:100%; float:left; }
+.home_gallery ul li { width:100px; height:100px; display:block; float:left; margin:4px; }
+
+/*...................................................*/
+
+/*..... Pagination .....*/
+.photos_pagination { width:300px; height:39px; background:url(../imagens/bg_paginacao_fotos.gif) no-repeat; float:left; margin-top:5px; }
+.photos_pagination li { display:block; float:left; }
+.photos_pagination ul { margin:7px 0 0 7px; }
+.photos_pagination .fw a { width:110px; height:21px; padding:4px 0 0 25px; color:#FFF; text-decoration:none; background:url(../imagens/bt_fotos_videos_bg.jpg) no-repeat; display:block; }
+.photos_pagination .fw a:hover { width:110px; height:21px; padding:4px 0 0 25px; color:#FFF; text-decoration:none; background:url(../imagens/bt_fotos_videos_bg.jpg) no-repeat; display:block; }
+.photos_pagination .ff a { width:125px; height:21px; padding:4px 0 0 10px; color:#FFF; text-decoration:none; background:url(../imagens/bt_fotos_videos_bg02.jpg) no-repeat; display:block; margin-left:5px; }
+.photos_pagination .ff a:hover { width:125px; height:21px; padding:4px 0 0 10px; color:#FFF; text-decoration:none; background:url(../imagens/bt_fotos_videos_bg02.jpg) no-repeat; display:block; margin-left:5px; }
+/*...................................................*/
+
+/*..... Cities .....*/
+.cities { float:left; margin:5px 0 15px 0; }
+.cities li { width:330px; height:17px; padding:6px 10px; background:url(/resources/theme-mda/imagens/arcoverde/bg_municipios.jpg) no-repeat; display:block; margin:2px 0; font-size:11px; color:#848484; }
+.cities li.active { width:330px; height:17px; padding:6px 10px; display:block; background:url(/resources/theme-mda/imagens/arcoverde/bg_municipio_ativo.jpg) no-repeat; font-size:11px; }
+.cities li.active a { color:#FFF; text-decoration:none; }
+.cities li span { float:right; margin-top:-18px; margin-right:15px; color:#848484; }
+.cities li.active span { color:#FFFF00; }
+/*...................................................*/
+
+/*..... Twitter .....*/
+.icon_twitter { width:105px; float:left; margin-right:10px; }
+.info_twitter { width:225px; float:right; margin-right:10px; }
+/*...................................................*/
+
+.destaque_search { position:absolute; width:370px; font-size:11px; margin-left:600px; margin-top:250px; z-index:10000; }
+
+.footer li { display:inline; margin:0 8px; }
+.footer li a { color:#FFF; text-decoration:none; }
+.footer li a:hover { color:#FFFF00; text-decoration:none; }
+
+.language { background:#FFF; height:25px; margin-left:888px; opacity:0.8; padding-top:5px; position:absolute; text-align:center; top:85px; width:120px; z-index:9999999; }
+.language li { display:inline; margin:0 2px; }
+
+h2 { font-size:18px; margin:10px 0 15px 0; color:#0072BC; border-bottom:3px double #DDD; padding-bottom:5px; }
+.noticia_destaque h2 { margin:15px 0; }
+.noticias_destaque a { color:#568C24; }
+.titulo_noticias_listagem h2 a { color:#0273BC; }
+.titulo_noticias_listagem h2 { border-bottom:none !important; }
+.data_noticia p { color:#FFF; }
+
+.patrocinios { width:968px; height:70px; background:#FFF; padding:20px; float:left; margin-bottom:10px; }
+.patrocinios li { display:inline; margin:0 10px; }
+.patrocinios .patrocinio { background:#FFF; float:left; }
+.patrocinios .realizacao { background:#FFF; float:right; }
+.patrocinios h6 { margin-bottom:10px; font-size:11px; font-weight:bold; color:#666; }
+
+#album_internal_carousel { margin-bottom:0px !important;}
+#album_vertical_carousel .previous_button { padding-top:3px; height:22px; }
+#album_vertical_carousel .next_button { padding-top:3px; height:22px; cursor:pointer; }
+#upbox { height:325px !important; }
+
+.photo_album_nav strong { background:#0072BC; padding:1px 5px; color:#FFF; }
+.photo_album_nav a { color:#0072BC; font-weight:bold; text-decoration:none; padding:1px 5px; }
+.photo_album_nav a:hover { background:#0072BC; padding:1px 5px; color:#FFF; }

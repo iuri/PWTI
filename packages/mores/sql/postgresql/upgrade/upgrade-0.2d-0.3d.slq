@@ -1,0 +1,141 @@
+CREATE TABLE mores_users_twitter
+(
+   user_id character varying, 
+   user_name character varying, 
+   seguidores integer, 
+   seguindo integer, 
+   listed integer, 
+   tweets integer, 
+   "name" character varying, 
+   CONSTRAINT "mores_users_twitter_PK" PRIMARY KEY (user_id)
+) 
+WITH (
+  OIDS = FALSE
+)
+;
+
+
+CREATE TABLE mores_stat_source
+(
+  account_id integer,
+  source character varying,
+  qtd integer,
+  updated_at date
+)
+WITH (
+  OIDS=FALSE
+);
+
+CREATE TABLE mores_stat_twt_usr
+(
+  account_id integer NOT NULL,
+  user_id character varying NOT NULL,
+  qtd integer,
+  updated_at date
+)
+WITH (
+  OIDS=FALSE
+);
+
+CREATE TABLE mores_stat_graph
+(
+  query_id integer,
+  data character varying NOT NULL,
+  qtd integer,
+  tipo character varying,
+  updated_at timestamp without time zone DEFAULT now(),
+  date date
+)
+WITH (
+  OIDS=FALSE
+);
+
+
+
+
+ALTER TABLE mores_items3 OWNER TO service0;
+ALTER TABLE mores_items3 ADD COLUMN mores_post_id serial NOT NULL;
+ALTER TABLE mores_items3 DROP CONSTRAINT mores_items3_pk2;
+ALTER TABLE mores_items3 ADD CONSTRAINT mores_items3_pk3 PRIMARY KEY (mores_post_id);
+
+ALTER TABLE mores_items3 ADD COLUMN sentimento smallint NOT NULL DEFAULT 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE mores_items3
+(
+  query_id integer NOT NULL,
+  user_id character varying,
+  user_nick character varying,
+  user_name character varying,
+  profile_img character varying,
+  post_id character varying NOT NULL,
+  created_at timestamp with time zone NOT NULL,
+  updated_at timestamp with time zone,
+  title character varying,
+  "text" character varying NOT NULL,
+  lang character varying,
+  source character varying NOT NULL,
+  favicon character varying,
+  "domain" character varying NOT NULL,
+  post_url character varying NOT NULL,
+  post_img character varying,
+  to_user character varying,
+  "type" character varying,
+  mores_post_id serial NOT NULL,
+  sentimento smallint NOT NULL DEFAULT 0,
+  CONSTRAINT mores_items2_pk3 PRIMARY KEY (mores_post_id),
+    CONSTRAINT mores_items3_query_id_key UNIQUE (query_id, created_at, source, post_id)
+)
+WITH (
+  OIDS=TRUE
+);
+ad_schedule_proc 60  mores::util::sync_microblog
+ad_schedule_proc 120 mores::util::sync_medias
+ad_schedule_proc 3600 mores::util::sync_all
+~                                                         
+
+
+INSERT INTO mores_items3(
+            query_id, user_id, user_nick, user_name, profile_img, post_id, 
+            created_at, updated_at, title, "text", lang, source, favicon, 
+            "domain", post_url, post_img, to_user, "type",sentimento)
+   SELECT distinct on (query_id, domain, post_id, created_at) query_id, user_id, user_nick, user_name, profile_img, post_id, 
+       created_at, updated_at, title, "text", lang, source, favicon, 
+       "domain", post_url, post_img, to_user, "type",sentimento
+  FROM mores_items2
+  ;
+
+
+ALTER TABLE mores_stat_twt_usr
+   ADD COLUMN query_id integer;
+   
+ALTER TABLE mores_stat_graph
+   ADD COLUMN account_id integer;
+
+ALTER TABLE mores_stat_graph
+   ADD COLUMN source character varying;
+
+
+CREATE TABLE mores_stat_source_query
+(
+  account_id integer,
+  query_id integer,
+  source character varying,
+  qtd integer,
+  updated_at date
+)
+WITH (
+  OIDS=TRUE
+);
+

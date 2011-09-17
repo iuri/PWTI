@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pie>
+  <!-- <message bg_color="#CCBB00" text_color="#FFFFFF"><![CDATA[You can broadcast any message to chart from data XML file]]></message> -->
+  <slice title="Positivo" pull_out="true">358</slice>
+  <slice title="Neutro">258</slice>
+  <slice title="Negativo">154</slice>
+  <slice title="Divulgação" url="http://www.interactivemaps.org" alpha="50">114</slice>
+</pie>

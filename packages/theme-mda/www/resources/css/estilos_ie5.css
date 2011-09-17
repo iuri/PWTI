@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*
+	Portal da Cidadania
+	Site: www.territoriosdacidadania.gov.br
+	Autor: Thiago Melo
+	E-mail: falecom@thiagomelo.com
+	Design de Interfaces: Thiago Melo
+	Arquitetura de Informação: Thiago Melo
+	Programação: Alessandro Landim e Breno Assunção
+	Última atualização do CSS: 16 de Fevereiro de 2009
+	Hack para o Internet Explorer 6
+*/
+
+/*..... Hacks .....*/
+#menu1Container { margin-left:-988px; }
+#menu2Container { margin-left:-510px; }
+.header .login { margin-left:-96px; top:60px; }
+.header .login:hover { margin-left:312px; top:60px; }
+.header .abas li { padding:8px 12px; }
+.header .abas { float:left; margin:60px 0 0 40px; padding-left:40px; }
+.footer p { margin-right:130px; }
+.footer { height:43px; }
+.header .abas li { display:block; float:left; margin-left:-24px; }
+.header .name a { margin:20px 0 0 10px; }
+/*...................................................*/

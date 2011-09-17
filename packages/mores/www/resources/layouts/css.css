@@ -1,0 +1,55 @@
+* {list-style:none; margin:0; padding:0; font-family:arial; font-size:12px;}
+
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+input[type=submit] {color:#96020d; font-size:12px; font-weight:bold;}
+h2 { color:#ff6701; text-align:center;  font-size:14px; font-weight:bold;}
+.cae {color:#96020d}
+.cac {color:#beddef} 
+.cle {color:#14435e} 
+.mdflt {margin:15px 0px 8px 2px;}
+
+.form {}
+
+.ctn {width:1008px; margin:100px auto 0 auto;}
+
+.header {background:url(../img/topo_menu.png) no-repeat;  height:36px;}
+.header .hleft {float:left; color:#000; margin:12px 0 0 20px; font-size:14px;}
+.header .hright {float:right; color:#000;margin:12px 20px 0 0; font-size:14px;}
+.header ul li {float:left; background:url(../img/separa_menu.jpg) no-repeat right; padding:0 10px}
+.header ul li.last {background:none;}
+.header ul li a {color:#000; font-weight:bold; }
+
+.ctnAll {}
+
+.ctnL {float:left; padding:20px 0;}
+.ctnL .wl {width:737px;}
+.ctnL .wlctn {width: 717px;}
+.ctnL .ctn1 .ctn1top {background:url(../img/topo_ctn_g.png) no-repeat; height:9px} 
+.ctnL .ctnLcontent {background:#fff; padding:10px; color:#666;}
+.ctnL .ctnbotton  {background:url(../img/base_ctn_g.png) no-repeat; height:9px} 
+
+.ctnL .ctn2 {margin-top:15px;}
+.ctnL .ctn2 .ctn2top {background:url(../img/topo_ctn_g_blue.png) no-repeat; height:24px; padding-top:9px; font-size:14px; color:#000; text-align:center; font-weight:bold;} 
+.ctnL .wl a{text-decoration:underline; color:#fddbb8;}
+.ctnL .wl a:hover {text-decoration:none;}
+.tags {overflow:hidden;}
+.tags li {background:url(../img/bg_menu_l.jpg) no-repeat left; display:block; float:left; padding: 4px 0; margin: 2px 2px;}
+.tags li a {background:url(../img/bg_menu_r.jpg) no-repeat right; height:15px; padding: 4px 16px; color:#000;}
+.tags li a:hover {text-decoration:underline;}
+.newtag {background:url(../img/btn_mais.jpg) no-repeat left; padding:10px 5px 10px 35px; color:#96020d; font-weight:bold; }
+
+.ctnR {float:right; padding:6px 0 6px 0;}
+.ctnR .wr {width:265px;}
+.ctnR .wrctn {width: 244px;}
+.ctnR .ctnR1 {margin-top:15px;}
+.ctnR .first {margin:0;}
+.ctnR .ctnR1 .ctnR1top {background:url(../img/topo_ctn_p_blue.png) no-repeat; height:24px; padding-top:9px; font-size:14px; color:#000; text-align:center; font-weight:bold;} 
+.ctnR .ctnRcontent {background:#fff; padding:10px; display:block; overflow-y:auto;}
+.ctnR .ctnRbotton  {background:url(../img/base_ctn_p.png) no-repeat; height:10px} 
+
+.footer {background:url(../img/rodape.png) no-repeat; clear:both; margin:10px 0 ; position:relative; height:50px}
+.ctnfooter {position:absolute; right:20px; top:9px; font-size:13px; color:#fff; font-weight:bold;}
+
+
+a:link { color: #96020D;}

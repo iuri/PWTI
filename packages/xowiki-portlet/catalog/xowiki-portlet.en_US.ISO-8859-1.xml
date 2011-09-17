@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<message_catalog package_key="xowiki-portlet" package_version="1.0.2" locale="en_US" charset="ISO-8859-1">
+
+  <msg key="admin_portlet_element_pretty_name">Xowiki Portlet</msg>
+  <msg key="admin_portlet_pretty_name">Xowiki Portlet Administration</msg>
+  <msg key="Brasil_actions">Brazil Actions</msg>
+  <msg key="Name">Name</msg>
+  <msg key="New">New</msg>
+  <msg key="new_xowiki_admin_portlet">New %element_pretty_name%</msg>
+</message_catalog>

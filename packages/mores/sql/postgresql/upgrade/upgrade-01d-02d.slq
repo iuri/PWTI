@@ -1,0 +1,38 @@
+CREATE OR REPLACE FUNCTION mores_query__new(integer, integer, character varying, boolean, timestamp with time zone, integer, timestamp with time zone, integer, character varying, integer) RETURNS integer AS
+$BODY$
+declare
+    p_query_id   			alias for $1;
+    p_account_id       	    alias for $2;
+    p_query_text    	    alias for $3;
+    p_isactive	 	    	alias for $4;
+    p_last_request			alias for $5;
+    p_package_id            alias for $6;
+    p_creation_date         alias for $7;
+    p_creation_user         alias for $8;
+    p_creation_ip           alias for $9;
+    p_context_id            alias for $10;
+  
+    v_query_id   integer;
+begin
+
+	v_query_id := acs_object__new (
+		p_query_id,  			 -- object_id
+		'mores_query',    	 -- object_type
+		p_creation_date,         -- creation_date
+		p_creation_user,         -- creation_user
+		p_creation_ip,           -- creation_ip
+		p_context_id,            -- context_id
+	    p_query_text,                  -- title
+        p_package_id             -- package_id
+	);
+
+	insert into mores_acc_query
+	   (query_id, account_id, query_text, isactive, last_request)
+	values
+	   (v_query_id, p_account_id, p_query_text, p_isactive, p_last_request);
+
+	return v_query_id;
+end;
+$BODY$
+LANGUAGE plpgsql VOLATILE;
+

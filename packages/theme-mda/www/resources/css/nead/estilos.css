@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+
+/*..... Estrutura .....*/
+* { margin:0px; list-style-type:none; }
+body { margin:0 auto; background:#F1F1F1; font:13px Arial, Tahoma, Verdana; color:#444; }
+img {border:0}
+.wrap { width:1008px; background:#FFF; margin:0 auto; }
+.barra_ministerio { width:1008px; height:40px; float:left; }
+.header { width:1008px; height:170px; background:#FFF url(/resources/theme-mda/imagens/nead/topo03.jpg) right top no-repeat; float:left; margin-top:-5px; }
+.menu_superior { width:1008px; height:40px; background-color: #3d301d; float:left; }
+.wrap_content { width:1008px; background:#ffffff; float:left; }
+.footer {width:988px;padding:10px;float:left;background-color: #A19773;background-image: url(/resources/theme-mda/imagens/nead/bg_footer.jpg);background-repeat: repeat-x;background-position: top;}
+/*...................................................*/
+.leftcolumn {float:left;width:205px;}
+/*..... Commons .....*/
+a { color:#A15502; }
+
+.mais_informacoes { clear:both; }
+.mais_informacoes a { width:148px; height:19px; background:url(/resources/theme-mda/imagens/nead/bg_mais_informacoes.gif) no-repeat; padding-left:25px; padding-top:2px; color:#FFF; display:block; text-decoration:none; margin-bottom:10px; }
+.mais_informacoes a:hover { width:148px; height:19px; background:url(/resources/theme-mda/imagens/nead/bg_mais_informacoes_hover.gif) no-repeat; padding-left:25px; padding-top:2px; color:#FFF; }
+.titulo { width:650px; float:}
+/*...................................................*/
+
+/*..... Elementos Home .....*/
+.programas_secretaria { width:773px; background:#E5E5E5; border:1px solid #D4D4D4; float:left; }
+.programas_secretaria ul { width:708px; height:98px; display:block; overflow:hidden; margin-left:5px; float:left; }
+.programas_secretaria li { width:140px; height:90px; border:1px solid #D9D5CE; display:block; float:left; margin:3px 1px; }
+.programas_secretaria li:hover { border-left:1px solid #568C24; border-top:1px solid #568C24; border-right:1px solid #CCC; border-bottom:1px solid #CCC; }
+.programas_secretaria li .nome_programa { position:absolute; text-align:center; width:120px; background:#FFF; margin-left:-140px; margin-top:65px; padding:5px 10px; opacity:0.90; filter:Alpha(Opacity=90); font:bold 12px Arial; }
+.programas_secretaria li .nome_programa a { text-decoration:none; color:#333; }
+.programas li .nome_programa { position:absolute; text-align:center; width:120px; background:#FFF; margin-left:-140px; margin-top:65px; padding:5px 10px; opacity:0.90; filter:Alpha(Opacity=90); font:bold 12px Arial; }
+.programas li .nome_programa a { text-decoration:none; color:#333; }
+.programas_secretaria .seta { float:left; margin:35px 0 0 5px; }
+.programas_relacionados li { display:block; float:left; margin:0 2px 10px 2px; }
+.programas_relacionados li .nome_programa { position:absolute; text-align:center; width:120px; background:#FFF; margin-left:-140px; margin-top:65px; padding:5px 10px; opacity:0.90; filter:Alpha(Opacity=90); font:bold 12px Arial; }
+.programas_relacionados li .nome_programa a { text-decoration:none; color:#333; }
+
+.column_01 { width:570px; margin-top:10px; float:left; }
+.column_02 {width:383px;margin-top:10px;margin-bottom:10px;padding:5px;float:right;background-color: #f8f7f3;}
+.column_04 { width:383px; background:#f8f7f3; margin-top:10px; margin-bottom:10px; padding:5px; float:right; }
+.column_03 { width:195px; background:#EAEAEA; margin-top:10px; margin-bottom:10px; padding:5px; margin-left:15px; margin-top:0; float:right; }
+.column_03 .programas li { width:166px; background:#FFF; border:1px solid #CCC; margin:10px 0; text-align:center; padding:11px 0 8px 0; margin-left:13px; }
+.column_03 .programas li:hover { width:166px; background:#C9DFB5; border:1px solid #CCC; margin:10px 0; text-align:center; padding:11px 0 8px 0; margin-left:13px; }
+
+.destaques {width:570px;height:275px;border:1px solid #C9C9C9;float:left;background-color: #eaeaea; margin-left:10px;}
+.destaque { width:430px; float:left; }
+.destaque .informacoes_destaque { position:absolute; width:410px; height:100px; padding:10px; background:#000; color:#FFF; margin-top:-125px; opacity:0.80; filter:Alpha(Opacity=80); }
+.destaque .informacoes_destaque h4 { font:bold 16px Arial; margin-bottom:5px; }
+.destaque .informacoes_destaque a { color:#FFF; text-decoration:none; }
+.destaque .informacoes_destaque a:hover { color:#FFCC00; text-decoration:none; }
+
+.noticias_home { width:570px; margin-top:10px; margin-bottom:10px; margin-left:10px; float:left; }
+.noticias_home .noticia_destaque { width:270px; background:#EAEAEA; padding:5px 10px; float:left; }
+.noticias_home .noticia_destaque h5 { font:bold 17px "Trebuchet MS"; background:none; color:#568C24; line-height:18px; }
+.noticias_home .noticia_destaque p { line-height:16px; }
+.noticias_home .noticia_destaque a { text-decoration:none; }
+.noticias_home .noticia_destaque p a { color:#333; text-decoration:none; }
+.noticias_home .noticia_destaque a:hover { text-decoration:underline; }
+
+.noticias_home .outras_noticias { width:260px; padding:0 10px; float:right; line-height:16px; }
+.noticias_home .outras_noticias h6 { font:bold 12px "Trebuchet MS"; color:#568C24; margin-bottom:3px; }
+.noticias_home .outras_noticias h6 a { text-decoration:none; }
+.noticias_home .outras_noticias p a { color:#333; text-decoration:none; }
+.noticias_home .outras_noticias p a:hover { text-decoration:underline; }
+.noticias_home .outras_noticias .noticia { width:260px; margin-bottom:10px; float:left; }
+
+.outros_destaques { width:140px; float:right; }
+.outros_destaques li { display:block; width:116px; height:54px; background:#EAEAEA; margin:4px; padding:5px 8px; line-height:14px; }
+.outros_destaques li:hover { background:#568C24 url(/resources/theme-mda/imagens/nead/bg_outros_destaques.jpg) repeat-x; color:#FFF; }
+.outros_destaques li:hover a { color:#FFF; }
+
+.outros_destaques li a { font:bold 11px "Trebuchet MS"; text-decoration:none; color:#666; }
+.outros_destaques li.ativo { background:#568C24 url(/resources/theme-mda/imagens/nead/bg_outros_destaques.jpg) repeat-x; }
+.outros_destaques li.ativo a { color:#FFF; }
+/*...................................................*/
+
+
+/*..... Header .....*/
+.header .name { margin:20px 0 0 10px; }
+.header .name a { font:bold 29px Arial; color:#333; text-decoration:none; }
+.header .elemento_header { position:absolute; top:73px; }
+.header .elemento_header img { border:0; }
+
+.search { border:0;margin-right:-51px; float:right;margin-top:-5px;}
+.search fieldset {border:0; padding:0; }
+.search label { display:none; }
+.search input {font-size:17px;background-color:#fff;}
+.search .txtfield { width:250px; padding:3px; border-left:1px solid #927D4A; border-top:1px solid #927D4A; border-right:1px solid #927D4A; border-bottom:1px solid #927D4A; font:11px Arial; color:#a15502; height:20px; font-size:17px;}
+.search .bt_buscar { background:url(/resources/theme-mda/imagens/nead/bg_botao_buscar.jpg) repeat-x; border:1px solid #7C642E; color:#FFF; font:bold 11px Arial; padding:2px 4px; cursor:pointer; }
+.search .bt_buscar:hover {border:1px solid #7C642E;color:#8f7d3f;font:bold 11px Arial;padding:2px 4px;cursor:pointer;background-color: #8f7d3f;}
+
+
+
+#menu {width:205px; margin:0; padding:14px 0 0 10px; list-style-type:none; margin:6px 0 0; }
+#menu li a:link, #menu li a:visited{background-repeat:no-repeat; color:#ffffff; display:block; font-family:"trebuchet MS",Arial,Helvetica,sans-serif; font-size:14px; padding:6px 10px;text-decoration:none; background-color:#D97322;}
+
+#menu li { border-top:solid 1px #ffffff; display:block; width:188px; height:30px;}
+#menu li a:hover {text-decoration:none; color:#47311C; background-color:#EAAC79;}
+
+.menu_superior .header_menu {padding:10px 8px; width:735px;float:left;}
+.menu_superior .header_menu ul { padding:0; margin:0;}
+
+.menu_superior .header_menu ul li { display:block; float:left; margin:0 7px; }
+.menu_superior .header_menu ul li a {color:#FFFFFF;font-weight:bold;text-decoration:none;padding-bottom:3px;}
+.menu_superior .header_menu ul li.outras_opcoes a:hover { border-bottom:none; }
+/*...................................................*/
+
+
+
+/*..... Menu Coluna .....*/
+.wrap_content .column { width:205px; background:#EAEAEA; float:left; }
+.wrap_content .column_content { width:195px; padding:8px 5px; float:left; }
+.wrap_content .menu { width:205px; background:#EAEAEA; float:left; }
+.wrap_content .menu li a { width:183px; display:block; background:url(/resources/theme-mda/imagens/nead/bg_menu_coluna.jpg) repeat-y; border-left:2px solid #999; border-bottom:1px dotted #999; padding:5px 10px; font:11px "Trebuchet MS"; color:#333; text-decoration:none; }
+.wrap_content .menu li a:hover { background:#6B9A40 url(/resources/theme-mda/imagens/nead/bg_menu_coluna_hover.jpg) repeat-y; border-left:2px solid #6B9A40; color:#FFF; }
+.wrap_content .menu li.ativo a { width:185px; background:#FFF; border-left:2px solid #DDD; }
+.wrap_content .menu li.ativo a:hover { width:185px; background:#FFF; border-left:2px solid #DDD; color:#333; }
+.wrap_content h3 { font:bold 12px Arial; color:#FFF; background-color:#a15402; padding:8px 12px; border-left:#FF9900 solid 2px;}
+.wrap_content h5 {color:#FFFFFF;padding:4px 5px;margin:5px 0 8px 0;background-color: #D2CCBD;font-family: Arial;font-size: 11px;font-weight: bold;}
+
+.wrap_content .column .document { margin:5px 0 10px 0; }
+.wrap_content .column .document p { background:url(/resources/theme-mda/imagens/nead/img_document.gif) 2px 2px no-repeat; padding-left:37px; line-height:15px; }
+.wrap_content .column .document p a { color:#333; text-decoration:none; }
+.wrap_content .column .document p a:hover { color:#333; text-decoration:underline; }
+
+.wrap_content .column_02 .calendar { margin:5px 0 10px 0; }
+.wrap_content .column_02 .calendar p { background:url(/resources/theme-mda/imagens/nead/img_txt.gif) 2px 2px no-repeat; padding-left:37px; line-height:15px; }
+.wrap_content .column_02 .calendar p a { color:#333; text-decoration:none; }
+.wrap_content .column_02 .calendar p a:hover {color:#333; text-decoration:underline; }
+
+
+.wrap_content .column_04 .txt { margin:5px 0 10px 0;}
+.wrap_content .column_04 .txt p {  background:url(/resources/theme-mda/imagens/nead/img_calendar.gif) 2px 2px no-repeat; padding-left:37px; line-height:15px; }
+.wrap_content .column_04 .txt p a { color:#333; text-decoration:none; }
+.wrap_content .column_04 .txt p a:hover { color:#3D301D; text-decoration:underline; }
+
+
+/*...................................................*/
+
+/*..... Content .....*/
+.wrap_content .content { width:773px; background:#FFF; padding:10px 15px; float:right; }
+.wrap_content .content p { margin:15px 0; }
+.wrap_content .content_home { background:#FFF; padding:10px 0 10px 0;  float:right; width:778px;}
+.img_programa { margin-top:5px; }
+.coluna_programa { float:left; margin:0 12px 10px 0; }
+.menu_contexto li { width:240px; background:#4C801C url(/resources/theme-mda/imagens/nead/bg_menu_contexto.jpg) repeat-x; border:1px solid #6B9A40; margin:3px 0; padding:3px 5px 1px 5px; }
+.menu_contexto li a { width:240px; display:block; color:#FFF; text-decoration:none; }
+.menu_contexto li a:hover { width:240px; display:block; color:#FFF; text-decoration:none; }
+.menu_contexto li.ativo { width:240px; background:#A99836; border:1px solid #A99836; margin:3px 0; padding:3px 5px 1px 5px; }
+/*...................................................*/
+
+
+/*..... Agenda .....*/
+.agenda_content{ width:570px; height:120px; background-color:#f3f1ed; border: 1px solid #d6d1c0;}
+#agenda_content-um{ width:590px; height: 125px; background:#E8F8FF; border:solid 1px #2EC9FC; margin:10px 0 10px 0;}
+.agenda_content-titulo{ font-family: Arial, Helvetica, sans-serif; font-size:16px; color:#082D64; padding:0 0 0 10px; border-bottom:dotted 1px #082d64;}
+.agenda_content-conteudo{font-family: Arial, Helvetica, sans-serif; font-size:12px; color:#3D5E8A; padding:0 0 0 10px;}
+
+
+/*...................................................*/
+
+
+
+/*..... Footer .....*/
+.footer p { font-weight:bold; color:#ffffff; }
+.footer .info { float:left; }
+.footer .secretaria { display:block; float:left; background:#A19773; padding:2px 5px; margin-bottom:5px; }
+.footer address { font:bold 11px/1.4em Arial; color:#FFF; font-style:normal; clear:both; margin:0 0 0 5px; }
+
+.footer .politicas { float:right; padding-top:40px; }
+.footer .politicas ul li { display:inline; margin:0 5px; }
+.footer .politicas ul li a { color:#FFF; font-weight:bold; text-decoration:none; }
+.footer .politicas ul li a:hover {
+	color:#CCCCCC;
+	font-weight:bold;
+	text-decoration:none;
+}
+.footer #admin  {float:left}
+
+/*..... Breadcrumbs .....*/
+/*.breadcrumbs { width:100%;float:left; margin-bottom:20px; }*/
+.breadcrumbs { width:100%; margin-bottom:33px; }
+.breadcrumbs li { height:17px; background:#568C24; padding:1px 15px 2px 4px; display:block; float:left; color:#FFF; }
+.breadcrumbs li a { color:#FFF; text-decoration:none; }
+.breadcrumbs li a:hover { color:#FFCC00; text-decoration:none; }
+.breadcrumbs li.ativo {padding:1px 15px 2px 4px;display:inline;color:#FFF;background-color: #8E4B04;background-image: url(/resources/theme-mda/imagens/nead/teste-nead-dois.gif);background-repeat: no-repeat;background-position: right top;}
+.breadcrumbs li.bread {background-color: #3D301D;background-image: url(/resources/theme-mda/imagens/nead/teste-nead.gif);
+background-repeat: no-repeat;background-position: right top;}
+.breadcrumbs li.bread02 { background:#3D301D url(/resources/theme-mda/imagens/nead/teste-nead.gif) right bottom no-repeat; }
+
+/*...................................................*/
+.banners_images_portlet {width:970px;}
+.banners_images_portlet #banner_carousel .container {width:900px;}
+
+.lars_blogger_text img {border: 1px solid #999; margin-top:20px;}
+.lars_blogger_text h6 {width: 450px; font-size:15px;margin-top:20px;}
+.lars_blogger_title {margin-bottom: 15px;}
+.lars_blogger_title p {color:#A15502}
+.lars_blogger_portlet h2 {color:#A15502}
+#lars_blogger_right {width:250px;}
+
+
+#banners_portlet {font-size:1px;}
+.banners_list li {margin-bottom:2px;}
+
+.main-content {width:409px;width:487px;}
+.right-content {background-color:#FFFFFF;margin-right:15px;width:280px;margin-top:0;}
+
+
+
+
+
+/* News */
+
+
+#news_g1_text .cat-img-top-priority img {padding-left:1px;width:138px;float:left}
+#news_g1_text_items_main_item p {color:#666666;font-size:12px;margin-top:9px;}
+#news_g1_text_items_main_item p a {color:#333;}
+#news_g1_text_items_main_item {min-height:150px;background-color:#F3F3F3;padding:12px}
+#news_g1_text_items_main_item .title {font-size:24px;}
+#news_g1_text_items_main_item .title a {color:#A15402;text-decoration:none;}
+#boxescontrel {width:556px;}
+.main-content {margin-top:-9px;}
+
+#calendar_portal_portlet {background-color:#3d301d}
+
+.calendar_portlet .calendar p {background:url("/resources/theme-mda/imagens/nead/img_calendar.gif") no-repeat scroll 0 1px transparent;}
+.calendar, .calendar table {background:none repeat scroll 0 0 #fff;}
+
+
+#box-agenda {margin-top:15px;width:100%;}
+#box-agenda h1 {display:none;}
+#box-agenda .conteudo {font-size:12px;}
+#box-agenda .data {background-color:#3D301D;}
+
+.portlet-header {margin-bottom:10px;}
+
+
+h3 span a {color:#fff;}
+
+.alert { padding:10px; background:#FFFFB9; border:1px solid #E6E600; margin:10px 0; margin-left:2px; }
+.alert p { margin:0 !important; color:#333; }
+
+.cal-table-display {float:right;width:567px;}
+
+.cat-img-top-priority {float:left;height:91px;overflow:hidden;}
+.news_g1_text_items_item {border-bottom:1px dotted #999999;clear:both;padding-bottom:24px;}
+.news_g1_text_items_item h2 a {color:#A15502;}
+.news_g1_text_items_item p {font-size:12px;}
+.news_g1_text_items_item .cat-img {float:left;height:75px;margin:1px 10px 0 0;overflow:hidden;width:109px;}
+.news_g1_text_items_item h2 {font-size:12px;margin:5px 0 0;padding:1px 0 0;text-align:left;}
+div.xowiki-content h2 {color:#333;}
+.main {padding:0}
+
+
+.handcursor {background-color:#F4F4F4; color:#FFFFFF; font-family:Arial; font-size:16px; font-weight:bold; margin:5px 5px 0 8px; padding:16px 12px; border-top:1px #CCCCCC dotted;
+border-bottom:1px #CCCCCC dotted;}
+.wrap_content h5 { border-top:1px #CCCCCC dotted; background-color:#F4F4F4;color:#D17105; font-family:Arial; font-size:16px; font-weight:bold; margin:5px 0 8px; padding:4px 5px; } 
+.switchgroup1 {background-color:#F4F4F4; border-bottom:1px #CCCCCC dotted; width:764px; margin-left:9px;} 
+.switchgroup1 p {padding:5px;} 
+strong { color:#A15402;}
+b { color:#A15402;}
+
+div.xowiki-content h2 {color:#3D301D;font:bold 16px Arial;margin-top:20px;}

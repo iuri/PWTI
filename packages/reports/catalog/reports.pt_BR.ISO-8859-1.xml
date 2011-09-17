@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<message_catalog package_key="reports" package_version="0.1d" locale="pt_BR" charset="ISO-8859-1">
+
+  <msg key="Add_new_report">Adicionar Novo Relatório</msg>
+  <msg key="bar">Barra</msg>
+  <msg key="Chart_type">Tipo de Gráfico</msg>
+  <msg key="Data">Dado</msg>
+  <msg key="Filters">Filtro</msg>
+  <msg key="Group">Grupo</msg>
+  <msg key="Groups">Grupo</msg>
+  <msg key="pie">Pizza</msg>
+  <msg key="Pretty_name">Nome</msg>
+  <msg key="Reference">Referência</msg>
+  <msg key="Type">Tipo</msg>
+  <msg key="Value">Valor</msg>
+</message_catalog>

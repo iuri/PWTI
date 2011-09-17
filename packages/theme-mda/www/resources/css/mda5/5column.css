@@ -1,0 +1,6 @@
+.main { width:788px; background:#FFF; padding:10px 0 10px 0; float:right; }
+.top-content { width:788px; float:left;}
+.main-content { width:570px; margin-top:10px; float:left; min-height:50px; }
+.right-content { width:195px; background:#EAEAEA; margin-top:10px; margin-bottom:10px; float:right; min-height:50px;}
+.left-content { float:left; padding:8px 5px; width:195px; min-height:50px; }
+.bottom-content { width:788px; margin-top:10px; float:left; min-height:10px; }

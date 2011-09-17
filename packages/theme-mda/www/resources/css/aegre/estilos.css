@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.menu_horizontal {background:url(/resources/theme-mda/imagens/aegre/bg_menu_horizontal.jpg) repeat-x; float:left;}
+.header .search { background:url(/resources/theme-mda/imagens/aegre/bg_buscar_header.gif) no-repeat; }
+
+.header .search .bt_buscar { background:url(/resources/theme-mda/imagens/aegre/bg_botao_buscar.jpg) repeat-x; border:1px solid #8265A5; color:#FFF; }
+.header .search .bt_buscar:hover { background:#8A7171; border:1px solid #8A7171; color:#FFF; }
+.wrap_content .menu li a:hover { background:#6B9A40 url(/resources/theme-mda/imagens/aegre/bg_menu_coluna_hover.jpg) repeat-y; border-left:2px solid #988181; color:#FFF; }
+.header .search .txtfield { border-color:#8A7171; color: #333;}
+.wrap_content h3 { background:url(/resources/theme-mda/imagens/aegre/bg_titulos.jpg) repeat-x; border:1px solid #988181; }
+.more a { background:url(/resources/theme-mda/imagens/aegre/bg_mais_informacoes.gif) }
+
+.footer { background:#BFA9A9; }
+.footer .secretaria { background:#BFA9A9; }
+
+.header .header_menu ul li a { color:#5C2DC1;}
+.header .header_menu ul li a:hover { border-bottom:3px solid #5C2DC1; }
+.portlet_main_news .max_priority h5 a {color:#5c4b4b;  }
+a { color:#5c4b4b; }
+.header .elemento_header { background-image: url(/resources/theme-mda/imagens/aegre/elemento_header_01.png);margin-left:830px;}
+
+.breadcrumbs li.bread { background:#6c528d url(/resources/theme-mda/imagens/aegre/bread-01.gif) right top no-repeat; }
+.breadcrumbs li.bread02 { background:#6c528d url(/resources/theme-mda/imagens/aegre/bread-01.gif) right bottom no-repeat; }
+.breadcrumbs li.ativo { background:#9f86bf url(/resources/theme-mda/imagens/aegre/bread-02.gif) right top no-repeat; padding:1px 15px 2px 4px; display:inline; color:#FFF; }
+
+.calendar_portlet .calendar p {background:transparent url(/resources/theme-mda/imagens/aegre/img_calendar.gif) no-repeat scroll 0 1px;}
+.menu_contexto li { background:#6C528D; border:1px solid #6C528D;}
+.data_noticia p { background:#6C528D; }
+.noticia_destaque h2 a { color:#5C4B4B !important; }
+.noticia_destaque02 h2 a { color:#5C4B4B !important; }

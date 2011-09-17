@@ -1,0 +1,11 @@
+.portlet-header {
+	background: #4b68a0 url(/resources/theme-zen/images/color-blue/portlet-header-bg.gif) repeat-x top left;
+}
+
+#main-navigation #main-navigation-active {
+	background-image:url("/resources/theme-zen/images/color-blue/main-navigation-active-left.gif");
+}
+	
+#main-navigation #main-navigation-active a {
+	background-image:url("/resources/theme-zen/images/color-blue/main-navigation-active-right.gif");
+}

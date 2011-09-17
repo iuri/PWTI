@@ -1,0 +1,95 @@
+/* MAIN NAVIGATION -----------------------------------------------------------*/
+
+#main-navigation {
+	float:left;
+	width:100%;
+	background: url("/resources/theme-zen/images/navigation/bg.gif") repeat-x bottom;
+}
+	
+#main-navigation ul {
+	margin:0;
+	padding:10px 10px 0;
+	list-style:none;
+}
+
+#main-navigation li {
+	float:left;
+	background:url("/resources/theme-zen/images/navigation/left.gif") no-repeat left top;
+	margin:0;
+	padding:0 0 0 9px;
+}
+
+#main-navigation a {
+	float:left;
+	display:block;
+	background:url("/resources/theme-zen/images/navigation/right.gif") no-repeat right top;
+	padding:5px 15px 4px 6px;
+	text-decoration:none;
+	font-weight:bold;
+	font-size: .95em;
+	color:#666666;
+}
+	
+
+#main-navigation #main-navigation-active {
+	background-image:url("/resources/theme-zen/images/navigation/left_on.gif");
+}
+	
+#main-navigation #main-navigation-active a {
+	background-image:url("/resources/theme-zen/images/navigation/right_on.gif");
+	color:#000;
+	padding-bottom:5px;
+}
+
+#main-navigation a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* END OF MAIN NAVIGATION */
+
+
+/* SUB NAVIGATION -----------------------------------------------------------*/
+
+#sub-navigation {
+	float: left;
+	width:100%;
+	background: url("/resources/theme-zen/images/navigation/bg.gif") repeat-x bottom;
+	clear: both;
+	padding-top: 5px;  /* remove this padding to make the subnavigation links to appear completly enclosed */
+	padding-bottom: 5px  /* remove this padding to make the subnavigation links to appear completly enclosed */
+}
+	
+#sub-navigation ul {
+	margin: 0;
+	padding:0px 10px 10px 10px;
+	list-style:none;
+	line-height: .7em;
+}
+	
+#sub-navigation li {
+	float:left;
+	border-right: 1px solid #a0a3a1;
+	padding: 0px 20px 0px 20px ; 
+}
+	
+#sub-navigation a {
+	float:left;
+	display:block;
+    color:#666666;
+    padding:4px 0px 6px 0px;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: .95em;
+}
+
+#sub-navigation li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#sub-navigation li#sub-navigation-active a {
+    color: #000;
+}
+
+/* END OF SUB NAVIGATION */

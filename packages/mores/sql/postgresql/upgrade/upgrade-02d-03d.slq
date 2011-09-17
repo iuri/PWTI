@@ -1,0 +1,26 @@
+CREATE TABLE mores_users_twitter
+(
+   user_id character varying, 
+   user_name character varying, 
+   seguidores integer, 
+   seguindo integer, 
+   listed integer, 
+   tweets integer, 
+   "name" character varying, 
+   account_id integer NOT NULL, 
+   CONSTRAINT "mores_users_twitter_PK" PRIMARY KEY (user_id, account_id), 
+   CONSTRAINT "mores_users_twitter_account_id_FK" FOREIGN KEY (account_id) REFERENCES mores_accounts (account_id) ON UPDATE NO ACTION ON DELETE CASCADE
+) 
+WITH (
+  OIDS = FALSE
+)
+;
+
+
+ALTER TABLE mores_stat_graph ADD COLUMN lang character varying;
+ALTER TABLE mores_stat_source_query ADD COLUMN lang character varying;
+ALTER TABLE mores_stat_source ADD COLUMN lang character varying;
+ALTER TABLE mores_stat_twt_usr ADD COLUMN lang character varying;
+
+
+

@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/*
+	Territórios da Cidadania
+	Site: www.territoriosdacidadania.gov.br
+	Autor: Thiago Melo
+	E-mail: falecom@thiagomelo.com
+	Design de Interfaces: Thiago Melo
+	Arquitetura de Informação: Thiago Melo
+	Programação: Alessandro Landim e Breno Assunção
+	Última atualização do CSS: 12 de Março de 2009
+*/
+
+/*..... Header .....*/
+.header .name a { width:182px; height:46px; background:url(/resources/theme-zen/images/portalcidadania/logomarca.gif) no-repeat; display:block; text-indent:-99999px; overflow:hidden; float:left; margin:20px 0 0 20px; }
+.header .abas { float:left; margin-top:68px; margin-left:50px; }
+.header .abas li { display:inline; float:left; }
+.header .abas li a { font:16px Arial; background:#FFF; color:#EFA951; font-weight:bold; text-decoration:none; padding:8px 12px; border-left:1px solid #DF8600; }
+.header .abas li a:hover { font:16px Arial; background:#FFA826; color:#FFF; font-weight:bold; text-decoration:none; padding:8px 12px; border-left:1px solid #DF8600; }
+.header .abas #main-navigation-active a { background:#FFA826 !important; color:#FFF !important; border:none; }
+/*...................................................*/
+
+/*..... Titles .....*/
+.titulos { width:1008px; background:#FFF; float:left; }
+.titulos ul { margin:15px 0 0 20px; }
+.titulos li { font:30px Arial; font-weight:bold; color:#CCC; display:block; float:left; margin-right:5px; }
+.titulos li a { font:30px Arial; font-weight:bold; color:#EFA951; text-decoration:none; }
+.titulos li a:hover { font:30px Arial; font-weight:bold; color:#838D72; }
+h1 { color:#EFA951; font-size:26px; font-weight:bold; margin-bottom:15px; }
+.titulo_padrao { font-size:18px !important; font-weight:bold; margin-bottom:15px; border-bottom:3px double #DDDDDD; padding-bottom:3px; clear:both;  }
+h2 { color:#848C73; font-size:20px; font-weight:bold; margin:15px 0; }
+.estrutura03 h2 { font:18px Arial; font-weight:bold; color:#EFA951; margin-top:20px; }
+.estrutura05 h1 { margin-bottom:10px; }
+/*...................................................*/
+
+/*..... Menu .....*/
+.menu li a { font:18px Arial; padding:3px 5px; font-weight:bold; text-decoration:none; }
+ul.dropdown { list-style:none; margin:0; padding:0; }
+ul.dropdown * { margin:0; padding:0; }
+ul.dropdown li { position:relative; display:inline; margin:0 8px; }
+ul.dropdown li a { color:#EFA951; text-decoration:none; padding:3px 5px; }
+ul.dropdown li a:hover { background:#EFA951 !important; padding:3px 5px; color:#FFF; }
+ul.dropdown ul { width:210px; position:absolute; top:24px; left:0; display:none; opacity:0; list-style:none; }
+ul.dropdown ul li { text-align:left; display:block; width:198px; height:15px; background:url(/resources/theme-zen/images/territorios/bg_submenu.gif) no-repeat; margin:2px 0; padding:5px 6px; }
+ul.dropdown ul li:hover { text-align:left; display:block; width:198px; height:15px; background:url(/resources/theme-zen/images/territorios/bg_submenu_hover.gif) no-repeat; margin:2px 0; padding:5px 6px; }
+ul.dropdown ul li a:hover { background:none !important; }
+ul.dropdown .sub a { font:11px Arial; color:#FFF; font-weight:bold; text-decoration:none; }
+/*...................................................*/
+
+/*..... Gestão do programa .....*/
+.lista_acoes_roteiro { border-collapse:collapse; border:1px solid #D2D2D2; background:#FFF; font:13px Arial; margin:15px 0; clear:both; }
+.lista_acoes_roteiro tr td { padding:5px; }
+.lista_acoes_roteiro .situacao_preenchido { color:#229F15; font-weight:bold; }
+.lista_acoes_roteiro .situacao_parcialmente_preenchido { color:#C0B606; font-weight:bold; }
+.lista_acoes_roteiro .situacao_sem_preenchimento { color:#990000; font-weight:bold; }
+.lista_acoes_roteiro .titulo_tabela  { color:#FFF; font-weight:bold; }
+.lista_acoes_roteiro a { text-decoration:none; font-size:12px; }
+.lista_acoes_roteiro a:hover { text-decoration:underline; }
+.lista_acoes_roteiro .situacao_sem_preenchimento { background:#990000; padding:6px 5px; font-size:10px; color:#FFF; }
+.lista_acoes_roteiro .situacao_preenchido { width:70px; background:#229F15; padding:3px 5px; font-size:10px; color:#FFF; float:left; }
+.lista_acoes_roteiro .situacao_parcialmente_preenchido { width:70px; background:#C0B606; padding:3px 5px; font-size:10px; color:#FFF; float:left; }
+.porcentagem_grafico_gantt { font-size:16px; font-weight:bold; }
+.atencao { background:#838D72; color:#FFF; padding:8px; }
+.nome_ministerio { color:#EFA951; font-size:26px; font-weight:bold; margin:15px 0; }
+.numeracao_listagem_acoes_colegiado li { margin:8px 0; }
+.numeracao_listagem_acoes_colegiado li a { text-decoration:none; }
+.numeracao_listagem_acoes_colegiado li a:hover { text-decoration:underline; }
+.numeracao_listagem { font-size:16px; font-weight:bold; margin-right:10px; color:#999; }
+.preenchimento_manual { width:48%; float:left; }
+.preenchimento_manual h3 { font-size:22px !important; text-align:center; background:#838D72; color:#FFF !important; font-weight:bold; padding:5px; }
+.preenchimento_automatico { width:48%; float:right; }
+.preenchimento_automatico h3 { font-size:22px !important; text-align:center; background:#838D72; color:#FFF !important; font-weight:bold; padding:5px; }
+.boxAcaoQuestionario04 .desativado { display:none; }
+.boxAcaoQuestionario04 ul li { margin:10px 0; }
+.boxAcaoQuestionario04 label { font-weight:bold; }
+.boxAcaoQuestionario03 { width:948px; background:#DDD; margin:10px 0; display:block; float:left; padding:10px; }
+.boxAcaoQuestionario03 .numeroAcao { width:45px; color:#999; font-weight:bold; font:45px Georgia; margin:5px 10px 0 10px; text-align:center; float:left; }
+.boxAcaoQuestionario03 .estadoAcao { width:80px; color:#B6B6B6; font-weight:bold; font:35px Georgia; margin:12px 30px 0 10px; text-align:center; float:left; }
+.boxAcaoQuestionario03 .questionarioAcao03 { width:600px; background:#FFF; border:1px dashed #CCC; padding:10px; float:right; cursor:pointer; }
+.boxAcaoQuestionario03 .questionarioAcao03 ul li {display:block; margin-right:10px;}
+.boxAcaoQuestionario03 ul { width:100%; float:left; margin-bottom:10px; }
+.boxAcaoQuestionario03 ul li {display:block; float:left; margin-right:10px;}
+.boxAcaoQuestionario03 .numeroPergunta { padding-left:4px; padding-top:1px; float:left; background:url(/resources/theme-zen/images/bg_numero_acao_questionario.gif) no-repeat; color:#FFF; font-weight:bold; font-size:11px; margin-right:3px; }
+.boxAcaoQuestionario03 ul li input { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; font:12px Verdana, Arial, Tahoma; color:#333; padding:2px; margin-top:3px; }
+.boxAcaoQuestionario03 .desativado { display:none; }
+.nome_territorio { margin:0; margin-bottom:5px; margin-top:10px; }
+.respondido03 { background:#E79944; color:#FFF; color:#FFF; }
+.respondido03 .numeroAcao { color:#F9D5AC !important; }
+.respondido03 .estadoAcao { color:#F9D5AC !important; }
+.respondido03 .questionarioAcao03 { background:#ECAF6C !important; border:1px dashed #E47514 !important; }
+.tabela_info_acoes_territorializadas { border-collapse:collapse; }
+.tabela_info_acoes_territorializadas tr td { border:1px solid #DDD; }
+/*...................................................*/
+
+/*..... Listagem de territórios .....*/
+.lista_territorios { width:948px; float:left; padding:10px; background:#F2F2F2; border:1px solid #EFEFEF; margin-bottom:15px; padding-bottom:30px; }
+.territorios_regiao { float:left; margin:0 20px; }
+.listagem_todos_territorios li { margin-left:15px; list-style-type:disc; }
+.xowiki-content h2 { text-transform:capitalize !important; }
+/*...................................................*/
+
+.abas_comunidades { width:968px; float:right; text-align:right; margin-right:-2px; margin-bottom:20px; }
+.abas_comunidades li { display:block; float:right; margin-left:2px; margin-bottom:8px; }
+.abas_comunidades li a { text-decoration:none; font-weight:bold; font-size:11px; background:#B5B5B5 url(/resources/theme-zen/images/comunidades/bg_abas_comunidades.jpg) repeat-x; padding:8px 10px; color:#FFF; border-top:1px solid #B5B5B5; border-right:1px solid #B5B5B5; border-left:1px solid #B5B5B5; }
+.abas_comunidades li a:hover { text-decoration:none; font-weight:bold; font-size:11px; background:#F5F5F5; padding:8px 10px; color:#235C96; border-top:1px solid #DDD; border-right:1px solid #DDD; border-left:1px solid #DDD; }
+
+.pagina_comunidade { clear:both; }
+
+.registro_portal2 { padding:0 10px; background:#F5F5F5; border:1px solid #EBEBEB; }
+.registro_portal2 img { cursor:pointer; }
+.destaque_informacao { font:28px Arial; font-weight:bold; margin-top:-10px; }
+
+/* Portlet Comunidades */
+.portlet_comunidades { width:332px; height:200px; color:#666666; }
+.portlet_comunidades .portlet_imagem { width:130px; height:200px; float:left; margin-right:15px; }
+.portlet_comunidades .portlet_imagem p { font:12px Arial !important; text-align:center; margin:0; padding:0; }
+.portlet_comunidades .portlet_comunidades_informacoes { width:167px; height:185px; overflow:auto; padding:0 10px; background:#FFF; float:right; }
+.portlet_comunidades .portlet_imagem .destaque_informacao { font:28px Arial; font-weight:bold; }
+
+.botao_entrar_portlet { margin-top:10px; float:left; }
+.botao_entrar_portlet a { border:1px solid #235C96; background:#235C96; color:#FFF !important; text-decoration:none; padding:4px 8px; margin-bottom:10px !important; }
+.botao_entrar_portlet a:hover { background:#666; border:1px solid #666; color:#FFF !important; text-decoration:none; padding:4px 8px; }
+
+.botao_donwload_arquivo { margin-top:10px; float:left; }
+
+ul.listagem_portlet_comunidades { margin-bottom:15px; }
+.listagem_portlet_comunidades li { margin:5px 0; list-style-type:disc; margin-left:15px !important; }
+.listagem_portlet_comunidades li a { font:12px Arial; font-weight:bold; color:#235C96; text-decoration:none; }
+.listagem_portlet_comunidades li a:hover { font:12px Arial; font-weight:bold; color:#235C96; text-decoration:underline; }
+.listagem_portlet_comunidades .data { font-size:10px; color:#666; font-weight:bold; }
+
+ul.listagem_portlet_membros { margin-bottom:15px; }
+.listagem_portlet_membros li { margin:5px 0; list-style-type:none; }
+.listagem_portlet_membros li a { font-size:12px; font-weight:bold; line-height:18px; color:#235C96; text-decoration:none; }
+.listagem_portlet_membros li a:hover { color:#235C96; text-decoration:underline; }
+
+.portlet_mais_opcoes { width:95%; background:#F7F7F7; float:left; padding:10px 0 12px 14px; border:1px solid #E2E2E2; margin:5px 0 30px 0; }
+.portlet_mais_opcoes li { width:30%; float:left; margin-right:10px; }
+.portlet_mais_opcoes li a { font:bold 12px Arial; color:#235C96; text-decoration:none; }
+.portlet_mais_opcoes .bt_mais_opcoes { width:26px; margin-right:0; background:url("/resources/theme-zen/images/bullet_mais.gif") right no-repeat; padding-right:14px; }
+.portlet_mais_opcoes .bt_mais_opcoes a { font-weight:bold; text-decoration:none; }
+/*...................................................*/

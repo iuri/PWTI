@@ -1,0 +1,7 @@
+
+
+.fs_portlet .document { margin:5px 0 10px 0; overflow:hidden; }
+.fs_portlet .document p { min-height:32px; background:url(/resources/theme-mda/imagens/img_document.gif) 0px 1px no-repeat; padding-left:37px; line-height:15px; }
+.fs_portlet .document p a { color:#333; text-decoration:none; }
+.fs_portlet .document p a:hover { color:#333; text-decoration:underline; }
+

@@ -1,0 +1,137 @@
+<master src="/www/blank-compat">
+  <property name="title">@title@</property>
+  <property name="header_stuff">
+    @header_stuff;noquote@
+
+	<style type="text/css">
+		.header {
+			background: url("/resources/theme-mda/imagens/nead/topo0@random_top@.jpg") no-repeat scroll right top #FFFFFF;
+		}
+	</style>
+
+
+  </property>
+  <if @context@ not nil><property name="context">@context;noquote@</property></if>
+    <else><if @context_bar@ not nil><property name="context_bar">@context_bar;noquote@</property></if></else>
+  <if @focus@ not nil><property name="focus">@focus;noquote@</property></if>
+  <if @doc_type@ not nil><property name="doc_type">@doc_type;noquote@</property></if>
+     <if @untrusted_user_id@ ne 0>
+    </if>
+    <else>
+    </else>
+	<if @random_top@ gt 2>
+		<style type="text/css">
+			.header .header_menu {
+				background-color: #A15502;
+				
+			}
+			.header .header_menu ul li a {
+				color:#fff;
+			}
+		</style>
+	</if>
+
+
+
+
+
+<div class="wrap">
+	<iframe width="1007" height="35" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="/barragoverno/barra.html"></iframe>
+	<div class="header">
+		<p class="site name"><a href="#" title="Voltar para página principal"></a></p>
+	        <div class="elemento_header"><a href="@subsite_url@" title="NEAD"><img src="/resources/theme-mda/imagens/nead/logo_nead.png" alt="Nead" /></a></div>
+		<!-- <div class="header_menu">
+			<ul>
+				@horizontal_menu;noquote@
+			</ul>
+		</div> -->
+	</div>
+
+
+
+	<div class="menu_superior">
+				<div class="search">
+			<fieldset>
+				<label for="buscar">Buscar:</label>
+
+				<input name="buscar" id="buscar" type="text" value="Digite uma palavra chave" class="txtfield" />
+				<input name="buscar" id="buscar" value="Buscar" class="bt_buscar" type="button" />
+			</fieldset>
+		</div>
+	</div>
+  	<div class="wrap_content">
+	  <div class="content_home">
+		<if @portal_page_p@ eq 0>
+		<div class="breadcrumbs">
+			<if @context_title:rowcount@ not nil>
+				<multiple name="context_title">
+					<if @context_title.rownum@ eq @context_title:rowcount@>
+						<li class="bread02"><a href="@context_title.url@" title="@context_title.label@">@context_title.label;noquote@</a></li>
+					</if>
+					<else>
+						<li class="bread"><a href="@context_title.url@" title="@context_title.label@">@context_title.label;noquote@</a></li>	
+					</else>
+				</multiple>
+					<li class="ativo">@title;noquote@</li>
+					<if @subsite_admin_p@><li class="ativo"><a href="@subsite_url@/admin/menus/choose-parent">Tornar esta página um item de menu</a></a></if>
+			</if>
+		</div>
+		</if>
+		<slave>
+	  </div>
+	</div>
+	<div class="footer">
+		<div class="info">
+			<p class="secretaria">Ministério do Desenvolvimento Agrário - Secretaria da Agricultura Familiar</p>
+			<address>Setor Bancário Norte - Edifício Palácio do Desenvolvimento <br />Telefones: (61) 3961-6512 / 3961-6512 </address>
+
+		</div>
+		<div class="politicas">
+			<ul>
+				<li><a href="#" title="Política de Acessibilidade">Política de Acessibilidade</a></li>
+				<li><a href="#" title="Política de Privacidade">Política de Privacidade</a></li>
+			</ul>
+		</div>
+
+		<if @subsite_admin_p@>
+		   <div id="admin">
+			<h3>#acs-subsite.Administrator#</h3>
+			<ul>
+			<multiple name="applications">
+				<li><a href="@subsite_url@@applications.name@" title="@applications.instance_name@">@applications.instance_name@</a>
+				<if @applications.available@ not nil>
+					 <a href="@subsite_url@admin/portal/application-portlet-add?package_id=@applications.package_id@&application_key=@applications.package_key@&return_url=@return_url@">Add portlet Application</a>
+				</if>
+				</li>
+			</multiple>
+			<li><a href="@subsite_url@admin/menus/" title="#theme-mda.Menus#">#theme-mda.Menus#</a></li>
+			<if @sw_admin_p@>
+				<li><a href="@new_portal_url@admin/portal-config?portal_id=@portal_id@&referer=@return_url@">Portal Edit</a></li>
+			</if>
+			</ul>
+		   </div>
+		</if>
+
+
+
+
+	</div>
+
+</div>
+
+
+
+
+<script type="text/javascript">
+    var menu=new menu.dd("menu");
+    menu.init("menu","menuhover");
+</script>
+<script type="text/javascript" language="Javascript" src="http://www.google-analytics.com/urchin.js"></script>
+<script type="text/javascript" language="Javascript">
+<!--
+	_uacct = "UA-2291113-2";
+	urchinTracker();
+-->
+
+</script>
+

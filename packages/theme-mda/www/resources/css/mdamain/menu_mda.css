@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+ 
+ul#primary-nav,
+ul#primary-nav ul {
+	margin: 0;
+	padding: 0;
+	width: 145px; /* Width of Menu Items */
+	border-bottom: 1px solid #d7ddd6;
+	background: #fff; /* IE6 Bug */
+	font-size: 100%;
+	font-weight: bold;
+	z-index:10;
+	}
+ 
+ul#primary-nav li {
+	position: relative;
+	list-style: none;
+	
+}
+ 
+ul#primary-nav li a {
+	background-image:url(../images/menu_fundo_cinza_n_seta.jpg);
+	background-repeat:repeat-x;
+	background-position: 0px 0px;
+	display: block;
+	text-decoration: none;
+	color: #777;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	padding: 9px 10px 10px 20px;
+	}
+ 
+/* Fix IE. Hide from IE Mac \*/
+* html ul#primary-nav li { float: left; height: 1%;   }
+* html ul#primary-nav li a { height: 1%; }
+/* End */
+ 
+ul#primary-nav ul {position: absolute;	display: none; left:145px;  /*Set 1px less than menu width */ top: 10px; z-index:99999;} /* left:122px; AJUSTE PARA O IE6 E IE7 */
+ 
+ul#primary-nav li:hover ul ul,
+ul#primary-nav li:hover ul ul ul,
+ul#primary-nav li.over ul ul,
+ul#primary-nav li.over ul ul ul { display: none; } /* Hide sub-menus initially */
+ 
+ul#primary-nav li:hover ul,
+ul#primary-nav li li:hover ul,
+ul#primary-nav li li li:hover ul,
+ul#primary-nav li.over ul,
+ul#primary-nav li li.over ul,
+ul#primary-nav li li li.over ul { display: block; color:#336655; } /* The magic */
+ 
+ul#primary-nav li.menuparent a { background: transparent  url(../images/menu_fundo_cinza.jpg) left top; background-repeat:repeat-x;}
+ul#primary-nav li.menuparent a:hover { background-color: #f0f0f0;  background: transparent  url(../images/menu_fundo_verde.jpg) left  top  no-repeat; background-position: 0px 0px; z-index:5;}
+ 
+ul#primary-nav li.itemmenu a { background: transparent  url(../images/menu_fundo_cinza_n_seta.jpg) left top; background-repeat:repeat-x;z-index:1000;}
+ul#primary-nav li.itemmenu a:hover { background-color: #f0f0f0;  background: transparent  url(../images/menu_fundo_verde_n_seta.jpg) left  top  no-repeat; background-position: 0px 0px; z-index:5;}
+ul#primary-nav li.itemmenu a:over { background-color: #f0f0f0;  background: transparent  url(../images/menu_fundo_verde_n_seta.jpg) left  top  no-repeat; background-position: 0px 0px; z-index:5;}
+ 
+ul#primary-nav li.over { background-color: #f0f0f0;  background: transparent  url(../images/menu_fundo_verde_n_seta.jpg) left  top  no-repeat; background-position: 0px 0px;}
+ul#primary-nav li a:hover { color:#336655;  background: transparent  url(../images/menu_fundo_verde_n_seta.jpg) left  top  no-repeat; background-position: 0px 0px;z-index:10;}

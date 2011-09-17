@@ -1,0 +1,113 @@
+ideas
+=====
+
+perms for multiple sites
+ - perms on types (see next section), templates (ditto)
+ - multi site:
+   - cm_modules: new group per instance -> security_inherit_p context_id = package_id
+	cms-fix.sql sez:
+	-- content_module inherit from content_item
+	-- this way it is possible to grant permissions on content modules
+   - how about perms on served content?
+
+serving/editing strategy for multiple sites
+ - serveroot/cms -> redirects to the cms?
+ - all other urls are served by index.vuh?
+ - create a new basic revision for each site upon which other content types will be based
+   - otherwise, all edits to basic item (content methods, etc.) will affect all sites (actually, not true- UI doesn't allow editing of basic revision)
+ - set root_key for content types to new basic revision type
+ - create a new folder for templates and content and set module root_keys to folder_ids
+ - set root content and template folder contexts to package_id 
+
+admin
+ - admin tab to select root/root_key for cm_modules (if is not set per instance, redirect to admin tab ala bcms?)
+
+tasks
+=====
+
+top priority
+------------
+set up install procs that set contexts appropriately (done, not thoroughly tested)
+clean up www/modules/items/relate-items (remove old table format)
+
+basic/cosmetic
+---------
+list-ize child items (or what to do with it? shouldn't we be able to relate items that already exist?)
+better navigation strategy (i.e., "back" links while visiting attributes, rename, delete pages, etc.)
+new icon for "clipping" items - competing with new listbuilder checkboxes confuse UI a bit
+include description in heading on folder attributes page
+inheritance display should not link to "basic item" on its page and should not include the current type (related to navigation strategy)
+move all item info (clip check, title, path, etc.) into an include and put in /lib (with ancestors and bookmark)
+combine the index pages for templates and items into one and put in /lib? (if they can be made the same)
+fix "clear the clipboard" functionality
+floatclipboard_p working?
+
+plumbing
+--------
+build up actions list for folder using allow_* vars (i.e., links? new folders?) on sitemap browser
+fix search (when i have tsearch2, ie upgrade to rhel4)
+utilize new cr tcl api where appropriate
+use ad_form where appropriate
+integrate categories and workflow packages
+ad_page_contract for non-include pages?
+select from cm_modules to build tabs?
+
+questions/ideas
+---------
+create templates from within folders (in old system)?
+generic error page (replace with ad_complain or just pretty up?)
+better model for "clipping" items?
+how do we get extlinks and other types (if any?) which do not sub-class content_revision into the system?
+comment integration?
+
+-- to drop old workflow from production:
+drop function content_workflow__is_overdue (integer,varchar);
+drop function content_workflow__get_holding_user_name (integer);
+drop function content_workflow__get_first_place();
+drop function content_workflow__get_this_place (varchar);
+drop function content_workflow__get_next_place (varchar);
+drop function content_workflow__get_previous_place (varchar);
+drop function content_workflow__checkout (integer,timestamptz,integer,varchar,varchar);
+drop function content_workflow__checkin (integer,integer,varchar,varchar);
+drop function content_workflow__approve (integer,integer,varchar,varchar);
+drop function content_workflow__reject (integer,integer,varchar,varchar,varchar);
+drop function content_workflow__notify_of_checkout (integer,integer,integer,varchar);
+drop function content_workflow__can_reject (integer,integer);
+drop function content_workflow__can_approve (integer,integer);
+drop function content_workflow__can_start (integer,integer);
+drop function content_workflow__approve_string (integer,integer);
+drop function content_workflow__count_finished_tasks (integer);
+drop function content_workflow__count_unfinished_tasks (integer);
+drop function content_workflow__is_active (integer,varchar);
+drop function content_workflow__is_finished (integer,varchar);
+drop function content_workflow__is_checked_out (integer,varchar);
+drop function content_workflow__is_checked_out (integer,varchar,integer);
+drop function content_workflow__get_status (integer,varchar);
+drop function content_workflow__can_touch (integer,integer);
+drop function content_workflow__unfinished_workflow_exists (integer);
+ 
+
+
+-- to drop old perms:
+delete from acs_permissions where privilege like '%cm%';
+-- removing privs below broke cms; still not sure why
+-- select acs_privilege__remove_child('cm_root', 'cm_admin');
+-- select acs_privilege__remove_child('cm_admin', 'cm_relate');
+-- select acs_privilege__remove_child('cm_relate', 'cm_write');
+-- select acs_privilege__remove_child('cm_write', 'cm_new');  
+-- select acs_privilege__remove_child('cm_new', 'cm_examine');
+-- select acs_privilege__remove_child('cm_examine', 'cm_read');
+-- select acs_privilege__remove_child('cm_admin', 'cm_item_workflow');
+-- select acs_privilege__remove_child('cm_admin', 'cm_perm_admin');
+-- select acs_privilege__remove_child('cm_perm_admin', 'cm_perm');
+-- select acs_privilege__remove_child('admin', 'cm_root');
+-- select acs_privilege__drop_privilege('cm_root');
+-- select acs_privilege__drop_privilege('cm_admin');
+-- select acs_privilege__drop_privilege('cm_relate');
+-- select acs_privilege__drop_privilege('cm_write');
+-- select acs_privilege__drop_privilege('cm_new');
+-- select acs_privilege__drop_privilege('cm_examine');
+-- select acs_privilege__drop_privilege('cm_read');
+-- select acs_privilege__drop_privilege('cm_item_workflow');
+-- select acs_privilege__drop_privilege('cm_perm_admin');
+-- select acs_privilege__drop_privilege('cm_perm');

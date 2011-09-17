@@ -1,0 +1,109 @@
+@chadfet "utf-8";
+
+/***** CSS  *******/
+
+*{margin:0; padding:0;list-style-type:none;}
+body{ background:url(/resources/theme-mda/imagens/feira2010df/background.jpg);  /* Centraliza no IE */ -x-system-font:none; font-size:12px;font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;color: #333333; font-family:"trebuchet MS",arial}
+img {border:0px;}
+a { color:#666600; text-decoration:none;}
+
+#wrap { width:1008px; margin:0 auto; overflow:hidden; height:100%;}
+
+
+/*****  Header  *******/
+
+#barra_ministerio {width:1008px; height:40px; background:#ffffff; float:left; }
+#topo{ width:1008px; height:410px; float:left; background:url(/resources/theme-mda/imagens/feira2010df/topo-01.gif) no-repeat; margin-bottom:20px;margin-top:-4px;}
+
+/*****  Header Fim *******/
+
+/* Menu Superior */
+
+#menu-superior{float:right;font-family:"Trebuchet MS",Arial,sans-serif;font-size:13px;font-weight:bold;height:20px;list-style:none outside none;margin-bottom:20px;margin-right:25px;margin-top:20px;}
+#menu-superior ul {margin: 0 auto;padding: 0;list-style: none;}
+#menu-superior li {float:left;margin-left:15px;}
+#menu-superior a {color:#FFFFFF;display:block;}
+#menu-superior a:hover {color:#bfbfbf;}
+#menu-superior li.dot {border-left:3px dotted #fff; height:5px;margin-top:20px;}
+
+/*...................................................*/
+
+/*****  Serviços  *******/
+h4 {color:#006600;font-family:"trebuchet MS",arial;font-size:26px;}
+
+.container {width: 420px;font: 10px normal Arial, Helvetica, sans-serif;line-height: 1.7em;}
+h2.trigger { font-family:"Accidental Presidency", Arial, sans-serif; padding: 0 0 0 45px;margin: 0 0 5px 0;background: url(/resources/theme-mda/imagens/feira2010df/h2_trigger_a.gif) no-repeat;height:43px;line-height: 44px;width: 482px;font-size: 1.8em;font-weight: normal;float: left;}
+h2.trigger a {color: #3d4132;text-decoration: none; text-align:left;display: block;}
+h2.trigger a:hover {color: #808868;}
+h2.active {background-position: left bottom;}
+.toggle_container {margin: 0 0 5px;padding: 10px;border-top: 1px solid #bfb777;border-bottom: 1px solid #F2F0F3;overflow: hidden;font-size: 1.2em;width: 461px; height:195px;clear: both;background-color: #F2F0e3;background-repeat: repeat-y;background-position: left top;}
+.toggle_container div p {padding: 5px 0;margin: 5px 0;}
+.toggle_container h3 {font-size: 1.75em; font-family: "Trebuchet MS", Arial,sans-serif; margin: 0 0 5px;padding: 5px 0 5px 0;border-bottom: 1px dashed #ccc;font-weight:normal;}
+.toggle_container img {float: left;padding: 5px;background: #ddd;border: 1px solid #ccc;}
+.toggle_container table td.hour {border-right: 2px solid #bcb58d;padding-right:5px;margin-left:10px;}
+.toggle_container table td {padding-left:5px;}
+.toggle_container table tr {min-height:10px}
+
+/*...................................................*/
+
+
+/*****  Redes Sociais  *******/
+#redesocial{ width:1008px; height:100px; margin:0 auto; overflow:hidden;}
+#redesocial ul {list-style-type:none;}
+#redesocial li {width: 45px;float:left;}
+#redesocial #upbox {width: 750px;color:#333;background:none;border:none;height:100%;overflow:hidden;padding:none;font-size:16px;}
+#redesocial #upbox li {width: 100%;float:inline;margin:15px;text-align:left;}
+#box-redesocial{ width:990px; height:64px; margin:10px 10px 10px 10px; background:#e4e4e4; border:dotted 1px #cccccc;}
+/*...................................................*/
+
+
+/*****  Conteudo *******/
+#conteudo{ width:990px; margin:0 auto;overflow:hidden;}
+#conteudo-col-esquerda{ width:390px; height:862px; margin:34 30 34 0; border-right:dotted #999999 1px; float:left;}
+#conteudo-col-direita{ width:570px; height:862px; margin:34 0 0 0; float:right;}
+
+/*...................................................*/
+
+	
+#footer{width:1008px; height:215px; margin:0 auto; background:#ffffff; border-top:#cccccc 4px solid;}
+#footer li {list-style:none; display:inline;}
+#creativecommons {
+	color:#333;
+	text-align:center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+}
+
+#creativecommons a {
+	color:  #666;
+}
+
+#menu-inferior-admin {list-style-image:none;list-style-position:outside;list-style-type:none;margin-top:-5px;width:970px;margin:0 auto; height:100px; }
+#menu-inferior-admin ul {height:58px; margin: 0 auto;  sans-serif;font-size: 15px;list-style: none; width:770px;}
+#menu-inferior-admin li {float: left;margin-right:5px;}
+
+
+#destaque-story {width:230px;float:left;margin-right:15px;}
+#destaque-foto {float:right;}
+
+.page_title {color:#CACACA;font-family:"trebuchet MS",arial;font-size:40px;border-bottom:1px dotted #cacaca;margin-bottom:15px;padding-bottom:10px}
+
+.top-content {width:390px;}
+
+
+#sounds_portal_portlet {background-image:url("/resources/theme-mda/imagens/feira2010df/radio.gif");background-repeat:no-repeat;color:#DAD7CE;height:45px;margin-top:15px;font-size:0px;}
+#photo_album_portlet {background-image:url("/resources/theme-mda/imagens/feira2010df/galeria-de-fotos.gif");background-repeat:no-repeat;color:#EDECE9;height:45px;margin-top:15px;font-size:0px;}
+.main-content {width:550px; margin-left:45px}
+
+#videos_portal_portlet {background-image:url("/resources/theme-mda/imagens/feira2010df/tv-mda.gif");background-repeat:no-repeat;color:#EDECE9;height:45px;margin-top:15px;font-size:0px;}
+#como-chegar {margin-left:15px;}
+
+
+#fundo_conteudo_maps {width:872px; height:99px; margin:0 0 0 40px; background:url(/resources/theme-mda/imagens/feira2010df/fundo.jpg) no-repeat;}
+.fundo_conteudo_box_maps { margin:0 5px 0 0;  float:left;}
+.fundo_conteudo_text_maps {font-family:"trebuchet MS",arial; font-size:13px;color:#000000; padding:15px 0 0 0;}
+
+#mapas {width:948px; height:320px;margin:40px 30px 0 30px;}
+#mapas li{ display:inline; padding-left:10px;}
+

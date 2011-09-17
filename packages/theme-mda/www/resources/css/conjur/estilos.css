@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* CSS Conjur */
+/* --------- Inicio --------- */
+
+* {margin:0; padding:0; list-style: none}
+body { margin:0 auto; font:12px/1.6em "Trebuchet MS", Arial, Tahoma, Verdana; background:#fbfbfb;}
+img {border:none;}
+.wrap {width: 1008px;margin:0 auto;}
+#topo {height: 70px; background:url(/resources/theme-mda/imagens/conjur/fundo-topo.jpg) repeat-x;}
+#logo {width: 350px;float:left;margin-left:15px}
+.search {width: 550px; height:90px;float:right}
+.search p { color:#000000;}
+.search .txtfield { width:400px;background:#fbfbfb ; font:12px Arial, Helvetica, sans-serif; }
+.search .bt_search { width:80px; height:25px; background: url(/resources/theme-mda/imagens/conjur/busca.gif) no-repeat; margin-left:2px; color:#3E3D3C; font:12px Arial, Helvetica, sans-serif; cursor:pointer; padding:0 0 2px 0; border:none; }
+#menu_navegacao {width:100%; height:35px; background:url(/resources/theme-mda/imagens/conjur/fundo-menu.jpg) repeat-x left; text-align:left;padding-top:10px}
+#menu_navegacao li {display:inline; margin:0 8px; font-size:15px; font-weight:bold;}
+#menu_navegacao li a { color:#5b5b5b; text-decoration:none;}
+#menu_navegacao a:hover { color:#bebebe; text-decoration:none; }
+h1 {margin-top: 0; color:#666;margin-bottom:15px;margin-top:5px;}
+h3{padding:0 0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#23313A; border-bottom:dotted 1px #333333 ;}
+strong {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#23313A;}
+.content_home {float:left; margin-bottom:10px; margin-top:5px; width:100%; padding-left:5px;}
+.content {float:left; margin-bottom:10px; margin-top:5px; width:100%; padding-left:5px;}
+a {color:#23313A; text-decoration:none; list-style:none;}
+#navegacao {width: 100%;float: left; display:inline;}
+#banners {width: 760px;float:left;margin-top:20px;}
+.banners_images_portlet {width:950px;}
+.banners_images_portlet #banner_carousel .container {width:870px;}
+#footer {clear: both;background-color: #EEF8F3;font-size:12px; color:#23313A;padding-left:25px;height:160px}
+#footer p {margin:20px;float:left}
+address {margin:10px;float:left}
+.banners_images_portlet #banner_carousel ul {height:70px;}
+#news_portal_portlet {background-color:#fff}
+.list-main {width:100%}
+.context-menu li {float:left}
+.list-button-bar-top {display:none}
+div.list-button-bar-context-menu li a {background:#EFEFEF;border:1px solid #DDD;}
+div.list-button-bar-context-menu li a:hover {background:#EF931D; color:#FFF;}

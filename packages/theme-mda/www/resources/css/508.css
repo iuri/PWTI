@@ -1,0 +1,33 @@
+#main-navigation ul li a:after {
+	content: " [" attr(accesskey) "] ";
+}
+
+#sub-navigation ul li a:after {
+	content: " [" attr(accesskey) "] ";
+}
+
+.accesskey:after {
+	content: " [" attr(accesskey) "] ";
+}
+
+/* SKIP */
+ #skiptocontent a, #skiptocontent a:hover, #skiptocontent a:visited, .block-marker {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:200px;
+	height:25px;
+	overflow:hidden;
+}
+
+.screen-reader-only {
+	display: inline;
+}
+
+/*a:before {
+	content: " [ ";
+}
+
+a:after {
+	content: " ] ";
+}*/

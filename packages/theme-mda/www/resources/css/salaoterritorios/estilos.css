@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* II Salão dos Territórios - 2010  */
+
+/* Estrutura */
+* { margin:0px; padding:0px; border:0px; list-style-type:none; }
+body { margin:0 auto; background:#E8E5C0; font:12px/1.6em "Trebuchet MS", Arial, Tahoma, Verdana; color:#333; }
+a { color:#333;}
+#wrap { width:1008px; background:#E8E5C0; margin:0 auto; overflow:hidden; }
+#header {width:1008px; height:300px;background:#E8E5C0; float:left; }
+#content {width:980px; background:#ffffff; float:left; padding:15px}
+#footer {width:1008px; height:170px; background:#ffffff; float:left; border-top:#E8E5C0 solid 2px;}
+.logo_territorios{height:155px;}
+.curvas {position:relative; left:0;top:100px;} 
+/*...................................................*/
+
+
+/* Menu Horizontal */
+#menu-superior {float:left;list-style: none; }
+#menu-superior ul {margin: 0 auto;padding: 0;list-style: none;width:450px;}
+#menu-superior li {float: left;width: 110px;height: 50px;}
+#menu-superior a {display: block;width: 110px;padding-top: 12px;text-align: center;text-decoration: none;font-weight: bold;color: #fff;height: 30px;}
+#menu-superior a:hover {color:#CCCCCC;}
+#menu-superior li a {background-image: url(/resources/theme-mda/imagens/salaoterritorios/activo.gif);background-repeat: no-repeat;background-position: center;}
+
+/* Menu Admin */
+#menu-admin {float:left;list-style: none;}
+#menu-admin ul {height: 22px;margin: 0 auto;padding: 0;list-style: none;}
+#menu-admin li {float: left; padding:5px;}
+#menu-admin a {display: block;text-align: center;text-decoration: none;font-weight: bold; color:#333;float:left;margin-left:5px;}
+
+
+/*...................................................*/
+
+/* Menu Horizontal Secundário */
+#menu_secundario { width:1008px; height:35px; background:#E87E1B;  padding-top:5px; text-align:center; float:left; padding-top:20px;}
+#menu_secundario li { display:inline; margin:0 8px; font-size:14px; font-weight:bold;}
+#menu_secundario li a { color:#FFF; text-decoration:none; }
+#menu_secundarioli a:hover { color:#6F3A0B; text-decoration:none; }
+/*...................................................*/
+
+
+/* noticia */
+.news {height:400px;margin-bottom:15px;} 
+.news ul {width:100%}
+#destaque { float:left; padding-left: 10px;width:415px;}
+#destaque h6 a {text-decoration: none; font-weight:normal; width:410px; height:45px; margin-top:10px; font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#43433a;}
+#destaque img { width: 410px; margin-top:10px; margin-left:5px;}
+#destaque p {width:410px; height:45px; margin-top:10px;}
+#destaque p a {text-decoration: none; font-weight: normal;color:#43433A; }
+#mais-noticias {float:left; width:430px; margin-left:15px; background-image: url(/resources/theme-mda/imagens/salaoterritorios/outras_noticias.gif); background-repeat: no-repeat; padding-top:50px; margin-left:50px}
+.mais-noticias-um h1 a {color:#89501D;text-decoration:none; font-weight: normal; font-size: 12px;}
+.mais-noticias-um {background-image:url(/resources/theme-mda/imagens/salaoterritorios/linha_h.gif);background-position:center bottom;background-repeat:repeat-x;margin-bottom:20px;padding-bottom:12px;}
+
+/*...................................................*/
+
+/* footer */
+
+#patrocinio {width:700px; height:100%; background:#ffffff;margin-top:10px;margin-left:80px}
+#patrocinio li {display: block; float:right; margin-right:5px; list-style:none;}
+
+/* Content Right */
+#col_right{ float:right;width:450px; height:515px; margin-right:30px;}
+#col_outras_noticia{ float:left;width:450px; height:325px; margin-top:10px;}
+
+p.linkum {margin-bottom:20px; background-image:url(imagens/linha_h.gif); background-position:bottom; background-repeat:repeat-x; padding-bottom:12px;}
+a.linkum:link {text-decoration:none;}
+a.linkum:visited {color:#89501d;text-decoration:none;}
+a.linkum:hover {color:#999999;text-decoration:underline;}
+a.linkum:active {color:#999999;}
+
+#links {width: 100%;margin-top:60px;}
+#col_banner {height:120px;width:420px;background-image: url(/resources/theme-mda/imagens/salaoterritorios/conheca.gif); background-repeat: no-repeat; padding-top:50px; float:left}
+#col_banner li {width:210px; float: left}
+
+#col_midia{ width:410px; height:120px; background-image: url(/resources/theme-mda/imagens/salaoterritorios/multmidia.gif); background-repeat: no-repeat; padding-top:50px; float:left; margin-left:30px;}
+#col_midia li{ display:inline; padding-left:50px;}
+
+/*...................................................*/

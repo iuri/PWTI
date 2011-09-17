@@ -1,0 +1,812 @@
+/* @override http://alpha.mda.gov.br/resources/theme-zen/css/base.css */
+
+/*..... Estrutura .....*/
+* { margin:0; padding:0; }
+html, body { margin:0; padding:0; }
+body { margin:0; padding:0; background:#FFF; background:url(/resources/theme-zen/images/bkg.jpg) repeat-x top; margin:0 auto; }
+#wrap { width:1007px; height:100%; font:12px Verdana, Arial, Tahoma !important; background:url(/resources/theme-zen/images/linha_superior.gif) top no-repeat; margin:0 auto; clear:both; }
+.cabecalho { width:1007px; height:109px; background:url(/resources/theme-zen/images/imagem_topo.jpg) bottom no-repeat; clear:both; }
+.login { width:987px; height:25px; padding:10px; margin-top:10px; clear:both; }
+.conteudo{ width:987px; padding:10px; color:#7F7F7F; line-height:17px; clear:both; }
+.pages { width:987px; clear:both; margin-bottom:15px; padding-right:10px; margin-left:10px; }
+.pages800 { width:757px; clear:both; margin-bottom:15px; padding-right:10px; margin-left:10px; }
+.pages p { margin:10px 0; }
+/*.....................*/
+
+.colunas_simples_coluna01 { width:670px !important; float:left !important; }
+.colunas_simples_coluna02 { width:295px !important; float:right !important; }
+
+/*..... Elementos Comuns .....*/
+form { margin:0; padding:0; }
+a {	text-decoration:none; }
+body select { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; font:12px Verdana, Arial, Tahoma; color:#333; padding:0 !important; }
+body textarea { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; font:12px Verdana, Arial, Tahoma; color:#333; padding:2px; }
+.form-button input { border:1px solid #CCC; background:#DDD; font:12px Verdana, Arial, Tahoma; color:#333; cursor:pointer; }
+.form-button input:hover { background:#FFA826; color:#FFF; border:1px solid #E68A00; }
+.list-even input { border:1px solid #CCC; background:#DDD; font:12px Verdana, Arial, Tahoma; color:#333; cursor:pointer; }
+.list-even input:hover { background:#FFA826; color:#FFF; border:1px solid #E68A00; }
+/*.....................*/
+
+/*..... Cabecalho .....*/
+.site { width:231px; height:98px; margin-top:10px; float:left; }
+.site a { width:231px; height:98px; display:block; text-indent:-99999px; overflow:hidden; background:url("/resources/theme-zen/images/logomarca.gif") no-repeat; }
+.site a:hover { width:231px; height:98px; display:block; text-indent:-99999px; overflow:hidden; background:url("/resources/theme-zen/images/logomarca.gif") no-repeat; }
+
+ul#nav { background:#DDDAD5; }
+ul#nav,ul#nav li { list-style-type:none; margin:0; padding:0; }
+ul#nav li { float:left; margin-right:3px; margin-top:86px; text-align:center; }
+ul#nav a { float:left; padding:5px 10px; background:#FFF; text-decoration:none; color:#333; }
+ul#nav a:hover { background:#FFA826; color:#FFF; }
+ul#nav li#main-navigation-active a,ul#nav li#main-navigation-active a:hover { background:#FFA826; color:#FFF; }
+/*.....................*/
+
+/*..... Login e Busca .....*/
+.login ul { float:left; }
+.login li { display:inline; list-style-type:none; }
+.login .busca { float:left !important; }
+.login .txtfield { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; font:12px Verdana, Arial, Tahoma; color:#333; padding:2px; }
+.login .bt_ok { border:1px solid #CCC; background:#FFF; font:12px Verdana, Arial, Tahoma; color:#333; cursor:pointer; }
+.login .bt_ok:hover { background:#FFA826; color:#FFF; border:1px solid #E68A00; }
+.login .registro { margin:2px 30px 0 15px; }
+.login .registro li { margin-left:4px; padding-right:7px; border-right:1px solid #235C96; font-size:11px; }
+.login .registro .lembrete_senha { border:none !important; margin-right:15px !important; }
+.login .registro .sair { border:none !important; margin-right:405px !important; }
+
+.login label { font-size:11px; margin:0 3px 0 6px; }
+.login .opcoes_conexao { float:left !important; }
+.login .opcoes_conexao li { margin-left:4px; padding-right:7px; border-right:1px solid #235C96; font-size:9px; }
+/*.....................*/
+
+/*..... Titulos .....*/
+h1#titulo {	font:italic 50px/1.4em Georgia, "Times New Roman", Times, serif; color:#000; margin-top:-10px; }
+h1#titulo img { margin-bottom:-15px; }
+h1#titulo a:hover { background:none !important; }
+#Acoes h2 { width:100%; font:21px Georgia; color:#e47514; margin:0 0 15px 0; border-bottom:1px solid #d2d2d4; float:left; }
+
+h2.periodo_acompanhamentos_acoes { width:100%; font:21px Georgia !important; color:#e47514 !important; margin:0 0 15px 0; border-bottom:1px solid #d2d2d4; clear:both; }
+
+.complemento_titulo { width:988px; font:13px Georgia; font-style:italic; font-weight:bold; color:#666; clear:both; margin-bottom:5px; }
+
+
+.txt_formulario_evento { width:732px; clear:both; margin:0 auto; }
+.txt_formulario_evento h3 { font:12px Georgia, "Times New Roman", Times, serif; font-style:italic; color:#000; margin:10px 0; }
+
+.titulo_gestao_planos_territoriais { width:100%; font:21px Georgia; color:#e47514; margin:15px 0; float:left; text-align:center; }    
+.titulo_gestao_planos_territoriais_data { color:#666; }
+.informacoes_gestao_matriz p { margin:5px 0 !important; }
+.tabela_projetos_formulario p { margin:-5px 0 !important; }
+.rolagem_gestao_matriz { width:990px; height:380px; overflow:auto; float:left; padding-left:1px; margin-bottom:10px; margin-top:-10px; }
+/*.....................*/
+
+
+ul#subLinks { width:100%; margin:10px 0; float:left; }
+ul#subLinks li { list-style-type:none; }
+ul#subLinks li { float:left; margin-right:5px; text-align:center; }
+ul#subLinks li a { float:left; padding:3px 10px; background:#D9D9D9; text-decoration:none; color:#333; border:3px solid #FFF; }
+ul#subLinks li a:hover { background:#F2A754; color:#FFF; }
+ul#subLinks #sub-navigation-active a { background:#F2A754; color:#FFF; text-decoration:none; }
+
+.hack_fonte { font:12px Verdana, Arial, Tahoma !important; }
+
+#territoriosCidadaniaPeq{
+		
+		margin: 0px;padding: 0px;
+		/*Size of the image*/ 
+		padding-top: 29px; 
+		width: 100%;
+		margin-top:0px;
+		
+		
+		margin-left:200px;
+
+		/*The image*/ 
+		background-image: url(/resources/theme-zen/images/territoriosCidadaniaLogoPeq.jpg); 
+		background-repeat: no-repeat; 
+		
+		/*Hide the text*/ 
+		overflow: hidden; 
+		/* WIN IE5 hack */ 
+		height: 29px; 
+		voice-family: "\"}\""; 
+		voice-family:inherit; 
+		height: 0; 
+	
+}
+
+
+
+
+#colDir .portlet-wrapper h2{
+	font: 22px Georgia;
+	border-bottom:0px solid #d2d2d4;
+
+}
+
+.portlet-wrapper p { font:12px Verdana, Arial, Tahoma !important; }
+
+
+/* @group col Esq */
+
+#colEsq{
+	position:relative;
+	float:left;
+	width: 330px;
+	margin-top:10px;
+
+	
+}
+
+
+#colMeio{
+	position:relative;
+	float:left;
+	width: 385px;
+	margin-top:10px;
+	margin-left:40px;
+}
+
+
+
+#colDir{
+	position:relative;
+	float:left;
+	width: 185px;
+	margin-top:10px;
+	margin-left:30px;
+	_margin-left:20px;
+}
+
+
+
+/* @end */
+
+
+
+/* @group portlet Acoes */
+
+.boxAcao { width:400px; background:#F1F1F3; margin:4px 0; clear:both; }
+.boxAcao h4 { font:12px Tahoma; font-weight:bold; color:#666666; background:#D1D1D3 url(/resources/theme-zen/images/acaoTituloSetaDown.gif) no-repeat 10px 10px; padding:5px 5px 5px 30px; text-transform:lowercase; cursor:pointer; clear:both; }
+.boxAcao h4.respondido { background:#54BA54 url(/resources/theme-zen/images/img_icone_respondido.gif) no-repeat 10px 7px; color:#FFF; }
+
+
+.boxAcao .desativado { display:none; }
+
+.boxAcao li { list-style-type:none; }
+.boxAcao li { float:left; margin-right:5px; text-align:center; }
+.boxAcao li a { float:left; padding:3px 10px; text-decoration:none; color:#636364; }
+.boxAcao li a:hover { text-decoration:underline; background:none; }
+
+.boxAcao li.acaoRow2{
+	background-color: #e4e4e6;
+	width:400px;
+	
+}
+.boxAcao li.acaoRow1{
+	background-color: #f3f2f5;
+	width:400px;
+	
+}
+
+.boxAcao li.acaoRow4{
+	background-color: #F3F2F5;
+	width:400px;
+	
+}
+.boxAcao li.acaoRow3{
+	background-color: #FFF;
+	width:400px;
+	
+}
+
+.boxAcao ul li .numero {
+	text-align: center;
+	font: bold 27px/27px Verdana, "Lucida Grande", Lucida, sans-serif;
+	color: #cacacb;
+	vertical-align: middle;
+}
+
+
+.boxAcao ul li .nomeAcao {
+	text-align: left;
+	font: bold 10px Verdana, "Lucida Grande", Lucida, sans-serif;
+	color: #636364;
+	padding:10px 5px;
+		
+}
+
+.boxAcao ul li .metaFisica {
+	text-align: center;
+	font: 10px Verdana, "Lucida Grande", Lucida, sans-serif;
+	color: #636364;
+	padding:10px 5px;		
+}
+
+.boxAcao ul li .metaFinanc {
+	text-align: center;
+	font: 10px Verdana, "Lucida Grande", Lucida, sans-serif;
+	color: #636364;
+	height:50px;
+	vertical-align: middle;
+}
+
+.boxAcao ul li .metaFisica .metaFinanNumero{
+	font: 10px/25px Verdana, "Lucida Grande", Lucida, sans-serif;
+	color:white;
+	margin:1px;padding: 0px;
+	vertical-align: middle;
+	background-color: #e57942;
+}
+
+.boxAcao ul li.acaoRow2 .metaFisica .metaFinanNumero{
+		color:white;
+	background-color: #e79944;
+}
+
+
+
+.boxAcao ul li .infosGerais {
+	display:none;
+	width:85px;
+	text-align: center;
+	font: 10px Verdana, "Lucida Grande", Lucida, sans-serif;
+	color: #636364;
+		
+}
+
+.boxAcao02:hover { width:305px; padding:4px 0 0 25px; background:url(/resources/theme-zen/images/bg_divisao_estados_ativo.gif) left top no-repeat; float:left; margin:2px 0; }
+.boxAcao02:hover h4 { color:#FFF; }
+
+.boxAcao02_ativo { width:305px; padding:4px 0 0 25px; background:url(/resources/theme-zen/images/bg_divisao_estados_ativo.gif) left top no-repeat; float:left; margin:2px 0; }
+.boxAcao02_ativo h4 { width:305px; height:26px; font:15px "Trebuchet MS"; font-weight:bold; color:#FFF; cursor:pointer; display:block; float:left; }
+
+.boxAcao02 { width:305px; padding:4px 0 0 25px; background:url(/resources/theme-zen/images/bg_divisao_estados.gif) left top no-repeat; float:left; margin:2px 0; }
+.boxAcao02 h4 { width:305px; height:26px; font:15px "Trebuchet MS"; font-weight:bold; color:#666; cursor:pointer; display:block; float:left; }
+.boxAcao02 h4.respondido { background:url(/resources/theme-zen/images/bg_divisao_estados_ativo.gif) top left no-repeat; color:#FFF; }
+
+.boxAcao02 .desativado { display:none; }
+
+
+/* @end */
+
+.listagem_territorios {}
+ul.listagem_territorios li { margin-left:15px !important; margin-bottom:3px; border-bottom:1px dashed #A2A2A2; padding-bottom:4px; }
+.listagem_padrao ul { margin-top:5px; }
+.listagem_padrao li { margin-left:15px !important; }
+
+.listagem_todos_territorios { margin:5px 0 8px 0; float:left; margin-left:-5px; }
+.listagem_todos_territorios li { width:305px; margin-bottom:3px; border-bottom:1px dashed #A2A2A2; padding-bottom:4px; }
+.listagem_todos_territorios li a:hover { text-decoration:underline; background:none; }
+
+
+
+.data_calendario { width:180px; height:22px; color:#E47514 !important; margin:15px 0 10px 0 !important; font-size:11px !important; border-bottom:1px dashed #CCC; float:left; }
+.data_calendario span { width:18px; height:16px; float:left; background:url(/resources/theme-zen/images/icone_data.gif) no-repeat; color:#666; margin-right:5px; font-weight:normal; padding:6px 0 0 3px; margin-top:-5px; cursor:help; }
+.eventos_calendario { width:180px; padding:0 10px; background:#F2F2F2; font:12px Verdana, Arial, Tahoma; clear:both; margin-bottom:10px; }
+.eventos_calendario .descricao { padding-bottom:10px; line-height:16px !important; }
+.eventos_calendario .descricao02 { padding-bottom:10px; border-bottom:none !important; line-height:16px !important; }
+
+.noticias_programa { width:94%; clear:both; font-size:12px !important; padding:0 3%; background:#F2F2F2; margin-bottom:10px; display:table; }
+.noticias_programa .dataNoticia { background:#EB9811; padding:1px 2px; font:9px Verdana, Arial, Tahoma !important; float:left; margin-right:5px; color:#FFF; margin-top:0px; }
+.noticias_programa .estrelasNoticias { float:left; margin-right:5px; }
+
+.registro_portal2 { float:left; margin-left:0; border-bottom:1px dashed #A2A2A2; padding-bottom:5px; }
+.registro_portal2 img { cursor:pointer; }
+.registro #inst { border:none; }
+.subtotal_acoes { width:361px; height:19px; background:url(/resources/theme-zen/images/bg_subtotal_acoes.gif) no-repeat; font:12px Arial !important; font-weight:bold; padding:5px 3px 0 10px; margin:10px 0 !important; }
+
+.usuario_online { background:url(/resources/theme-zen/images/img_status_online.gif) 0 3px no-repeat; padding-left:15px; }
+.usuario_offline { background:url(/resources/theme-zen/images/img_status_offline.gif) 0 3px no-repeat; padding-left:15px; }
+
+.portrait { background:#FFF; border:1px dashed #CCC; }
+.portrait:hover { background:#FFF; border:1px dashed #999; }
+
+<!-- -->
+
+.boxAcaoQuestionario { width:733px; margin:0 auto; margin-bottom:4px; clear:both; }
+.boxAcaoQuestionario ul { clear:both; padding-top:12px; padding-right:12px; margin:10px 0; border:1px dashed #CCC; text-align:center; }
+.boxAcaoQuestionario ul li { clear:both; margin:0 0 14px 15px; list-style-type:none; text-align:left !important; }
+.boxAcaoQuestionario textarea { margin:5px 0 10px 0; float:left; }
+.boxAcaoQuestionario ul li input { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; font:12px Verdana, Arial, Tahoma; color:#333; padding:2px; margin-top:3px; }
+.boxAcaoQuestionario .btEnviarResposta { clear:both !important; margin:5x 0 10px 0; border:1px solid #CCC; background:#DDD; font:12px Verdana, Arial, Tahoma; color:#333; cursor:pointer; margin-bottom:10px; }
+.boxAcaoQuestionario .btEnviarResposta:hover { background:#FFA826; color:#FFF; border:1px solid #E68A00; }
+.boxAcaoQuestionario li.botaoEnviar { list-style-type:none; margin-bottom:10px; }
+.boxAcaoQuestionario .statusEnviando { background:url(/resources/theme-zen/images/loading_enviando.gif) left no-repeat; padding-left:20px; }
+.boxAcaoQuestionario .numeroPergunta { width:13px; height:16px; padding-left:4px; padding-top:1px; float:left; background:url(/resources/theme-zen/images/bg_numero_acao_questionario.gif) no-repeat; color:#FFF; font-weight:bold; font-size:11px; margin-right:3px; }
+
+.boxAcaoQuestionario .perguntaAcao { width:680px; float:right; text-align:left; }
+
+.boxAcaoQuestionario h4 { width:703px; font:12px Tahoma; font-weight:bold; color:#666666; background:#D1D1D3 url(/resources/theme-zen/images/acaoTituloSetaDown.gif) no-repeat 715px 10px; padding:5px 25px 8px 5px; text-transform:lowercase; cursor:pointer; clear:both; margin-top:10px; }
+.boxAcaoQuestionario h4.respondido { background:#E79944 url(/resources/theme-zen/images/img_icone_respondido.gif) no-repeat 715px 7px; color:#FFF; }
+.boxAcaoQuestionario h4.respondido .numeroAcao { color:#FFF; }
+.boxAcaoQuestionario .desativado { display:none; }
+
+.boxAcaoQuestionario .numeroAcao { width:25px; padding:1px 0; float:left; color:#999; font-weight:bold; font-size:13px; margin-right:10px; text-align:center; }
+.boxAcaoQuestionario .questionarioMetaFisica { font-size:11px; font-weight:normal; margin-left:11px; text-align:center; }
+.boxAcaoQuestionario .questionarioMetaFinanceira { width:154px !important; text-align:center; font:10px Verdana, "Lucida Grande", Lucida, sans-serif; color:#FFF; margin:2px 0 3px 21px; padding:3px 5px; vertical-align: middle; background:#e57942; text-transform:uppercase; float:left; }
+
+.boxAcaoQuestionario .meta {width:733px; border:1px dashed #CCC; margin:6px 0 2px 0; padding:2px 0;}
+
+
+.boxAcaoQuestionario02 { width:968px; background:#DDD; margin:10px 0; display:block; float:left; padding:10px; }
+.boxAcaoQuestionario02 .numeroAcao { width:45px; color:#999; font-weight:bold; font:45px Georgia; margin:5px 10px 0 10px; text-align:center; float:left; }
+.boxAcaoQuestionario02 .estadoAcao { width:45px; color:#B6B6B6; font-weight:bold; font:35px Georgia; margin:12px 30px 0 10px; text-align:center; float:left; }
+
+.boxAcaoQuestionario02 .questionarioAcao02 { width:795px; background:#FFF; border:1px dashed #CCC; padding:10px; float:left; }
+.boxAcaoQuestionario02 .questionarioAcao02 ul li {display:block; margin-right:10px;}
+.boxAcaoQuestionario02 ul {float:left; }
+.boxAcaoQuestionario02 ul li {display:block; float:left; margin-right:10px;}
+.boxAcaoQuestionario02 .numeroPergunta { width:13px; height:16px; padding-left:4px; padding-top:1px; float:left; background:url(/resources/theme-zen/images/bg_numero_acao_questionario.gif) no-repeat; color:#FFF; font-weight:bold; font-size:11px; margin-right:3px; }
+.boxAcaoQuestionario02 ul li input { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; font:12px Verdana, Arial, Tahoma; color:#333; padding:2px; margin-top:3px; }
+.boxAcaoQuestionario02 .desativado { display:none; }
+.respondido02 { background:#E79944 url(/resources/theme-zen/images/img_icone_respondido.gif) no-repeat 715px 7px; color:#FFF; color:#FFF; }
+.respondido02 .numeroAcao { color:#F9D5AC !important; }
+.respondido02 .estadoAcao { color:#F9D5AC !important; }
+.respondido02 .questionarioAcao02 { background:#ECAF6C !important; border:1px dashed #E47514 !important; }
+
+/* Matriz 2009 */ 
+
+.boxAcaoQuestionario03 { width:968px; background:#DDD; margin:10px 0; display:block; float:left; padding:10px; }
+.boxAcaoQuestionario03 .numeroAcao { width:45px; color:#999; font-weight:bold; font:45px Georgia; margin:5px 10px 0 10px; text-align:center; float:left; }
+.boxAcaoQuestionario03 .estadoAcao { color:#B6B6B6; font-weight:bold; font:35px Georgia; margin:12px 30px 0 10px; text-align:center; float:left; }
+
+.boxAcaoQuestionario03 .questionarioAcao03 { width:700px; background:#FFF; border:1px dashed #CCC; padding:10px; float:left; }
+.boxAcaoQuestionario03 .questionarioAcao03 ul li {display:block; margin-right:10px;}
+.boxAcaoQuestionario03 ul {float:left; }
+.boxAcaoQuestionario03 ul li {display:block; float:left; margin-right:10px;}
+.boxAcaoQuestionario03 .numeroPergunta { width:13px; height:16px; padding-left:4px; padding-top:1px; float:left; background:url(/resources/theme-zen/images/bg_numero_acao_questionario.gif) no-repeat; color:#FFF; font-weight:bold; font-size:11px; margin-right:3px; }
+.boxAcaoQuestionario03 ul li input { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; font:12px Verdana, Arial, Tahoma; color:#333; padding:2px; margin-top:3px; }
+.boxAcaoQuestionario03 .desativado { display:none; }
+.respondido03 { background:#E79944 url(/resources/theme-zen/images/img_icone_respondido.gif) no-repeat 715px 7px; color:#FFF; color:#FFF; }
+.respondido03 .numeroAcao { color:#F9D5AC !important; }
+.respondido03 .estadoAcao { color:#F9D5AC !important; }
+.respondido03 .questionarioAcao03 { background:#ECAF6C !important; border:1px dashed #E47514 !important; }
+
+.boxAcaoQuestionario04 { width:968px; background:#DDD; margin:10px 0; display:block; float:left; padding:10px; }
+.boxAcaoQuestionario04 .numeroAcao { width:45px; color:#999; font-weight:bold; font:45px Georgia; margin:5px 10px 0 10px; text-align:center; float:left; }
+.boxAcaoQuestionario04 .estadoAcao { width:45px; color:#B6B6B6; font-weight:bold; font:35px Georgia; margin:12px 30px 0 10px; text-align:center; float:left; }
+
+.boxAcaoQuestionario04 .questionarioAcao04 { width:795px; background:#FFF; border:1px dashed #CCC; padding:10px; float:left; }
+.boxAcaoQuestionario04 .questionarioAcao04 ul li {display:block; margin-right:10px;}
+.boxAcaoQuestionario04 ul {float:left; }
+.boxAcaoQuestionario04 ul li {display:block; margin-right:10px;}
+.boxAcaoQuestionario04 .numeroPergunta { width:13px; height:16px; padding-left:4px; padding-top:1px; float:left; background:url(/resources/theme-zen/images/bg_numero_acao_questionario.gif) no-repeat; color:#FFF; font-weight:bold; font-size:11px; margin-right:3px; }
+.boxAcaoQuestionario04 ul li input { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; font:12px Verdana, Arial, Tahoma; color:#333; padding:2px; margin-top:3px; }
+.boxAcaoQuestionario04 .desativado { display:none; }
+.respondido04 { background:#E79944 url(/resources/theme-zen/images/img_icone_respondido.gif) no-repeat 715px 7px; color:#FFF; color:#FFF; }
+.respondido04 .numeroAcao { color:#F9D5AC !important; }
+.respondido04 .estadoAcao { color:#F9D5AC !important; }
+.respondido04 .questionarioAcao04 { background:#ECAF6C !important; border:1px dashed #E47514 !important; }
+
+
+
+/* Fim Matriz 2009 */
+
+
+#breadcrumbs { width:988px; float:left; background:none !important; margin:10px 0 20px 0; padding:0; }
+
+.listagemMinisterios li { margin-left:15px; list-style-type:disc; margin:10px 0; }
+
+ul.botoesQuestionarios li { display:inline !important; }
+
+/* Project Manager */
+.informacoes_projeto { width:95%; background:#FFF; border:1px solid #CCC; float:left; margin-bottom:10px; padding:2%; }
+.informacoes_projeto p { font:12px Arial !important; color:#666; float:left; margin:0; padding:0; }
+.informacoes_projeto .investimento_projetos { float:right; }
+.informacoes_projeto .numero { font-size:18px; font-weight:bold; }
+.informacoes_projeto .info01 { width:30%; border-right:1px dotted #CCC; padding-right:10px; float:left; }
+.informacoes_projeto .info02 { width:31%; border-right:1px dotted #CCC; padding-right:10px; float:left; }
+.informacoes_projeto .info03 { width:30%; padding-right:10px; float:left; }
+.informacoes_projeto .status { width:96%; height:70px; margin:0 5px; float:left; }
+
+.projectname { width:207px; font:18px Arial !important; font-weight:bold !important; float:left; }
+.projectstatus {}
+.numerosInfoProjetos { font-family:Arial, Verdana, Tahoma !important; font-size:18px !important; }
+
+.numerosInfo_01 { width:110px; float:left; margin-right:10px; }
+.numerosInfo_02 { width:145px; float:left; margin-right:10px; }
+.numerosInfo_03 { width:115px; float:left; }
+/* Fim */
+
+.nome_ministerio { font:13px Georgia, Verdana, Tahoma, Arial; background:#828D70; color:#FFF; font-weight:bold; margin:20px 0; padding:4px; }
+.numeracao_listagem { width:50px; float:left; text-align:center; font:18px Verdana, Tahoma, Arial; font-weight:bold; color:#999; text-align:left; }
+ul.numeracao_listagem_acoes_colegiado li { display:table; border-bottom:1px dashed #CCC; padding-bottom:10px; list-style-type:none !important; margin:5px 0; clear:both; }
+.informacao_listagem { width:278px; float:left; }
+
+ul.numeracao_listagem_acoes_colegiado li { display:table; border-bottom:1px dashed #CCC; padding-bottom:10px; list-style-type:none !important; margin:5px 0; clear:both; }
+ul.numeracao_listagem_acoes_mda_incra li { width:100%; display:table; border-bottom:1px dashed #CCC; padding-bottom:10px; list-style-type:none !important; margin:5px 0; clear:both; }
+ul.numeracao_listagem_acoes_mda_incra li a { color:#828D70; }
+/* @group utilitarios topo */
+
+
+/* Portlet Comunidades */
+.portlet_comunidades { width:332px; height:200px; color:#666666; }
+.portlet_comunidades .portlet_imagem { width:130px; height:200px; float:left; margin-right:15px; }
+.portlet_comunidades .portlet_imagem p { font:11px Verdana !important; text-align:center; margin:0; padding:0; }
+.portlet_comunidades .portlet_comunidades_informacoes { width:187px; float:right; }
+.portlet_comunidades .portlet_imagem .destaque_informacao { font:21px Arial; font-weight:bold; }
+
+.categoria_rede_01 .botao_fundo_cinza { width:180px; height:18px; border:1px solid #999; color:#FFF; text-align:center; background:url("/resources/theme-zen/images/bg_botao_cinza.jpg") repeat-x; padding-top:3px; margin:0 !important; float:left; }
+.categoria_rede_02 .botao_fundo_cinza { width:180px; height:18px; border:1px solid #999; color:#FFF; text-align:center; background:url("/resources/theme-zen/images/bg_botao_cinza.jpg") repeat-x; padding-top:3px; margin:0 !important; float:left; }
+
+.botao_entrar_portlet { width:180px; height:18px; border:1px solid #F2A754; color:#FFF; text-align:center; background:url("/resources/theme-zen/images/bg_botao_ferramentas_comunidade.jpg") repeat-x; padding-top:3px; margin:0 !important; }
+.botao_entrar_portlet a { color:#FFF; text-decoration:none; }
+.botao_entrar_portlet a:hover { color:#FFF; text-decoration:none; background:none; }
+
+.botao_fundo_verde { width:180px; height:18px; border:1px solid #828D70; color:#FFF; text-align:center; background:url("/resources/theme-zen/images/bg_botao_verde.jpg") repeat-x; padding-top:3px; margin:0 !important; }
+.botao_fundo_verde a { color:#FFF; text-decoration:none; }
+.botao_fundo_verde a:hover { color:#FFF; text-decoration:none; background:none; }
+
+.botao_fundo_cinza { width:180px; height:18px; border:1px solid #999; color:#FFF; text-align:center; background:url("/resources/theme-zen/images/bg_botao_cinza.jpg") repeat-x; padding-top:3px; margin:0 !important; }
+.botao_fundo_cinza a { color:#FFF; text-decoration:none; }
+.botao_fundo_cinza a:hover { color:#FFF; text-decoration:none; background:none; }
+
+.botao_fundo_azul { width:180px; height:18px; border:1px solid #5973A6; color:#FFF; text-align:center; background:url("/resources/theme-zen/images/bg_botao_azul.jpg") repeat-x; padding-top:3px; margin:0 !important; }
+.botao_fundo_azul a { color:#FFF; text-decoration:none; }
+.botao_fundo_azul a:hover { color:#FFF; text-decoration:none; background:none; }
+
+ul.listagem_portlet_comunidades { margin-bottom:15px; }
+.listagem_portlet_comunidades li { margin:10px 0; list-style-type:disc; margin-left:15px !important; }
+.listagem_portlet_comunidades li a { font:11px Verdana; color:#235C96; text-decoration:underline; }
+.listagem_portlet_comunidades li a:hover { font:11px Verdana; color:#235C96; text-decoration:underline; background:none; }
+.listagem_portlet_comunidades .data { font-size:10px; color:#666; font-weight:bold; }
+
+ul.listagem_portlet_comunidades_02 { margin-bottom:10px; }
+.listagem_portlet_comunidades_02 li { margin:10px 0; list-style-type:none; }
+.listagem_portlet_comunidades_02 .data { font-size:10px; color:#666; font-weight:bold; margin:0; padding:0; }
+
+ul.listagem_portlet_membros { margin-bottom:15px; }
+.listagem_portlet_membros li { margin:10px 0; list-style-type:none; }
+.listagem_portlet_membros li a { font:11px Verdana; color:#235C96; text-decoration:underline; }
+.listagem_portlet_membros li a:hover { font:11px Verdana; color:#235C96; text-decoration:underline; }
+
+
+.portlet_mais_opcoes { width:95%; background:#EFEFEF; float:left; padding:10px 0 12px 14px; border-bottom:1px solid #D2D2D4; border-top:1px solid #D2D2D4; margin:15px 0 30px 0; }
+.portlet_mais_opcoes li { width:75px; display:block; float:left; margin-right:3px; }
+.portlet_mais_opcoes li a { font:11px Verdana; color:#235C96; text-decoration:underline; }
+.portlet_mais_opcoes .bt_mais_opcoes { width:26px; margin-right:0; background:url("/resources/theme-zen/images/bullet_mais.gif") right no-repeat; padding-right:14px; }
+.portlet_mais_opcoes .bt_mais_opcoes a { font-weight:bold; text-decoration:none; }
+/* Fim */
+
+.territorio_contribuicao { width:930px; background:#DDD url("/resources/theme-zen/images/icone_exclamacao.gif") 5px 1px no-repeat; border:1px solid #CCC; padding:10px 10px 10px 45px; }
+
+
+/* Portlet Meu Espaço */
+.portlet_meu_espaco { width:100%; color:#666666; }
+.portlet_meu_espaco .box_informacoes { background:#E6E6E6; border:1px solid #D9D9D9; padding:10px; }
+.portlet_meu_espaco .box_informacoes .imagem_portlet { position:absolute; margin-left:200px; margin-top:-60px; }
+.portlet_meu_espaco .box_informacoes .imagem_portlet_02 { position:absolute; margin-left:280px; margin-top:-60px; }
+.portlet_meu_espaco p { font:11px Verdana !important; }
+.portlet_meu_espaco .box_informacoes li { list-style-type:none; color:#666666; font-weight:bold; margin:6px 0; }
+.portlet_meu_espaco .box_informacoes li a { font-size:11px; font-weight:normal; }
+.portlet_meu_espaco .box_informacoes .numero_comunidade { color:#FFF; font:24px Verdana; font-weight:bold; margin-right:5px; }
+.portlet_meu_espaco .box_informacoes .subcomunidades_meu_espaco { margin-left:25px; }
+.portlet_meu_espaco .box_informacoes .subcomunidades_meu_espaco li { margin-left:15px; list-style-type:disc !important; }
+.portlet_meu_espaco .entrar_comunidade { margin-left:27px !important; }
+
+.portlet_meu_espaco_opcoes { width:100%; float:left; margin:15px 0 30px 0; }
+.portlet_meu_espaco_opcoes li { width:150px; display:block; float:left; margin-right:3px; }
+.portlet_meu_espaco_opcoes li a { font:11px Verdana; color:#235C96; text-decoration:underline; }
+
+.portlet_meu_espaco .numero_meu_espaco { font:21px Arial; font-weight:bold; }
+.ultima_mensagem_meu_espaco { width:280px; }
+.data_calendario_meu_espaco { color:#235C96; }
+.configuracao_informacoes_meu_espaco { width:230px; float:left; }
+.foto_membro_meu_espaco { width:65px; height:65px; float:left; }
+.foto_membro_meu_espaco img { margin-left:10px; }
+
+.img_logomarca_mais_alimentos { width:25%; float:left; margin-right:3%; }
+.img_logomarca_mais_alimentos img { border:1px solid #CCC; }
+.introducao_tratores { width:70%; float:left; margin-top:3px; }
+.introducao_tratores p { font-size:11px !important; }
+
+.opcoes_selecao_mais_alimentos { width:270px; float:left; }
+.opcoes_contribuicao_icms { width:100%; float:left; }
+.info_contribuicao_icms { width:97%; background:#EFEFEF; border:1px solid #DDD; padding:0 10px; margin-top:10px; margin-bottom:20px; float:right; }
+.info_contribuicao_icms p { font:11px Arial !important; font-weight:bold; }
+.tabela_filtros_tratores { border-collapse:collapse; margin:15px 0; }
+.tabela_filtros_tratores tr td { border:1px solid #CCC; padding:8px; }
+.tabela_filtros_tratores .titulo_tabela { background:#828D70; color:#FFF; font-weight:bold; }
+.tabela_filtros_tratores .valor { font-size:12px; font-weight:bold; }
+.tabela_filtros_tratores .nome { font-size:12px; font-weight:bold; color:#828D70; }
+
+.listagem_pedido_tratores { margin:15px 0; }
+.listagem_pedido_tratores li { list-style-type:none !important; margin:10px 0; }
+
+.listagem_tratores_passo_passo { margin:8px 0 18px 0; }
+.listagem_tratores_passo_passo li { list-style-type:none !important; margin:10px 0; font-size:11px; }
+
+.filtro_tratores h3 .numero { width:14px; height:17px; float:left; padding-left:3px; margin-right:5px; background:url("/resources/theme-zen/images/bg_numero_acao_questionario.gif") no-repeat; color:#FFF; }
+.filtro_tratores p { margin:15px 0 !important; }
+.img_info_contribuicao_icms { float:left; margin:20px 10px 15px 0; }
+
+.listagem_produto_mais_alimentos { width:840px; display:block; float:left; text-align:center; margin-left:70px; }
+.listagem_produto_mais_alimentos li { width:400px; display:block; float:left; margin:20px 10px 30px 10px; }
+.botoes_produtos_mais_alimentos { width:987px; float:left; border-top:1px solid #DDD; background:#EFEFEF; margin-top:10px; margin-bottom:15px; }
+/* Fim */
+
+
+ul.listagem_portlet_membros { margin-bottom:15px; }
+.listagem_portlet_membros li { margin:10px 0; list-style-type:none; }
+.listagem_portlet_membros li a { font:11px Verdana; color:#235C96; text-decoration:underline; }
+.listagem_portlet_membros li a:hover { font:11px Verdana; color:#235C96; text-decoration:underline; }
+
+
+.portlet_mais_opcoes { width:95%; background:#EFEFEF; float:left; padding:10px 0 12px 14px; border-bottom:1px solid #D2D2D4; border-top:1px solid #D2D2D4; margin:15px 0 30px 0; }
+.portlet_mais_opcoes li { width:75px; display:block; float:left; margin-right:3px; }
+.portlet_mais_opcoes li a { font:11px Verdana; color:#235C96; text-decoration:underline; }
+.portlet_mais_opcoes .bt_mais_opcoes { width:26px; margin-right:0; background:url("/resources/theme-zen/images/bullet_mais.gif") right no-repeat; padding-right:14px; }
+.portlet_mais_opcoes .bt_mais_opcoes a { font-weight:bold; text-decoration:none; }
+
+.destaques_videos { width:330px; height:310px; float:left; margin:15px 0; overflow:hidden; }
+.destaque { width:330px; height:310px; float:left; }
+
+.valor_pago { background:#D9DBD2; }
+.valor_empenhado { background:#D9DBD2; }
+.edit_p .nome_territorio { color:#FFF; }
+.edit_p .numeracao { color:#FFF; }
+.edit_p .valor_pago { background:#F2A754; color:#FFF; border:1px solid #DDD !important; }
+.edit_p .valor_empenhado { background:#F2A754; color:#FFF; }
+/* Fim */
+
+/* Portlet Meu Espaço */
+.portlet_meu_espaco { width:100%; color:#666666; }
+.portlet_meu_espaco .box_informacoes { background:#E6E6E6; border:1px solid #D9D9D9; padding:10px; }
+.portlet_meu_espaco .box_informacoes .imagem_portlet { position:absolute; margin-left:200px; margin-top:-30px; }
+.portlet_meu_espaco p { font:11px Verdana !important; }
+.portlet_meu_espaco .box_informacoes li { list-style-type:none; color:#666666; font-weight:bold; margin:6px 0; }
+.portlet_meu_espaco .box_informacoes li a { font-size:11px; font-weight:normal; }
+.portlet_meu_espaco .box_informacoes .numero_comunidade { color:#FFF; font:24px Verdana; font-weight:bold; margin-right:5px; }
+.portlet_meu_espaco .box_informacoes .subcomunidades_meu_espaco { margin-left:25px; }
+.portlet_meu_espaco .box_informacoes .subcomunidades_meu_espaco li { margin-left:15px; list-style-type:disc !important; }
+.portlet_meu_espaco .entrar_comunidade { margin-left:27px !important; }
+
+.portlet_meu_espaco_opcoes { width:100%; float:left; margin:15px 0 30px 0; }
+.portlet_meu_espaco_opcoes li { width:150px; display:block; float:left; margin-right:3px; }
+.portlet_meu_espaco_opcoes li a { font:11px Verdana; color:#235C96; text-decoration:underline; }
+/* Fim */
+
+/* Pafeflow */
+.photoflow_content { width:100%; text-align:center; clear:both; margin:20px 0; border:1px solid #DDD; background:#FFF; }
+.listagem_conteudos { width:978px; height:200px; overflow:auto; float:left; margin:15px 0 30px 0; padding:0 10px 0 0; }
+.listagem_conteudos li { width:947px; float:left; background:#EFEFEF; border:1px solid #CCC; list-style-type:none; padding:5px; margin-bottom:8px; }
+.listagem_conteudos li a { font-size:11px; }
+.listagem_conteudos li.odd { width:947px; float:left; background:#DDD; border:1px solid #CCC; list-style-type:none; padding:5px; margin-bottom:8px; }
+
+/* Fim */
+
+/* Página do arquivo */
+.coluna_arquivo_01 { width:670px; float:left; margin-bottom:20px; color:#666; }
+.coluna_arquivo_02 { width:295px; float:left; margin-bottom:20px; color:#666; margin-left:20px; }
+.coluna_arquivo_01 .coluna_arquivo { width:320px; height:300px; float:left; margin:10px 20px 0 0; }
+.coluna_arquivo_01 .arquivo { width:320px; height:240px; background:#EFEFEF; border:1px solid #DDD; float:left; margin-bottom:15px; }
+.coluna_arquivo_01 .informacoes_arquivo { width:300px; float:left; margin:10px 10px 0 0; }
+.coluna_arquivo_01 .informacoes_arquivo h3 { font:21px Georgia; color:#828D70; margin-bottom:15px; }
+.coluna_arquivo_01 .informacoes_arquivo .tit_informacoes_arquivo { color:#E47514; clear:both; }
+.coluna_arquivo_02 .tit_informacoes_arquivo { color:#E47514; clear:both; }
+.ver_outros_arquivos { background:url("/resources/theme-zen/images/icone_voltar.gif") left no-repeat; padding-left:18px; font-size:11px; }
+.coluna_arquivo_02 .outras_informacoes_arquivo { width:275px; padding:10px; background:url("/resources/theme-zen/images/bg_coluna_arquivo_02.jpg") repeat-x; float:left; margin-top:10px; }
+/* Fim */
+
+/* Página de conteúdo */
+.divisao_categorias { width:988px; float:left; margin-bottom:15px; }
+.foto_rede { width:330px; float:left; margin-top:10px; margin-bottom:10px; }
+.informacoes_rede { width:643px; float:right; margin-top:-10px; padding-top:20px; margin-right:15px; }
+.categorias_geral_rede { width:988px; clear:both; margin-bottom:15px; }
+.categoria_rede_01 { width:420px; height:195px; background:#E8E8E8; float:left; margin:10px 0; }
+.categoria_rede_02 { width:420px; height:195px; background:#E8E8E8; float:right; margin:10px 0; }
+
+.categoria_rede_01 img { float:left; margin:5px 10px 5px 5px; }
+.categoria_rede_01 h3 { font:21px Georgia; color:#235C96; margin-top:10px; }
+
+.categoria_rede_02 img { float:left; margin:5px 10px 5px 5px; }
+.categoria_rede_02 h3 { font:21px Georgia; color:#235C96; margin-top:10px; }
+
+.categoria_rede_01 .botao_entrar_portlet { float:left; margin-top:5px; }
+.categoria_rede_02 .botao_entrar_portlet { float:left; margin-top:5px; }
+
+.estrutura_subcomunidades h2 { font:21px Georgia !important; color:#E47514 !important; border-bottom:1px solid #C0C0C0; padding:5px; }
+.subcomunidades { width:670px; float:left; }
+.subcomunidades_news { width:285px; float:left; margin-left:20px; }
+.subcomunidade_info { width:187px; height:315px; background:#D9D9D9; float:left; padding:5px; }
+p.descricao_subcomunidade { color:#666666; }
+.estrutura_subcomunidades tr td { padding:5px; }
+.estrutura_subcomunidades { margin-left:-10px; }
+
+.titulo_253 { font:21px Georgia !important; color:#e47514 !important; margin-bottom:10px; clear:both; }
+.titulo_padrao { font:21px Georgia !important; color:#e47514 !important; margin-bottom:10px; clear:both; }
+.titulo_padrao2 { font:21px Georgia !important; color:#838D72 !important; margin-bottom:10px; clear:both; }
+.botaoAdicionarConteudo { position:absolute; margin-top:-120px; margin-left:730px; }
+
+.primeira_linha { margin-top:0px; }
+
+.bt_execucao { background:#EB9811; color:#FFF; font-size:11px; padding:5px; display:table; text-align:center; }
+.bt_execucao:hover { background:#999; }
+
+.bt_execucao a { color:#FFF !important; font-size:11px; }
+p.bt_execucao_informacoes { font-size:11px !important; }
+.bt_execucao_informacoes { width:150px; background:#EB9811; color:#FFF; font-size:11px; padding:5px; display:table; text-align:center; margin-right:5px; }
+.bt_execucao_informacoes a { color:#FFF !important; text-align:center; margin-left:25px; }
+
+.nome_acao { margin:0 !important; padding:0 !important; clear:both; }
+.nome_acao a { font-size:10px !important; margin-left:-10px; }
+p.nome_orgao { font-size:10px !important; margin:0; padding:0; color:#235C96; clear:both; }
+
+.botao_gerar_relatorio_territorios { margin:10px 0; }
+.webconferencia_ativa { width:160px; background:#669900; color:#FFF; padding:5px !important; font-weight:bold; font-size:10px; float:left; }
+.bt_acesse_agora a { color:#669900; font-weight:bold; font:11px Arial; }
+.bt_acesse_webconferecia a { color:#235C96; font-weight:bold; font:11px Arial; }
+.data_webconferencia { width:160px; font-size:9px !important; background:#DDD !important; padding:2px 3px; margin:3px 0 !important; font-weight:bold; float:left; }
+
+.player_audio { width:200px; height:100px; float:left; margin-left:60px; margin-top:70px; }
+
+.tabela_acompanhamento_acoes { margin:10px 0; border-collapse:collapse; color:#333; }
+.tabela_acompanhamento_acoes tr td { padding-left:10px; border:1px solid #CCC; }
+.tabela_acompanhamento_acoes .odd { background:#EFEFEF; }
+.tabela_acompanhamento_acoes .titulo { background:#818E74; }
+.tabela_acompanhamento_acoes .filtros { background:#999; color:#FFF; font-size:21px; }
+.tabela_acompanhamento_acoes .filtros p { font-weight:bold; }
+.tabela_acompanhamento_acoes .titulo p { color:#FFF; font-weight:bold; }
+.tabela_acompanhamento_acoes .porcentagem { color:#666; font-size:21px; font-weight:bold; margin-right:10px; }
+.tabela_acompanhamento_acoes .icone_situacao { border-left:none !important; }
+.tabela_acompanhamento_acoes .linha { border-right:none !important; }
+.tabela_acompanhamento_acoes .simbolo_porcentagem { font-size:14px !important; margin-left:2px; }
+
+.informacoes_aprovacoes_pendentes { background:#EEE; border:1px solid #CCC; width:967px; padding:0 10px 10px 10px; float:left; margin:10px 0; }
+.tabela_aprovacoes_pendentes { width:986px; height:120px; float:left; overflow:auto; padding-left:1px; }
+.tabela_aprovacoes_pendentes .list-table { margin-top:0 !important; margin-bottom:0 !important; }
+
+.opcoes_administracao_comunidades { background:#F2A754; border:1px solid #EE8F26; width:748px; padding:10px; float:left; margin:10px 0; color:#FFF; font-size:11px; }
+.opcoes_administracao_comunidades a { font-weight:bold; color:#FFF; text-decoration:none; }
+.opcoes_administracao_comunidades a:hover { color:#FFF; background:none; }
+.opcoes_administracao_comunidades .editar_categorias { background:url("/resources/theme-zen/images/img_editar_categorias.gif") 0 1px no-repeat; padding:2px 0 5px 20px; }
+
+.controles_video { width:330px; float:left; background:#E5E5E5; margin-bottom:10px; }
+.controles_video li { list-style-type:none; display:block; float:left; }
+.controles_video .bt_anterior a { width:104px; height:20px; text-indent:-99999px; overflow:hidden; margin-top:-2px; background:url("/resources/theme-zen/images/bt_video_anterior.jpg") no-repeat; float:left; }
+.controles_video .bt_proximo a { width:104px; height:20px; text-indent:-99999px; overflow:hidden; margin-top:-2px; background:url("/resources/theme-zen/images/bt_video_proximo.jpg") no-repeat; float:left; }
+.nome_videos { width:122px; height:16px; left:105px; background:#E5E5E5; float:left; text-align:center; padding-top:2px; margin-top:-2px; }
+.titulo_videos { font:11px Verdana !important; font-weight:bold !important; text-align:center; margin:10px 0 !important; }
+
+.controles_revista { position:absolute; width:320px; height:240px; margin-left:5px; margin-top:-242px; z-index:9999998; }
+.controles_revista li { list-style-type:none; }
+.controles_revista .bt_anterior02 { position:absolute; margin-left:-5px; margin-top:-60px; }
+.controles_revista .bt_anterior02 a { width:30px; height:30px; text-indent:-99999px; overflow:hidden; margin-top:-2px; background:url("/resources/theme-zen/images/seta_esquerda.gif") no-repeat; float:left; }
+.controles_revista .bt_proximo02 { position:absolute; margin-left:295px; margin-top:-60px; }
+.controles_revista .bt_proximo02 a { width:30px; height:30px; text-indent:-99999px; overflow:hidden; margin-top:-2px; background:url("/resources/theme-zen/images/seta_direita.gif") no-repeat; float:left; }
+
+.portlet_revistas { width:330px; height:350px; display:table; float:left; }
+
+.preenchimento_manual { width:48%; float:left; }
+.preenchimento_manual h3 { text-align:center !important; background:#666; color:#FFF !important; font-weight:bold !important; padding:5px; }
+.preenchimento_automatico { width:48%; float:right; }
+.preenchimento_automatico h3 { text-align:center !important; background:#666; color:#FFF !important; font-weight:bold !important; padding:5px; }
+
+.conteudo_preenchimento { width:95.8%; border:1px solid #CCC; background:#FFF; float:left; margin:10px 0; padding:2%; }
+.modelo_planilha { width:20%; float:left; margin-right:10px; font-size:11px; margin-top:-5px !important; }
+.modelo_planilha2 { width:280px; height:80px; float:left; margin-right:10px; padding-top:20px; }
+.modelo_planilha2 img { margin-top:-10px; }
+.lista_acoes_roteiro { border-collapse:collapse; border:1px solid #D2D2D2; background:#FFF; font:11px Verdana; margin:15px 0; clear:both; }
+.lista_acoes_roteiro tr td { padding:5px; }
+.lista_acoes_roteiro .situacao_preenchido { color:#229F15; font-weight:bold; }
+.lista_acoes_roteiro .situacao_parcialmente_preenchido { color:#C0B606; font-weight:bold; }
+.lista_acoes_roteiro .situacao_sem_preenchimento { color:#990000; font-weight:bold; }
+
+.riscos_restricoes_execucao { width:968px; background:#EFEFEF; padding:5px 10px; border:1px solid #CCC; float:left; margin:10px 0 20px 0; }
+.riscos_restricoes_execucao .anexos { width:660px; float:left; display:table; border-left:3px double #CCC; padding-left:15px; }
+
+.portlet_portal_chat .informacoes_chat { width:181px; float:left; }
+.portlet_portal_chat .informacoes_chat p { font-weight:bold; font-size:11px; }
+.portlet_portal_chat a { cursor:pointer; }
+.portlet_portal_chat .usuarios_conectados { width:117px; float:left; margin-left:10px; }
+.portlet_portal_chat .usuarios_conectados p { font-size:11px !important; }
+.portlet_portal_chat .usuarios_conectados .membros { width:107px; text-align:center; color:#666; font-weight:normal; }
+.portlet_portal_chat .usuarios_conectados_chat { font:21px Arial; font-weight:bold; text-align:center; }
+.portlet_portal_chat { width:308px; padding:10px 10px 0 10px; background:#FFF; border:1px solid #E2E1E8; float:left; overflow:hidden; margin-bottom:10px; }
+.portlet_portal_chat p { font:11px Arial; color:#235C96; font-weight:bold; }
+.portlet_portal_chat .info_chat { font:14px Arial; color:#666; font-weight:bold; }
+.portlet_portal_chat .download_material_chat { width:265px; padding:5px 10px 5px 35px; background:#F1F1F2 url("/resources/theme-zen/images/img_download_material_chat.gif") 8px 18px no-repeat; margin-bottom:10px; float:left; }
+.portlet_portal_chat .download_material_chat p { color:#666 !important; font-weight:normal; font-size:11px !important; }
+.portlet_portal_chat .download_material_chat a { color:#235C96; }
+
+.relatorio_execucao { width:330px; padding:10px 0; margin:10px 0; border-top:1px solid #D2D2D4; border-bottom:1px solid #D2D2D4; margin-bottom:30px; }
+.relatorio_execucao h3 { font:18px Arial; color:#235C96 !important; font-weight:bold; }
+
+.listagem_faq { margin-bottom:30px; }
+.listagem_faq li { margin:10px 0; border-bottom:1px dashed #d2d2d2; padding-bottom:10px; }
+/* Fim */
+
+
+
+#utilits {
+	position:absolute;
+	right: 20px;
+	top: 120px;
+	top: 800px !ie;
+	text-align:left;
+	height:40px;
+	color: #808080;
+	z-index: 1;
+	vertical-align: top;
+	width: 800px;
+	
+}
+
+#utilits li{
+	position:relative;
+	float:left;
+	list-style-type: none;
+	margin-left:5px;
+}
+
+
+
+#utilits input{
+	background-color: #dbd9dc;
+	color: #a0a0a3;
+	border: 1px solid #b9babc;
+	height:15px;
+}
+
+#utilits input#busca{
+	width: 77px;
+}
+
+#spanBusca {
+	width:25px;
+	height:26px;
+	background: url(/resources/theme-zen/images/busca.gif) no-repeat 0;
+
+	
+
+}
+
+#spanUser{
+	
+	width:36px;
+	height:34px;
+	margin-top:-2px;
+}
+
+
+#utilits #linha2{
+	clear:both;
+	position:relative;
+	float:right;
+	margin-top: 5px;
+	height:20px;
+}
+
+
+#utilits #linha2 input{
+	width:95px;
+}
+
+
+
+/* Gestor */
+
+.coluna_matriz { width:320px; float:left; margin:5px 10px 5px 0; }
+.coluna_matriz p { margin:15px 0; }
+.coluna_matriz h2 { background:#E6E6E6 !important; font:18px Arial !important; color:#828D6B !important; padding:3px 6px !important; margin:10px 0 !important; }
+.coluna_matriz h3 { font:13px Arial !important; color:#EF8F17 !important; font-weight:bold !important; background:url(imagens/bullet_laranja.gif) 0 6px no-repeat !important; padding-left:8px!important; margin:10px 0 !important; }
+.coluna_matriz h4 { margin-top:15px; }
+ul.numeracao_listagem_acoes_colegiado li { display:table; border-bottom:1px dashed #CCC; padding-bottom:10px; list-style-type:none !important; margin:5px 0; clear:both; }
+.informacao_listagem { width:270px; float:left; }
+ul.numeracao_listagem_acoes_colegiado li { display:table; border-bottom:1px dashed #CCC; padding-bottom:10px; list-style-type:none !important; margin:5px 0; clear:both; }
+ul.numeracao_listagem_acoes_mda_incra li { width:100%; display:table; border-bottom:1px dashed #CCC; padding-bottom:10px; list-style-type:none !important; margin:5px 0; clear:both; }
+ul.numeracao_listagem_acoes_mda_incra li a { color:#828D70; }
+.numeracao_listagem { width:50px; float:left; text-align:center; font:18px Verdana, Tahoma, Arial; font-weight:bold; color:#999; text-align:left; }
+
+/* @end */
+
+
+
+.capa_comunidades { width:224px; background:url(/resources/theme-zen/images/bg_capa_comunidades.gif) no-repeat; padding-left:8px; padding-top:8px; float:left; margin:0 7px; margin-bottom:30px; margin-top:15px; }
+.nome_capa_comunidades { width:224px; font:18px Arial; font-weight:bold; color:#838D72; text-align:center; }
+
+
+
+
+
+
+

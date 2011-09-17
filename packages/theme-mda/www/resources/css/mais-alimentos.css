@@ -1,0 +1,37 @@
+.img_logomarca_mais_alimentos { width:25%; float:left; margin-right:3%; }
+.img_logomarca_mais_alimentos img { border:1px solid #CCC; }
+.introducao_tratores { width:70%; float:left; margin-top:3px; }
+.introducao_tratores p { font-size:11px !important; }
+
+.opcoes_selecao_mais_alimentos { width:270px; float:left; }
+.opcoes_contribuicao_icms { width:100%; float:left; }
+.info_contribuicao_icms { width:97%; background:#EFEFEF; border:1px solid #DDD; padding:0 10px; margin-top:10px; margin-bottom:20px; float:right; }
+.info_contribuicao_icms p { font:11px Arial !important; font-weight:bold; }
+.tabela_filtros_tratores { border-collapse:collapse; margin:15px 0; }
+.tabela_filtros_tratores tr td { border:1px solid #CCC; padding:8px; }
+.tabela_filtros_tratores .titulo_tabela { background:#828D70; color:#FFF; font-weight:bold; }
+.tabela_filtros_tratores .valor { font-size:12px; font-weight:bold; }
+.tabela_filtros_tratores .nome { font-size:12px; font-weight:bold; color:#828D70; }
+
+.listagem_pedido_tratores { margin:15px 0; }
+.listagem_pedido_tratores li { list-style-type:none !important; margin:10px 0; }
+
+.listagem_tratores_passo_passo { margin:8px 0 18px 0; }
+.listagem_tratores_passo_passo li { list-style-type:none !important; margin:10px 0; font-size:11px; }
+
+.filtro_tratores h3 .numero { width:14px; height:17px; float:left; padding-left:3px; margin-right:5px; background:url("/resources/theme-zen/images/bg_numero_acao_questionario.gif") no-repeat; color:#FFF; }
+.filtro_tratores p { margin:15px 0 !important; }
+.img_info_contribuicao_icms { float:left; margin:20px 10px 15px 0; }
+
+.listagem_produto_mais_alimentos { width:840px; display:block; float:left; text-align:center; margin-left:70px; }
+.listagem_produto_mais_alimentos li { width:400px; display:block; float:left; margin:20px 10px 30px 10px; }
+.botoes_produtos_mais_alimentos { width:987px; float:left; border-top:1px solid #DDD; background:#EFEFEF; margin-top:10px; margin-bottom:15px; }
+/* Fim */
+
+
+ul.listagem_portlet_membros { margin-bottom:15px; }
+.listagem_portlet_membros li { margin:10px 0; list-style-type:none; }
+.listagem_portlet_membros li a { font:11px Verdana; color:#235C96; text-decoration:underline; }
+.listagem_portlet_membros li a:hover { font:11px Verdana; color:#235C96; text-decoration:underline; }
+
+

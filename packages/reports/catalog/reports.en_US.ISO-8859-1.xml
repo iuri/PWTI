@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<message_catalog package_key="reports" package_version="0.1d" locale="en_US" charset="ISO-8859-1">
+
+  <msg key="Add_new_report">Add New Report</msg>
+  <msg key="Admin">Admin</msg>
+  <msg key="bar">bar</msg>
+  <msg key="Chart_type">Chart type</msg>
+  <msg key="Data">Data</msg>
+  <msg key="Filters">Filters</msg>
+  <msg key="Group">Group</msg>
+  <msg key="Groups">Groups</msg>
+  <msg key="pie">Pie</msg>
+  <msg key="Pretty_name">Pretty Name</msg>
+  <msg key="Reference">Reference</msg>
+  <msg key="Type">Type</msg>
+  <msg key="Value">Value</msg>
+</message_catalog>

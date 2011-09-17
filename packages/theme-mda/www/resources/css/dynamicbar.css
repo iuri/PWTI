@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*
+	Portal da Cidadania
+	Site: www.territoriosdacidadania.gov.br
+	Design de Interfaces: Thiago Melo
+	Arquitetura de Informação: Thiago Melo
+	Programação: Alessandro Landim e Breno Assunção
+	CSS para as Barras Dinâmicas
+*/
+
+.boxAcao { width:100%; background:#F1F1F3; margin:4px 0; clear:both; }
+.boxAcao h4 { font:15px "Trebuchet MS", Arial; font-weight:bold; color:#666666; background:#D1D1D3 url(/resources/theme-zen/images/territorios/acaoTituloSetaDown.gif) no-repeat 10px 11px; padding:5px 5px 5px 30px; text-transform:lowercase; cursor:pointer; clear:both; }
+.boxAcao .desativado { display:none; }
+.boxAcao li { list-style-type:none; }
+.boxAcao li { float:left; margin-right:5px; text-align:center; }
+.boxAcao li a { float:left; padding:3px 10px; text-decoration:none; color:#636364; }
+.boxAcao li a:hover { text-decoration:underline; background:none; }
+.boxAcao li.acaoRow2 { background:#E9E7ED; width:100%; }
+.boxAcao li.acaoRow1 { background:#f3f2f5; width:100%; }
+
+.boxAcao li.acaoRow1 table tr td { border:none !important; }
+.boxAcao li.acaoRow2 table tr td { border:none !important; }
+.boxAcao li.acaoRow3 table tr td { border:none !important; }
+.boxAcao li.acaoRow4 table tr td { border:none !important; }
+
+.boxAcao li.acaoRow4 { background:#F3F2F5; width:100%; }
+.boxAcao li.acaoRow3 { background:#FFF;	width:100%; }
+
+
+.boxAcao ul li .numero { text-align:center; font:bold 27px/27px Arial; color:#CCC; vertical-align:middle; }
+.boxAcao ul li .nomeAcao { text-align:left;	font:bold 12px Arial; color:#636364; }
+
+.boxAcao ul li table tr td.nomeAcao { border-left:1px solid #DDD !important; border-right:1px solid #DDD !important; }
+
+.boxAcao ul li .metaFisica { text-align:center;	font:bold 11px Arial; color:#636364;	padding:10px 5px; }
+.boxAcao ul li .metaFinanc { text-align:center;	font:12px Arial; color:#636364;	height:50px; vertical-align:middle; }
+.boxAcao ul li .metaFisica .metaFinanNumero { font:bold 12px/25px Arial; color:#FFF; margin:5px; padding:0px; vertical-align:middle; background:#EB9811; }
+.boxAcao ul li .acaoRow2 .metaFisica .metaFinanNumero { color:#FFF; background:#e79944; border:none !important; }
+.boxAcao ul li .infosGerais { display:none;	width:85px;	text-align:center; font:11px Arial; color:#636364; }
+.boxAcao ul li .nomeAcao .nome_orgao { margin-left:10px; font-size:10px; color:#235C96; }
+
+.boxAcao02:hover { width:305px; padding:4px 0 0 25px; background:url(/resources/theme-zen/images/territorios/bg_divisao_estados_ativo.gif) left top no-repeat; float:left; margin:2px 0; }
+.boxAcao02:hover h4 { color:#FFF; }
+.boxAcao02_ativo { width:305px; padding:4px 0 0 25px; background:url(/resources/theme-zen/images/territorios/bg_divisao_estados_ativo.gif) left top no-repeat; float:left; margin:2px 0; }
+.boxAcao02_ativo h4 { width:305px; height:26px; font:15px "Trebuchet MS"; font-weight:bold; color:#FFF; cursor:pointer; display:block; float:left; }
+.boxAcao02 { width:305px; padding:4px 0 0 25px; background:url(/resources/theme-zen/images/territorios/bg_divisao_estados.gif) left top no-repeat; float:left; margin:2px 0; }
+.boxAcao02 h4 { width:305px; height:26px; font:15px "Trebuchet MS"; font-weight:bold; color:#666; cursor:pointer; display:block; float:left; }
+.boxAcao02 h4.respondido { background:url(/resources/theme-zen/images/territorios/bg_divisao_estados_ativo.gif) top left no-repeat; color:#FFF; }
+.boxAcao02 .desativado { display:none; }
+
+.listagem_todos_territorios { margin:5px 0 5px 0; float:left; margin-left:-5px; }
+.listagem_todos_territorios li { width:305px; margin-bottom:3px; list-style-type:disc; margin-left:0; }
+.listagem_todos_territorios li a { color:#235C96; text-decoration:none; padding:2px 3px; }
+.listagem_todos_territorios li a:hover { background:#235C96; color:#FFF; padding:2px 3px; }
+
+.bt_execucao_informacoes { width:150px; background:#EB9811; color:#FFF; font-size:11px; padding:5px; display:table; text-align:center; margin-right:5px; }
+.bt_execucao_informacoes a { color:#FFF; text-align:center; margin-left:25px; }
+
+
+
+
+.boxAcaoQuestionario02 { width:968px; background:#DDD; margin:10px 0; display:block; float:left; padding:10px; }
+.boxAcaoQuestionario02 .numeroAcao { width:45px; color:#999; font-weight:bold; font:45px Georgia; margin:5px 10px 0 10px; text-align:center; float:left; }
+.boxAcaoQuestionario02 .estadoAcao { width:45px; color:#B6B6B6; font-weight:bold; font:35px Georgia; margin:12px 30px 0 10px; text-align:center; float:left; }
+
+.boxAcaoQuestionario02 .questionarioAcao02 { width:795px; background:#FFF; border:1px dashed #CCC; padding:10px; float:left; }
+.boxAcaoQuestionario02 .questionarioAcao02 ul li {display:block; margin-right:10px;}
+.boxAcaoQuestionario02 ul {float:left; }
+.boxAcaoQuestionario02 ul li {display:block; float:left; margin-right:10px;}
+.boxAcaoQuestionario02 .numeroPergunta { width:13px; height:16px; padding-left:4px; padding-top:1px; float:left; background:url(/resources/theme-zen/images/bg_numero_acao_questionario.gif) no-repeat; color:#FFF; font-weight:bold; font-size:11px; margin-right:3px; }
+.boxAcaoQuestionario02 ul li input { background:#FFF; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #DDD; border-bottom:1px solid #DDD; font:12px Verdana, Arial, Tahoma; color:#333; padding:2px; margin-top:3px; }
+.boxAcaoQuestionario02 .desativado { display:none; }
+.respondido02 { background:#E79944 url(/resources/theme-zen/images/img_icone_respondido.gif) no-repeat 715px 7px; color:#FFF; color:#FFF; }
+.respondido02 .numeroAcao { color:#F9D5AC !important; }
+.respondido02 .estadoAcao { color:#F9D5AC !important; }
+.respondido02 .questionarioAcao02 { background:#ECAF6C !important; border:1px dashed #E47514 !important; }
+
+
