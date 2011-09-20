@@ -20,7 +20,6 @@
           [template::list::filter_where_clauses -and -name "mentions"]
 	  [template::list::page_where_clause -and -name "mentions" -key "base.mores_post_id"]      
 	  [template::list::orderby_clause -orderby -name "mentions"]
-	  LIMIT 80
         </querytext>
     </fullquery>
 
