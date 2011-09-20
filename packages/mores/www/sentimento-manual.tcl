@@ -3,8 +3,8 @@ ad_page_contract {
     @creation-date Feb 02, 2011
 
 } -query {
-	account_id
-	{page "1"}
+    account_id
+    {page:optional}
     {orderby "created_at,desc"}
     {user:optional}
     {query_id_p:optional}
@@ -308,16 +308,11 @@ template::list::create \
     -selected_format $format \
     -pass_properties "" \
     -filters $filters \
+    -page_size 20 \
+    -page_flush_p t \
+    -page_query_name select_mentions_pagination \
     -elements $elements 
 
-
-set orderby [template::list::orderby_clause -orderby -name mentions]
-
-if {[string equal $orderby ""]} {
-    set orderby ""
-}
-
-#set limit 80					
 
 db_multirow -extend {account_id color datai dataf user_url date hora } mentions select_mentions {} {
 
