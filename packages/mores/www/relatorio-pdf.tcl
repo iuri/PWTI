@@ -400,8 +400,8 @@ append dados_aceitacao "data.setValue([expr $cont_query_sent -1], 0, '$current_q
 set base "http://pwti.com.br"
 set html "<html lang=\"pt\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\">
 	<head>
-		<title>Planeta MPI</title>
-		<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">
+		<title>Relatório de Monitoramento do Planeta</title>
+		<meta http-equiv=\"content-type\" content=\"text/html; charset=iso8859-1\">
 		<link rel=\"stylesheet\" type=\"text/css\" href=\"$base/resources/mores/mores.css\" /> 
 		<link rel=\"stylesheet\" type=\"text/css\" href=\"$base/resources/mores/styles.css\" />
 		<link href=\"css/cssrelatorio.css\" rel=\"stylesheet\" type=\"text/css\" />
@@ -727,11 +727,13 @@ puts $fd $html
 
 close $fd
 
+
+
 ns_log notice "close fd" 
 ns_log notice "passou iconv |  exec /usr/bin/pisa/wkhtmltopdf $filename_base $filename_pdf" 
 # if [catch {exec htmldoc --firstpage toc --size 210x297mm --left 1cm --right 1.5cm --webpage --quiet -f $filename_pdf $filename_base2 -} errmsg]
 
-if {[catch {exec /usr/bin/pisa/wkhtmltopdf-i386 $filename_base $filename_pdf  } errmsg]} {
+if {[catch {exec /usr/bin/pisa/wkhtmltopdf-i386  --encoding iso8859-1 $filename_base $filename_pdf  } errmsg]} {
 	ns_log notice "ERRO: $errmsg"   	    
     if { $errmsg eq "child process exited abnormally" || 1} {
      	ns_set update [ns_conn outputheaders] Content-Disposition "attachment; filename=\"relatorio-planeta-$account_name-[ad_generate_random_string 5].pdf\""
