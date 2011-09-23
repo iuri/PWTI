@@ -3,8 +3,7 @@ ad_page_contract {
     @creation-date Feb 02, 2011
 
 } -query {
-    account_id
-    {page:optional}
+	account_id
     {orderby "created_at,desc"}
     {user:optional}
     {query_id_p:optional}
@@ -13,6 +12,7 @@ ad_page_contract {
     {datai:optional}
     {dataf:optional}
     {lang_p:optional}
+    {page:optional}
     {limit "80"}
     {rel_p "0"}
 }
@@ -218,8 +218,9 @@ if {![exists_and_not_null query_id_p ]} {
 	}
 	
 }
-set options_list_langs ""
 
+set options_list_langs ""
+set options_list_users ""
 db_foreach select_langs {} {
     	lappend options_list_langs [list "$lang - $qtd" $lang]
 }
@@ -308,11 +309,18 @@ template::list::create \
     -selected_format $format \
     -pass_properties "" \
     -filters $filters \
-    -page_size 20 \
+    -page_size 30 \
     -page_flush_p t \
-    -page_query_name select_mentions_pagination \
+    -page_query_name mentions_pagination \
     -elements $elements 
 
+set orderby 
+
+if {[string equal $orderby ""]} {
+    set orderby ""
+}
+
+#set limit 80					
 
 db_multirow -extend {account_id color datai dataf user_url date hora } mentions select_mentions {} {
 
