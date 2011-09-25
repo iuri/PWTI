@@ -9,7 +9,7 @@
     <implements-subsite-p>f</implements-subsite-p>
     <inherit-templates-p>t</inherit-templates-p>
     
-    <version name="0.6d" url="http://openacs.org/repository/download/apm/mores-0.6d.apm">
+    <version name="0.7d" url="http://openacs.org/repository/download/apm/mores-0.7d.apm">
         <owner url="mailto:assuncao.b@gmail.com">Breno Assunção</owner>
         <description format="text/plain">This package is a excelent monitor to social networks.</description>
         <maturity>0</maturity>

@@ -175,9 +175,11 @@ if {$rel_p == 0} {
 
 if {![exists_and_not_null source_p]} {
 	set sql_source ""
+	set sql_source2 ""
 	set sql_query_id2 ""
 } else {
-	set sql_source " and source = '$source_p'"
+	set sql_source " and mi.source = '$source_p'"
+	set sql_source2 " and source = '$source_p'"
 }
 
 
@@ -198,7 +200,7 @@ if {![exists_and_not_null query_id_p ]} {
 	set sql_query_id2 ""
 	db_multirow redes select_redes "SELECT source, sum(qtd) as qtd
 		  FROM mores_stat_source
-		  where account_id = :account_id $sql_source $sql_lang
+		  where account_id = :account_id $sql_source2 $sql_lang
 		  group by source
 		  order by qtd desc
   	 " {
@@ -210,7 +212,7 @@ if {![exists_and_not_null query_id_p ]} {
 	set sql_query_id2 " and maq.query_id = $query_id_p"
 	db_multirow redes select_redes "SELECT source,  sum(qtd) as qtd
 		  FROM mores_stat_source_query
-		  where account_id = :account_id and query_id = :query_id_p $sql_source $sql_lang
+		  where account_id = :account_id and query_id = :query_id_p $sql_source2 $sql_lang
   		  group by source
 		  order by qtd desc
   	" {
@@ -232,8 +234,9 @@ db_multirow users select_users "SELECT user_id as user_name, sum(qtd) as qtd
   where account_id = :account_id $sql_query_id $sql_lang 
   group by user_id
   order by 2 desc
-  limit 100;" {
-    	lappend options_list_users [list "$user_name - $qtd" $user_name]
+  limit 100;
+" {
+    lappend options_list_users [list "$user_name - $qtd" $user_name]
 }
 
 db_multirow  querys   select_account "
@@ -241,7 +244,7 @@ db_multirow  querys   select_account "
 	  FROM mores_acc_query maq
 	  left join (select query_id, sum(qtd) as qtd
 	  	from mores_stat_source_query mssq
-	  	where 1 = 1 $sql_query_id $sql_source $sql_lang
+	  	where 1 = 1 $sql_query_id $sql_source2 $sql_lang
 	  	group by query_id) as dt on ( dt.query_id = maq.query_id)
 	WHERE  maq.account_id =:account_id   $sql_query_id2
 	--group by maq.query_id, maq.query_text
@@ -256,6 +259,7 @@ db_multirow  querys   select_account "
 	  lappend options_list_sentimento [list "Negativo" 3] 
 	  lappend options_list_sentimento [list "Divulgação" 4]   
 	                
+#removed $options_list_users   Iuri Sampaio 2011-09-23
 set filters [list \
 	sentimento {
          label "Sentimento"
@@ -269,13 +273,13 @@ set filters [list \
      } \
      source_p {
          label "Rede"
-		 values $options_list_redes
-         where_clause " source = :source_p"
+	 values $options_list_redes
+         where_clause " mi.source = :source_p"
      } \
-     user {
-         label "Usuário do twitter"
-         values $options_list_users
-         where_clause " user_name = :user"
+     user {		 
+	 label "Usuário do twitter"
+         values ""
+	 where_clause " user_name = :user"
      } \
      lang_p {
          label "Língua"
@@ -309,10 +313,12 @@ template::list::create \
     -selected_format $format \
     -pass_properties "" \
     -filters $filters \
-    -page_size 30 \
-    -page_flush_p t \
-    -page_query_name mentions_pagination \
     -elements $elements 
+
+
+#    -page_size 30 \
+#    -page_flush_p t \
+#    -page_query_name mentions_pagination \
 
 set orderby 
 
