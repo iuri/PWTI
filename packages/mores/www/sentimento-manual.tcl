@@ -236,6 +236,11 @@ db_multirow users select_users "SELECT user_id as user_name, sum(qtd) as qtd
   order by 2 desc
   limit 100;
 " {
+    
+    if {[regexp {\[} $user_name]} {
+	regsub -all {[][,]} $user_name " " user_name
+    }
+	
     lappend options_list_users [list "$user_name - $qtd" $user_name]
 }
 
@@ -259,7 +264,6 @@ db_multirow  querys   select_account "
 	  lappend options_list_sentimento [list "Negativo" 3] 
 	  lappend options_list_sentimento [list "Divulgação" 4]   
 	                
-#removed $options_list_users   Iuri Sampaio 2011-09-23
 set filters [list \
 	sentimento {
          label "Sentimento"
@@ -278,7 +282,7 @@ set filters [list \
      } \
      user {		 
 	 label "Usuário do twitter"
-         values ""
+         values $options_list_users
 	 where_clause " user_name = :user"
      } \
      lang_p {
