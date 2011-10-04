@@ -22,7 +22,7 @@ ad_proc -public mores::util::sync_microblog {
 	} {
 	#	set last_id [db_string select_name {select max(post_id) from mores_items3 where query_id = :query_id and source = 'twitter'} -default "1"]
 		regsub -all { } $query_text {+} query_text
-		regsub -all {'} $query_text {\"} query_text
+		regsub -all {'} $query_text {"} query_text
 #		mores::util::sync_twitter -query_text $query_text -query_id $query_id -last_id $last_id
 				mores::util::sync_twitter -query_text $query_text -query_id $query_id
 	}
@@ -34,11 +34,13 @@ ad_proc -public mores::util::sync_medias {
  } { 
 	Add a account
 } {
-    db_foreach select_account {
-	SELECT query_id,  query_text, isactive, last_request FROM mores_acc_query WHERE isactive = true ;
-    } {
-	mores::util::sync_social_mention -query_text $query_text -query_id $query_id
-    }
+	db_foreach select_account {
+	  SELECT query_id,  query_text, isactive, last_request
+  		FROM mores_acc_query
+		Where isactive = true ;
+	} {
+		mores::util::sync_social_mention -query_text $query_text -query_id $query_id
+	}
 }
 
 ad_proc -public mores::util::sync_medias_fb {
@@ -46,7 +48,9 @@ ad_proc -public mores::util::sync_medias_fb {
 	Add a account
 } {
 	db_foreach select_account {
-	  SELECT query_id,  query_text, isactive, last_request FROM mores_acc_query WHERE isactive = true ;
+	  SELECT query_id,  query_text, isactive, last_request
+  		FROM mores_acc_query
+		Where isactive = true ;
 	} {
 		mores::util::sync_facebook -query_text $query_text -query_id $query_id
 	}
@@ -58,87 +62,89 @@ ad_proc -public mores::util::sync_twitter_users {
 } { 
 	Add a account
 } {
-    set cont 0
-    db_foreach select_account {
-	
-	SELECT  distinct user_id FROM mores_stat_twt_usr
-	
-    } {
+	set cont 0
+	db_foreach select_account {
+	SELECT  distinct user_id
+  	FROM mores_stat_twt_usr
+  	; 
+	} {
 	incr cont
-	ns_log notice "usuário num $cont"
-	set url "http://api.twitter.com/1/users/show.json?screen_name=$user_id"
-	set url "http://api.twitter.com/1/users/show/$user_id.json"
-	if {[catch {set json [ns_httpget $url 60 0]} result]} {
-	    set json ""
-	} 	
-	set json [encoding convertfrom utf-8 $json]
-	regsub -all {&nbsp;} $json {} json
-	regsub -all {&nbsp;} $json {} json
-	regsub -all {\-} $json {$$*} json
-	
-	set json_list [util::json::parse $json]
-	
-	set items $json_list
-	# set results_list [lindex $results 1]
-	# set items [lindex $results_list 1]
-	
-	regsub -all {\$\$\*} $items {-} items
-	
-	#foreach one_item $items {
-	set one_item $items
-	set user_id $user_id
-	set user_name $user_id
-	set seguidores ""
-	set seguindo ""
-	set listed ""
-	set tweets ""
-	set name ""
-	set screen_name  ""
-	set followers_count  ""
-	set friends_count  ""
-	set listed_count  ""
-	set statuses_count ""
-	set name ""
-	
-	set attr [lindex $one_item 1]
-	for {set j 0} {$j < [llength $attr]} { } {		 		
-	    set [lindex $attr $j] [lindex $attr [expr $j+1]] 
-	    
-	    #ns_log notice "VAR: [lindex $attr $j] ******    ([lindex $attr [expr $j+1]])" 
-	    incr j
-	    incr j
+	 ns_log notice "usuário num $cont"
+		set url "http://api.twitter.com/1/users/show.json?screen_name=$user_id"
+		set url "http://api.twitter.com/1/users/show/$user_id.json"
+		if {[catch {set json [ns_httpget $url 60 0]} result]} {
+		   set json ""
+		} 	
+		set json [encoding convertfrom utf-8 $json]
+	 	regsub -all {&nbsp;} $json {} json
+		regsub -all {&nbsp;} $json {} json
+		regsub -all {\-} $json {$$*} json
+
+		set json_list [util::json::parse $json]
+
+		set items $json_list
+		# set results_list [lindex $results 1]
+		# set items [lindex $results_list 1]
+
+		regsub -all {\$\$\*} $items {-} items
+
+		#foreach one_item $items {
+		set one_item $items
+			set user_id $user_id
+			set user_name $user_id
+			set seguidores ""
+			set seguindo ""
+			set listed ""
+			set tweets ""
+			set name ""
+			set screen_name  ""
+			set followers_count  ""
+			set friends_count  ""
+			set listed_count  ""
+			set statuses_count ""
+			set name ""
+			
+			set attr [lindex $one_item 1]
+			for {set j 0} {$j < [llength $attr]} { } {		 		
+		 		set [lindex $attr $j] [lindex $attr [expr $j+1]] 
+		 		
+		 		#ns_log notice "VAR: [lindex $attr $j] ******    ([lindex $attr [expr $j+1]])" 
+				incr j
+				incr j
+			}
+
+
+			set user_id $user_id
+			set user_name $screen_name
+			set seguidores $followers_count
+			set seguindo $friends_count
+			set listed $listed_count
+			set tweets $statuses_count
+			set name $name
+			 
+			 
+			 if {[catch {db_dml insert_item {
+				INSERT INTO mores_users_twitter(
+						user_id, user_name, seguidores, seguindo, listed, tweets, "name")
+				VALUES (
+				:user_id,
+				:user_name,
+				:seguidores,
+				:seguindo,
+				:listed,
+				:tweets,
+				:name)
+			} }	result]} {
+					#ERROR
+				#ns_log notice " DEu erro   $result - "
+			} 	else {
+				#ns_log notice "inseriu o usuário corretamente"
+			
+			}
+			
+
+     	#}
 	}
-	
-	
-	set user_id $user_id
-	set user_name $screen_name
-	set seguidores $followers_count
-	set seguindo $friends_count
-	set listed $listed_count
-	set tweets $statuses_count
-	set name $name
-	
-	
-	if {[catch {db_dml insert_item {
-	    INSERT INTO mores_users_twitter (
-		     user_id, user_name, seguidores, seguindo, listed, tweets, "name"
-	    ) VALUES (
-		     :user_id,
-		     :user_name,
-		     :seguidores,
-		     :seguindo,
-		     :listed,
-		     :tweets,
-		     :name
-						       )
-	} }	result]} {
-	    #ERROR
-	    #ns_log notice " DEu erro   $result - "
-	} 	else {
-	    #ns_log notice "inseriu o usuário corretamente"
-	    
-	}
-    }
 }
 
 
@@ -172,21 +178,34 @@ ad_proc -public mores::util::sync_twitter {
 			set stop 1	
 			return 0	
 		} else {
-	#	ns_log notice "twitter buscando $page"
+	ns_log notice "twitter buscando $page"
+
+
 		}
+
+	set json [encoding convertfrom utf-8 $json]
+	regsub -all {\-} $json {$$*} json
+	set json_list [util::json::parse $json]
+	set json2 [util::json::object::get_value -object $json_list -attribute "results"]
+
+	set items [lindex $json2 1]
+	
+
+	regsub -all {\$\$\*} $items {-} items
+
 			
-		set json [encoding convertfrom utf-8 $json]
-	 	regsub -all {&nbsp;} $json {} json
-		regsub -all {&nbsp;} $json {} json
-		regsub -all {\-} $json {$$*} json
-
-		set json_list [util::json::parse $json]
-
-		set results [lindex $json_list 1]
-		set results_list [lindex $results 1]
-		set items [lindex $results_list 1]
-
-		regsub -all {\$\$\*} $items {-} items
+#		set json [encoding convertfrom utf-8 $json]
+#	 	regsub -all {&nbsp;} $json {} json
+#		regsub -all {&nbsp;} $json {} json
+#		regsub -all {\-} $json {$$*} json
+#
+#		set json_list [util::json::parse $json]
+#
+#		set results [lindex $json_list 1]
+#		set results_list [lindex $results 1]
+#		set items [lindex $results_list 1]
+#
+#		regsub -all {\$\$\*} $items {-} items
 
 		foreach one_item $items {
 			set from_user_id ""
@@ -483,6 +502,7 @@ ad_proc -public mores::util::sync_twitter_posts  {
 		   text, lang, post_url, type, followers, following, favorites, statuses, verified
 	  FROM mores_items_tmp;
 	} {
+		regsub -all {\\} $text {} text
 		db_foreach select_query { SELECT query_id, account_id, query_text
 		  FROM mores_acc_query where lower(:text) like '%'||lower(trim(both '"' from query_text))||'%'
 		} {
@@ -725,6 +745,7 @@ ad_proc -public mores::util::sync_all {
 	db_dml delete_item { delete from mores_stat_source_query_tmp;}
 	db_dml delete_item { delete from mores_stat_source_tmp;}
 	db_dml delete_item { delete from mores_stat_twt_usr_tmp;}
+#	db_dml delete_item { delete from mores_stat_twt_tmp;}
 	
 	
 		
@@ -807,6 +828,17 @@ ad_proc -public mores::util::sync_all {
 	ns_log notice "atualizou users"
 
 
+
+
+# db_dml insert_item {
+#		INSERT INTO mores_stat_twt_tmp (
+#			account_id, query_id, lang, user_nick, user_name, user_img, following, 
+#			followers, favorites, statuses, verified)
+#		SELECT  distinct on (query_id, lang,user_name) 1 as acc, query_id, lang,user_nick
+#			, user_name, profile_img, following,followers, favorites, statuses, verified
+#			FROM mores_items3 where followers is not null;
+#	
+#	}
 
 
 #			select account_id, query_id, source, to_char(hour,'HH24') as hour,
@@ -903,11 +935,13 @@ ad_proc -public mores::util::sync_all {
 	}
 	ns_log notice "atualizou users"
 
+
+####
 #	db_dml insert_item {
 #		INSERT INTO mores_stat_twt(
 #			account_id, query_id, lang, user_nick, user_name, user_img, following, 
 #			followers, favorites, statuses, verified)
-#		SELECT  distinct 1 as acc, query_id, lang,user_nick, user_name, profile_img, following,
+#		SELECT  distinct on (query_id, lang,user_name) 1 as acc, query_id, lang,user_nick, user_name, profile_img, following,
 #			followers, favorites, statuses, verified
 #			FROM mores_items3 where followers is not null;
 #	}
