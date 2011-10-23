@@ -36,10 +36,10 @@ if {$account_id == 1935} {
 }
 
 if {$css == ""} {
-	template::head::add_css -href "/resources/mores/layouts/css.css"
+    template::head::add_css -href "/resources/mores/layouts/css.css"
 }
 set account_id_p $account_id
-  
+
 set return_url [ad_return_url]
 
 set return_url [ns_urlencode $return_url]
@@ -47,180 +47,180 @@ set return_url [ns_urlencode $return_url]
 set fields "<input type=\"hidden\" name=\"account_id\" id=\"account_id\" value=\"$account_id\">"
 
 if {[exists_and_not_null sentimento ] } { 
-   	append fields " <input type=\"hidden\" name=\"sentimento\" id=\"sentimento\" value=\"$sentimento\">"
+    append fields " <input type=\"hidden\" name=\"sentimento\" id=\"sentimento\" value=\"$sentimento\">"
 }
 if {[exists_and_not_null orderby ] } {
-   	append fields "<input type=\"hidden\" name=\"orderby\" id=\"orderby\" value=\"$orderby\">"
+    append fields "<input type=\"hidden\" name=\"orderby\" id=\"orderby\" value=\"$orderby\">"
 }
 if {[exists_and_not_null user] } {
-   	append fields "<input type=\"hidden\" name=\"user\" id=\"user\" value=\"$user\">"
+    append fields "<input type=\"hidden\" name=\"user\" id=\"user\" value=\"$user\">"
 }
 if {[exists_and_not_null query_id_p ]} {
-   	append fields "<input type=\"hidden\" name=\"query_id_p\" id=\"query_id_p\" value=\"$query_id_p\">"
+    append fields "<input type=\"hidden\" name=\"query_id_p\" id=\"query_id_p\" value=\"$query_id_p\">"
 }
 if {[exists_and_not_null source_p] } {
-   	append fields "<input type=\"hidden\" name=\"source_p\" id=\"source_p\" value=\"$source_p\">"
+    append fields "<input type=\"hidden\" name=\"source_p\" id=\"source_p\" value=\"$source_p\">"
 }
- 
- 
- set sql_date ""
+
+
+set sql_date ""
 ## filtro das datas
 if {[exists_and_not_null datai] } {
-	set datai2 [lc_time_conn_to_system $datai]
-   	append sql_date " and created_at >= '$datai2'"
-   	set min_date $datai
+    set datai2 [lc_time_conn_to_system $datai]
+    append sql_date " and created_at >= '$datai2'"
+    set min_date $datai
 } else {
-	set min_date [db_string select_min_date {SELECT to_char(o.creation_date -interval '10 days'   , 'YYYY-MM-DD HH24:MI') 
-		   FROM mores_accounts maq, acs_objects o
-	  where  maq.account_id = :account_id  AND maq.account_id = o.object_id} -default ""]
-	  
-	set datai $min_date 
+    set min_date [db_string select_min_date {SELECT to_char(o.creation_date -interval '10 days'   , 'YYYY-MM-DD HH24:MI') 
+	FROM mores_accounts maq, acs_objects o
+	where  maq.account_id = :account_id  AND maq.account_id = o.object_id} -default ""]
+    
+    set datai $min_date 
 }
 
 if {[exists_and_not_null dataf] } {
-	set dataf2 [lc_time_conn_to_system $dataf]
+    set dataf2 [lc_time_conn_to_system $dataf]
 
-   	append sql_date " and created_at <= '$dataf2'"
-   	set max_date $dataf
+    append sql_date " and created_at <= '$dataf2'"
+    set max_date $dataf
 } else {
-	set max_date [db_string select_max_date "SELECT  to_char(now(), 'YYYY-MM-DD HH24:MI') " -default ""]
-	   	set dataf $max_date
+    set max_date [db_string select_max_date "SELECT  to_char(now(), 'YYYY-MM-DD HH24:MI') " -default ""]
+    set dataf $max_date
 }
 
-    
+
 set account_name [db_string select_name {select name from mores_accounts where account_id = :account_id}]
 
 if {$rel_p == 0} {
-
-	set elements [list  username \
-			  [list label username \
+    
+    set elements [list  username \
+		      [list label username \
 		           display_template { @mentions.user_nick@ <br/><a href="user_block-ajax?return_url=$return_url&user_nick=@mentions.user_nick@&source=@mentions.source@&query_id=@mentions.query_id@" style="color:red;">bloquear</a> } \
-				   orderby_desc {fs_objects.title desc} \
-				   orderby_asc {fs_objects.title asc}] \
-			  source [list label source  \
-		                         display_template {@mentions.source@}] \
-	 		  text \
-			  [list label "mention" \
-	 		       display_template {
-	 		       		<div class="item" style="background-color:@mentions.color@;">
-								<div class="user_image">
-									<a target="_blank" href="@mentions.user_url@">
-										<img src="@mentions.profile_img@">
-									</a>
-								</div>
-								<div class="text">@mentions.text@
-								</div>
-								<div class="details">
-									<div class="source">
-										<img src="@mentions.favicon@">&nbsp;
-										<span rel="1291660465000" class="date">
-											<a target="_blank" href="@mentions.post_url@" title="Veja o post original ">@mentions.hora@</a>
-										</span>  por <a target="_blank" href="@mentions.user_url@">@mentions.user_nick@</a> - @mentions.source@
-									</div>
-								</div>
-							</div>}] \
-			  created_at \
-			  [list label "data" \
-			   		display_template {@mentions.date@ @mentions.hora@} \
-				   orderby_desc {created_at desc} \
-				   orderby_asc {created_at asc}] \
-			  sentimento \
-			  [list label "sentimento" \
-				   display_template {<div id ="item@mentions.mores_post_id@" <ul style="width: 85px;">
-				   		<li style="display: block;"><a href="javascript:ajaxpage('sentimento-ajax?sentimento=1&mores_post_id=@mentions.mores_post_id@', 'item2@mentions.mores_post_id@');"><img  src="/resources/mores/positivo.png"></a> </li>
-				   		<li style="display: block;"><a href="javascript:ajaxpage('sentimento-ajax?sentimento=2&mores_post_id=@mentions.mores_post_id@', 'item2@mentions.mores_post_id@');"><img  src="/resources/mores/neutro.png"></a></li>
-				   		<li style="display: block;"><a href="javascript:ajaxpage('sentimento-ajax?sentimento=3&mores_post_id=@mentions.mores_post_id@', 'item2@mentions.mores_post_id@');"><img  src="/resources/mores/negativo.png"></a> </li>
-				   		<li style="display: block;"><a href="javascript:ajaxpage('sentimento-ajax?sentimento=4&mores_post_id=@mentions.mores_post_id@', 'item2@mentions.mores_post_id@');"><img src="/resources/mores/divulgacao.png"></a> </li>
-				   </ul> </div>
-				   <div id ="item2@mentions.mores_post_id@"></div>}]
-			  ]
-			 
+			   orderby_desc {fs_objects.title desc} \
+			   orderby_asc {fs_objects.title asc}] \
+		      source [list label source  \
+				  display_template {@mentions.source@}] \
+		      text \
+		      [list label "mention" \
+			   display_template {
+			       <div class="item" style="background-color:@mentions.color@;">
+			       <div class="user_image">
+			       <a target="_blank" href="@mentions.user_url@">
+			       <img src="@mentions.profile_img@">
+			       </a>
+			       </div>
+			       <div class="text">@mentions.text@
+			       </div>
+			       <div class="details">
+			       <div class="source">
+			       <img src="@mentions.favicon@">&nbsp;
+			       <span rel="1291660465000" class="date">
+			       <a target="_blank" href="@mentions.post_url@" title="Veja o post original ">@mentions.hora@</a>
+			       </span>  por <a target="_blank" href="@mentions.user_url@">@mentions.user_nick@</a> - @mentions.source@
+			       </div>
+			       </div>
+			       </div>}] \
+		      created_at \
+		      [list label "data" \
+			   display_template {@mentions.date@ @mentions.hora@} \
+			   orderby_desc {created_at desc} \
+			   orderby_asc {created_at asc}] \
+		      sentimento \
+		      [list label "sentimento" \
+			   display_template {<div id ="item@mentions.mores_post_id@" <ul style="width: 85px;">
+			       <li style="display: block;"><a href="javascript:ajaxpage('sentimento-ajax?sentimento=1&mores_post_id=@mentions.mores_post_id@', 'item2@mentions.mores_post_id@');"><img  src="/resources/mores/positivo.png"></a> </li>
+			       <li style="display: block;"><a href="javascript:ajaxpage('sentimento-ajax?sentimento=2&mores_post_id=@mentions.mores_post_id@', 'item2@mentions.mores_post_id@');"><img  src="/resources/mores/neutro.png"></a></li>
+			       <li style="display: block;"><a href="javascript:ajaxpage('sentimento-ajax?sentimento=3&mores_post_id=@mentions.mores_post_id@', 'item2@mentions.mores_post_id@');"><img  src="/resources/mores/negativo.png"></a> </li>
+			       <li style="display: block;"><a href="javascript:ajaxpage('sentimento-ajax?sentimento=4&mores_post_id=@mentions.mores_post_id@', 'item2@mentions.mores_post_id@');"><img src="/resources/mores/divulgacao.png"></a> </li>
+			       </ul> </div>
+			       <div id ="item2@mentions.mores_post_id@"></div>}]
+		 ]
+    
 } else {
-
-			set elements [list  text \
-			  [list label "mention" \
-	 		       display_template {
-	 		       		<div class="item" style="background-color:@mentions.color@;max-width: 863px !important;">
-								<div class="user_image">
-									<a target="_blank" href="@mentions.user_url@">
-										<img src="@mentions.profile_img@">
-									</a>
-								</div>
-								<div class="text">@mentions.text@
-								</div>
-								<div class="details">
-									<div class="source">
-										<img src="@mentions.favicon@">&nbsp;
-										<span rel="1291660465000" class="date">
-											<a target="_blank" href="@mentions.post_url@" title="Veja o post original ">@mentions.hora@</a>
-										</span>  por <a target="_blank" href="@mentions.user_url@">@mentions.user_nick@</a> - @mentions.source@
-									</div>
-								</div>
-							</div>}] \
-			  created_at \
-			  [list label "data" \
-			   		display_template {@mentions.date@ @mentions.hora@} \
-				   orderby_desc {created_at desc} \
-				   orderby_asc {created_at asc}] \
-			  
-			  ]
-			 
-
+    
+    set elements [list  text \
+		      [list label "mention" \
+			   display_template {
+			       <div class="item" style="background-color:@mentions.color@;max-width: 863px !important;">
+			       <div class="user_image">
+			       <a target="_blank" href="@mentions.user_url@">
+			       <img src="@mentions.profile_img@">
+			       </a>
+			       </div>
+			       <div class="text">@mentions.text@
+			       </div>
+			       <div class="details">
+			       <div class="source">
+			       <img src="@mentions.favicon@">&nbsp;
+			       <span rel="1291660465000" class="date">
+			       <a target="_blank" href="@mentions.post_url@" title="Veja o post original ">@mentions.hora@</a>
+			       </span>  por <a target="_blank" href="@mentions.user_url@">@mentions.user_nick@</a> - @mentions.source@
+			       </div>
+			       </div>
+			       </div>}] \
+		      created_at \
+		      [list label "data" \
+			   display_template {@mentions.date@ @mentions.hora@} \
+			   orderby_desc {created_at desc} \
+			   orderby_asc {created_at asc}] \
+		      
+		 ]
+    
+    
 }			 
-	     ## FILTERS
+## FILTERS
 
 if {![exists_and_not_null source_p]} {
-	set sql_source ""
-	set sql_source2 ""
-	set sql_query_id2 ""
+    set sql_source ""
+    set sql_source2 ""
+    set sql_query_id2 ""
 } else {
-	set sql_source " and mi.source = '$source_p'"
-	set sql_source2 " and source = '$source_p'"
+    set sql_source " and mi.source = '$source_p'"
+    set sql_source2 " and source = '$source_p'"
 }
 
 
 if {![exists_and_not_null user]} {
-	set sql_user ""
+    set sql_user ""
 } else {
-	set sql_user " and user_name = '$user'"
+    set sql_user " and user_name = '$user'"
 }
 
 if {![exists_and_not_null lang_p] } {
-	set sql_lang ""
+    set sql_lang ""
 } else {
-	set sql_lang " and substr(lang,1,2) = '$lang_p'"
+    set sql_lang " and substr(lang,1,2) = '$lang_p'"
 }
 
 if {![exists_and_not_null query_id_p ]} {
-	set sql_query_id ""
-	set sql_query_id2 ""
-	db_multirow redes select_redes "SELECT source, sum(qtd) as qtd
+    set sql_query_id ""
+    set sql_query_id2 ""
+    db_multirow redes select_redes "SELECT source, sum(qtd) as qtd
 		  FROM mores_stat_source
 		  where account_id = :account_id $sql_source2 $sql_lang
 		  group by source
 		  order by qtd desc
   	 " {
-  	  lappend options_list_redes [list "$source - $qtd" $source]
-	}
-
+	     lappend options_list_redes [list "$source - $qtd" $source]
+	 }
+    
 } else {
-	set sql_query_id " and query_id = $query_id_p"
-	set sql_query_id2 " and maq.query_id = $query_id_p"
-	db_multirow redes select_redes "SELECT source,  sum(qtd) as qtd
+    set sql_query_id " and query_id = $query_id_p"
+    set sql_query_id2 " and maq.query_id = $query_id_p"
+    db_multirow redes select_redes "SELECT source,  sum(qtd) as qtd
 		  FROM mores_stat_source_query
 		  where account_id = :account_id and query_id = :query_id_p $sql_source2 $sql_lang
   		  group by source
 		  order by qtd desc
   	" {
-  		lappend options_list_redes [list "$source - $qtd" $source]
+	    lappend options_list_redes [list "$source - $qtd" $source]
 	}
-	
+    
 }
 
 set options_list_langs ""
 set options_list_users ""
 db_foreach select_langs {} {
-    	lappend options_list_langs [list "$lang - $qtd" $lang]
+    lappend options_list_langs [list "$lang - $qtd" $lang]
 }
 
 set options_list_querys ""
@@ -236,7 +236,7 @@ db_multirow users select_users "SELECT user_id as user_name, sum(qtd) as qtd
     if {[regexp {\[} $user_name]} {
 	regsub -all {[][,]} $user_name " " user_name
     }
-	
+    
     lappend options_list_users [list "$user_name - $qtd" $user_name]
 }
 
@@ -251,51 +251,51 @@ db_multirow  querys   select_account "
 	--group by maq.query_id, maq.query_text
 	order by 3 desc 
 	" {
-		   	   lappend options_list_querys [list "$query_text - $qtd" $query_id]
+	    lappend options_list_querys [list "$query_text - $qtd" $query_id]
 	}
 
-	  lappend options_list_sentimento [list "Não Classificado" 0] 
-	  lappend options_list_sentimento [list "Positivo" 1]     
-	  lappend options_list_sentimento [list "Neutro" 2]     
-	  lappend options_list_sentimento [list "Negativo" 3] 
-	  lappend options_list_sentimento [list "Divulgação" 4]   
-	                
+lappend options_list_sentimento [list "Não Classificado" 0] 
+lappend options_list_sentimento [list "Positivo" 1]     
+lappend options_list_sentimento [list "Neutro" 2]     
+lappend options_list_sentimento [list "Negativo" 3] 
+lappend options_list_sentimento [list "Divulgação" 4]   
+
 set filters [list \
-	sentimento {
-         label "Sentimento"
-         values $options_list_sentimento
-         where_clause " sentimento = :sentimento"
-     } \
-     query_id_p {
-         label "Termo"
-         values $options_list_querys
-         where_clause " maq.query_id = :query_id_p"
-     } \
-     source_p {
-         label "Rede"
-	 values $options_list_redes
-         where_clause " mi.source = :source_p"
-     } \
-     user {		 
-	 label "Usuário do twitter"
-         values $options_list_users
-	 where_clause " user_name = :user"
-     } \
-     lang_p {
-         label "Língua"
-         values $options_list_langs
-         where_clause " lang = :lang_p"
-     } \
-     datai {} \
-     dataf {} \
-     date {
-         label "Usuário do twitter"
-         where_clause " user_name = :user"
-     } \
-     account_id {
-	 default_value $account_id
-     } \
-]
+		 sentimento {
+		     label "Sentimento"
+		     values $options_list_sentimento
+		     where_clause " sentimento = :sentimento"
+		 } \
+		 query_id_p {
+		     label "Termo"
+		     values $options_list_querys
+		     where_clause " maq.query_id = :query_id_p"
+		 } \
+		 source_p {
+		     label "Rede"
+		     values $options_list_redes
+		     where_clause " mi.source = :source_p"
+		 } \
+		 user {		 
+		     label "Usuário do twitter"
+		     values $options_list_users
+		     where_clause " user_name = :user"
+		 } \
+		 lang_p {
+		     label "Língua"
+		     values $options_list_langs
+		     where_clause " lang = :lang_p"
+		 } \
+		 datai {} \
+		 dataf {} \
+		 date {
+		     label "Usuário do twitter"
+		     where_clause " user_name = :user"
+		 } \
+		 account_id {
+		     default_value $account_id
+		 } \
+		]
 
 
 set actions "\"\" \"account?account_id=$account_id\" \"#mores.account_view#\""
@@ -329,7 +329,6 @@ if {[string equal $orderby ""]} {
 
 
 db_multirow -extend {color datai dataf user_url date hora } mentions select_mentions {} {
-    #set account_id $account_id
     
     
     switch $source {
@@ -363,7 +362,7 @@ db_multirow -extend {color datai dataf user_url date hora } mentions select_ment
 	    set user_url "nao encontrado"
 	}
         
-    
+    }
     
     switch $sentimento {
 	1 {
